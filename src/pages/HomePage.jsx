@@ -2,9 +2,9 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <>
-      <div></div>
-    </>
+    <div className="bg-homepage">
+      <div>asd</div>
+    </div>
   );
 };
 
