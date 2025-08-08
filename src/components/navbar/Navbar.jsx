@@ -1,10 +1,24 @@
+import { Container } from "react-bootstrap";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <>
-      <div></div>
-    </>
+    <Container fluid className="border navbar-contenedor">
+      <ul className="menu-navbar">
+        <li>
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="">Sobre mi</a>
+        </li>
+        <li>
+          <a href="">Tecnologias</a>
+        </li>
+        <li>
+          <a href="">Contacto</a>
+        </li>
+      </ul>
+    </Container>
   );
 };
 
