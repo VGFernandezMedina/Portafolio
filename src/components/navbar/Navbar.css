@@ -14,7 +14,7 @@
   align-items: center;
   padding-left: 0;
   height: 60%;
-  width: 30%;
+  width: 37%;
   border: 1px solid #343434;
   border-radius: 50px;
   background-color: #343434;
@@ -30,7 +30,6 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-style: normal;
 }
 
 .menu-navbar li a::after {

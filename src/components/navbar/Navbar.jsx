@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <Container fluid className="border navbar-contenedor">
+    <Container fluid className="navbar-contenedor">
       <ul className="menu-navbar">
         <li>
           <a href="">Inicio</a>
@@ -13,6 +13,9 @@ const Navbar = () => {
         </li>
         <li>
           <a href="">Tecnologias</a>
+        </li>
+        <li>
+          <a href="">Proyectos</a>
         </li>
         <li>
           <a href="">Contacto</a>
