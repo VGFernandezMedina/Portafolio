@@ -1,9 +1,10 @@
+import Inicio from "../components/inicio/Inicio";
 import "./HomePage.css";
 
 const HomePage = () => {
   return (
     <div className="bg-homepage">
-      <div>asd</div>
+      <Inicio />
     </div>
   );
 };
