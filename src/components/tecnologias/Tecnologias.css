@@ -1,0 +1,6 @@
+.tecnologias p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--color-texto-principal);
+  padding: 40px 0;
+}
