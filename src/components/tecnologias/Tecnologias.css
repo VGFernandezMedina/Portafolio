@@ -1,13 +1,6 @@
-.cont-parrafo {
-  padding: 40px 0;
-}
-
-.cont-parrafo p {
+.tecnologias p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: var(--color-texto-principal);
-}
-
-.img-perfil {
-  height: 250px;
+  padding: 40px 0;
 }

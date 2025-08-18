@@ -5,11 +5,11 @@ import perfil from "/perfil.jpg";
 
 const SobreMi = () => {
   return (
-    <Container fluid className="border">
+    <Container fluid>
       <Separador title="Sobre mi" />
       <Container fluid className="cont-parrafo">
         <Row>
-          <Col sm="12" md="6" lg="6" className="">
+          <Col sm="12" md="8" lg="8" className="">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
               nemo, distinctio sapiente, sunt iste dicta iusto doloribus
@@ -31,8 +31,8 @@ const SobreMi = () => {
           </Col>
           <Col
             sm="12"
-            md="6"
-            lg="6"
+            md="4"
+            lg="4"
             className="text-center d-flex align-items-center"
           >
             <Image src={perfil} roundedCircle fluid className="img-perfil" />
