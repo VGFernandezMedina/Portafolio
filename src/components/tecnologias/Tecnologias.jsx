@@ -23,9 +23,7 @@ const Tecnologias = () => {
     { src: "/vsc.svg", name: "VSCode" },
     { src: "/npm.svg", name: "npm" },
   ];
-  const aprendiendoIcons = [
-    { src: "/public/wordpress.svg", name: "WordPress" },
-  ];
+  const aprendiendoIcons = [{ src: "/wordpress.svg", name: "WordPress" }];
 
   return (
     <Container fluid className="py-5 tecnologias">
