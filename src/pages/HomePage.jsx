@@ -3,6 +3,7 @@ import Inicio from "../components/inicio/Inicio";
 import SobreMi from "../components/sobremi/SobreMi";
 import "./HomePage.css";
 import Tecnologias from "../components/tecnologias/Tecnologias";
+import Proyectos from "../components/proyectos/Proyectos";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Inicio />
       <SobreMi />
       <Tecnologias />
+      <Proyectos />
     </Container>
   );
 };

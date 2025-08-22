@@ -1,0 +1,62 @@
+.card-personalizada {
+  width: 350px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(9, 28, 57);
+  color: var(--color-texto-principal);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  height: 420px;
+}
+
+.card-body {
+  padding: 20px 25px;
+}
+
+.card-img-container {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-personalizada img {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.card-personalizada:hover .card-img-container img {
+  transform: scale(1.05);
+}
+
+.card-titulo {
+  font-weight: 500;
+  color: var(--color-hover);
+}
+
+.card-texto {
+  font-weight: 300;
+  font-size: 14px;
+  padding: 3px 0;
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-etiqueta {
+  background-color: rgb(29, 58, 102) !important;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: 300;
+}
+
+.card-etiqueta-img {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  font-weight: 600;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+}
