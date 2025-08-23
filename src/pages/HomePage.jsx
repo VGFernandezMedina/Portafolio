@@ -9,8 +9,8 @@ const HomePage = () => {
   return (
     <Container fluid className="homepage">
       <Inicio />
-      {/* <SobreMi />
-      <Tecnologias />
+      <SobreMi />
+      {/* <Tecnologias />
       <Proyectos /> */}
     </Container>
   );
