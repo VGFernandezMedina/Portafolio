@@ -9,9 +9,9 @@ const HomePage = () => {
   return (
     <Container fluid className="homepage">
       <Inicio />
-      <SobreMi />
+      {/* <SobreMi />
       <Tecnologias />
-      <Proyectos />
+      <Proyectos /> */}
     </Container>
   );
 };

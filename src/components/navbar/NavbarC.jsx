@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
-import "./Navbar.css";
+import "./NavbarC.css";
 
-const Navbar = () => {
+const NavbarC = () => {
   return (
     <Container fluid className="navbar-contenedor">
       <ul className="menu-navbar">
@@ -25,4 +25,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarC;
