@@ -1,13 +1,40 @@
-.cont-parrafo {
-  padding: 40px 0;
-}
-
-.cont-parrafo p {
+.parrafo {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 15px;
   color: var(--color-texto-principal);
 }
 
 .img-perfil {
-  height: 250px;
+  height: 220px;
+  max-width: 220px;
+  object-fit: cover;
+}
+
+.icono-titulo {
+  color: var(--color-texto-principal);
+  margin-right: 8px;
+}
+
+@media (max-width: 575.98px) {
+  .parrafo {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .img-perfil {
+    height: 180px;
+    width: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* .cont-parrafo {
+    padding: 10px 100px;
+  } */
+}
+
+@media (min-width: 1200px) {
 }

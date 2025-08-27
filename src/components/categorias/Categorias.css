@@ -4,8 +4,11 @@
   border-radius: 20px;
   border: 1px solid #18233c;
   padding: 1rem;
-  height: 300px;
   box-shadow: 5px 5px 20px #0a101eb7;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .category-box h3 {

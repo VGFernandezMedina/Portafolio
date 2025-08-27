@@ -1,17 +1,17 @@
-/* .homepage {
-  padding: 0 350px;
+.homepage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .homepage {
-    padding: 0 120px;
+    padding: 0 300px;
   }
-} */
-
-/* @media (min-width: 1200px) {
-  ...;
 }
 
-@media (min-width: 1400px) {
-  ...;
-} */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .homepage {
+    padding: 0 150px;
+  }
+}

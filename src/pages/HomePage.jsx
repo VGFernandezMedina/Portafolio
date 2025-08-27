@@ -7,12 +7,12 @@ import Proyectos from "../components/proyectos/Proyectos";
 
 const HomePage = () => {
   return (
-    <Container fluid className="homepage">
+    <div className="homepage">
       <Inicio />
       <SobreMi />
-      {/* <Tecnologias />
-      <Proyectos /> */}
-    </Container>
+      <Tecnologias />
+      {/* <Proyectos /> */}
+    </div>
   );
 };
 
