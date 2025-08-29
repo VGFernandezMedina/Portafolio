@@ -1,10 +1,9 @@
 .category-box {
-  background: #0f172a;
   background: linear-gradient(315deg, rgb(6, 10, 19) 40%, rgb(9, 28, 57) 120%);
   border-radius: 20px;
   border: 1px solid #18233c;
-  padding: 1rem;
   box-shadow: 5px 5px 20px #0a101eb7;
+  padding: 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;

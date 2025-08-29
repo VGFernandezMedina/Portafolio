@@ -28,8 +28,8 @@ const Tecnologias = () => {
   ];
   const aprendiendoIcons = [
     { src: "/wordpress.svg", name: "WordPress" },
-    { src: "/public/tailwind-css.svg", name: "TailwindCSS" },
-    { src: "/public/typescript.svg", name: "TypeScript" },
+    { src: "/tailwind-css.svg", name: "TailwindCSS" },
+    { src: "/typescript.svg", name: "TypeScript" },
   ];
 
   return (
@@ -38,7 +38,7 @@ const Tecnologias = () => {
         <RiToolsFill size={24} className="icono-titulo" />
         <Separador title="Tecnologias" />
       </div>
-      <p className="parrafo pt-4">
+      <p className="parrafo py-4">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
         deserunt dicta aperiam hic voluptate? Quasi est ipsum sunt magni vero
         ipsa, veritatis exercitationem quisquam, eaque illum ratione. Iste, et
