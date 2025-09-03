@@ -1,0 +1,47 @@
+.navbar-contenedor {
+  height: 16vh;
+  width: auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 0;
+  height: 60%;
+  width: 37%;
+  border: 1px solid #343434;
+  border-radius: 50px;
+  background-color: #343434;
+}
+
+.menu-navbar li {
+  list-style: none;
+  position: relative;
+}
+
+.menu-navbar li a {
+  color: var(--color-texto-principal);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.menu-navbar li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--color-texto-principal);
+  transition: width 0.3s ease;
+}
+
+.menu-navbar li:hover a::after {
+  width: 100%;
+}

@@ -1,0 +1,124 @@
+.inicio {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inicio h3 {
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--color-texto-principal);
+}
+
+.inicio h1 {
+  font-weight: 600;
+  font-size: 70px;
+  color: var(--color-hover);
+  text-align: center;
+}
+
+.inicio span {
+  font-weight: 300;
+  font-size: 17px;
+  color: var(--color-texto-principal);
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-acento);
+  border-radius: 50%;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 188, 212, 0.7);
+  }
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 10px rgba(0, 188, 212, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 188, 212, 0);
+  }
+}
+
+.inicio button,
+.inicio button:focus,
+.inicio button:active,
+.inicio button:active:focus {
+  background-color: transparent;
+  color: var(--color-texto-principal);
+  border-radius: 30px;
+  border-color: var(--color-acento);
+  padding: 6px 18px;
+  box-shadow: none;
+  font-size: 18px;
+}
+
+.inicio button:hover {
+  background-color: #197f8d;
+  border-color: #197f8d;
+  color: var(--color-texto-principal);
+}
+
+.inicio button:active,
+.inicio button:active:focus {
+  background-color: #197f8d;
+  border-color: #197f8d;
+  color: var(--color-texto-principal);
+  box-shadow: none;
+}
+
+.icon-download {
+  margin-right: 7px;
+}
+
+@media (max-width: 575.98px) {
+  .inicio h3 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .inicio h1 {
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .inicio span {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .punto {
+    width: 8px;
+    height: 8px;
+  }
+  .inicio button {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  .inicio h3 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .inicio h1 {
+    font-weight: 500;
+    font-size: 60px;
+  }
+  .inicio span {
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .punto {
+    width: 9px;
+    height: 9px;
+  }
+  .inicio button {
+    font-size: 16px;
+  }
+}

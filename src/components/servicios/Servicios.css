@@ -1,0 +1,14 @@
+.card-servicios {
+  height: 100%;
+  width: auto;
+  text-align: center;
+  color: white;
+  background: linear-gradient(315deg, rgb(6, 10, 19) 40%, rgb(9, 28, 57) 120%);
+  border: 1px solid #18233c;
+  box-shadow: 5px 5px 20px #0a101eb7;
+}
+
+.descripcion-servicios {
+  font-size: 15px;
+  font-weight: 400;
+}
