@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import "./Separador.css";
 
 const Separador = ({ title }) => {
