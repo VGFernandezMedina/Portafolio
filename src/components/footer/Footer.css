@@ -1,0 +1,38 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  height: 200px;
+  padding: 30px;
+}
+
+footer p {
+  color: var(--color-texto-principal);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.nav-footer {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-footer a {
+  color: var(--color-texto-principal);
+  transition: transform 0.3s ease;
+}
+
+.nav-footer a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 425px) {
+  footer p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
