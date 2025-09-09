@@ -3,7 +3,8 @@ import "./NavbarC.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import España from "/flag-spain.svg";
-import eeuu from "/public/flag-eeuu.svg";
+import eeuu from "/flag-eeuu.svg";
+import AlternarTema from "../alternarTema/AlternarTema";
 
 const NavbarC = () => {
   return (
@@ -19,17 +20,11 @@ const NavbarC = () => {
             <Nav.Link href="#">Servicios</Nav.Link>
           </Nav>
           <Nav className="ms-auto nav-right">
-            <Nav.Link href="#">Modo Oscuro</Nav.Link>
-            <NavDropdown title="Idioma" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">
-                <img src={eeuu} alt="flag-eeuu" className="flags" />
-                Inglés
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#">
-                <img src={España} alt="flag-spain" className="flags" />
-                Español
-              </NavDropdown.Item>
-            </NavDropdown>
+            <div className="flags">
+              <img src={eeuu} alt="flag-eeuu" />
+              <img src={España} alt="flag-spain" />
+            </div>
+            <AlternarTema />
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -38,25 +33,3 @@ const NavbarC = () => {
 };
 
 export default NavbarC;
-
-{
-  /* <Container fluid className="navbar-contenedor">
-  <ul className="menu-navbar">
-    <li>
-      <a href="">Inicio</a>
-    </li>
-    <li>
-      <a href="">Sobre mi</a>
-    </li>
-    <li>
-      <a href="">Tecnologias</a>
-    </li>
-    <li>
-      <a href="">Proyectos</a>
-    </li>
-    <li>
-      <a href="">Contacto</a>
-    </li>
-  </ul>
-</Container> */
-}
