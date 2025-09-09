@@ -1,8 +1,8 @@
 .category-box {
-  background: linear-gradient(315deg, rgb(6, 10, 19) 40%, rgb(9, 28, 57) 120%);
+  background: var(--color-fondo-gradiante);
+  box-shadow: var(--color-sombra);
+  border: var(--color-border);
   border-radius: 20px;
-  border: 1px solid #18233c;
-  box-shadow: 5px 5px 20px #0a101eb7;
   padding: 1rem;
   flex: 1;
   display: flex;
@@ -14,7 +14,7 @@
 .category-box h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: white;
+  color: var(--color-texto-principal);
   margin-bottom: 1rem;
 }
 
@@ -45,7 +45,7 @@
 .icon-item span {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  color: white;
-  margin-top: 3px;
   font-size: 14px;
+  color: var(--color-texto-principal);
+  margin-top: 3px;
 }
