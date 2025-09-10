@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* :root {
-  --color-fondo: #121212;
-  --color-texto-principal: #e0f7fa;
-  --color-texto-secundario: #b0bec5;
-  --color-acento: #00bcd4;
-  --color-hover: #26c6da;
-  --color-boton-fondo: #1e1e1e;
-  --color-boton-texto: #e0f7fa;
-} */
-
 /* Tema claro */
 [data-theme="light"] {
   --color-fondo-homepage: #bcc4e8;

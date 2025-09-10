@@ -1,7 +1,7 @@
 .parrafo {
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 18px;
   color: var(--color-texto-principal);
 }
 
@@ -12,7 +12,7 @@
 }
 
 .icono-titulo {
-  color: var(--color-texto-principal);
+  color: var(--color-hover);
   margin-right: 8px;
 }
 
@@ -25,16 +25,4 @@
     height: 180px;
     width: auto;
   }
-}
-
-@media (min-width: 576px) and (max-width: 991.98px) {
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /* .cont-parrafo {
-    padding: 10px 100px;
-  } */
-}
-
-@media (min-width: 1200px) {
 }

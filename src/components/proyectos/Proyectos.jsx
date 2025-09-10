@@ -9,7 +9,7 @@ const Proyectos = () => {
   return (
     <Container fluid className="py-5">
       <div className="d-flex align-items-center">
-        <GoProjectRoadmap size={22} className="icono-titulo" />
+        <GoProjectRoadmap size={24} className="icono-titulo" />
         <Separador title="Proyectos" />
       </div>
       <p className="parrafo py-4">

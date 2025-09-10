@@ -5,3 +5,7 @@
   color: var(--color-texto-principal);
   width: 140px;
 }
+
+.form-temas .form-check-input:checked {
+  background-color: var(--color-hover);
+}

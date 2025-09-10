@@ -8,7 +8,7 @@ const SobreMi = () => {
   return (
     <Container fluid className="py-5">
       <div className="d-flex align-items-center">
-        <LuUserRoundCheck size={22} className="icono-titulo" />
+        <LuUserRoundCheck size={24} className="icono-titulo" />
         <Separador title="Sobre mi" />
       </div>
       <Container fluid className="cont-parrafo">

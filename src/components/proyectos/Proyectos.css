@@ -7,7 +7,6 @@
   background: var(--color-fondo-gradiante);
   border: var(--color-border);
   box-shadow: var(--color-sombra);
-  overflow: hidden;
 
   position: relative;
   z-index: 1;
@@ -27,7 +26,7 @@
   transition: transform 0.3s ease;
 }
 
-.card-personalizada:hover .card-img-container img {
+.card-img-container img:hover {
   transform: scale(1.05);
 }
 
@@ -37,7 +36,7 @@
 }
 
 .card-texto {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   padding: 3px 0;
   letter-spacing: 0.5px;
@@ -52,7 +51,7 @@
   color: var(--color-texto-principal);
   padding: 5px 10px;
   border-radius: 12px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .card-etiqueta-img {
