@@ -1,20 +1,22 @@
 .category-box {
-  background: linear-gradient(315deg, rgb(6, 10, 19) 40%, rgb(9, 28, 57) 120%);
-  border-radius: 20px;
-  border: 1px solid #18233c;
-  box-shadow: 5px 5px 20px #0a101eb7;
+  background: var(--color-fondo-gradiante);
+  box-shadow: var(--color-sombra);
+  border: var(--color-border);
+  flex-direction: column;
+  border-radius: 12px;
+  position: relative;
   padding: 1rem;
   flex: 1;
   display: flex;
-  flex-direction: column;
   height: 100%;
-  z-index: 1;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .category-box h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: white;
+  color: var(--color-texto-principal);
   margin-bottom: 1rem;
 }
 
@@ -34,18 +36,78 @@
 .icon-item img {
   width: 50px;
   height: 50px;
-  transition: transform 0.3s ease;
-}
-
-.icon-item img:hover {
-  transform: translateY(-5px);
-  border-radius: 8px;
+  z-index: 2;
 }
 
 .icon-item span {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  color: white;
-  margin-top: 3px;
+  font-weight: 400;
   font-size: 14px;
+  color: var(--color-texto-principal);
+  margin-top: 3px;
+}
+
+.titulo-tecnologia {
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .icon-item img {
+    width: 30px;
+  }
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: blur(20px);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover::before {
+  transform: scale(1.1);
+  background-color: var(--color-hover);
+}
+
+.category-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    var(--color-hover),
+    transparent 30%,
+    var(--color-hover)
+  );
+  animation: luz-girando 4s linear infinite;
+  z-index: -2;
+}
+
+.category-box::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--color-fondo-gradiante);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@keyframes luz-girando {
+  to {
+    transform: rotate(360deg);
+  }
 }

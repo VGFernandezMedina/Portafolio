@@ -6,10 +6,10 @@
 
 .titulo h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-hover);
   position: relative;
-  color: var(--color-texto-principal);
   margin: 0;
 }
 

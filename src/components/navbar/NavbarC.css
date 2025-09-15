@@ -1,24 +1,34 @@
 .bg-navbar {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
-  height: 80px;
+  padding: 30px 0;
 }
 
-.nav-right .nav-link {
-  color: var(--color-texto-principal) !important; /* Borrar */
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  padding-left: 10px;
 }
 
 .nav-center {
-  display: flex;
   gap: 20px;
+  height: 100%;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .nav-center .nav-link {
   color: var(--color-texto-principal) !important;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .nav-center .nav-link:hover {
@@ -30,7 +40,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 3px;
   width: 0%;
   background-color: var(--color-hover);
   transition: width 0.3s ease;
@@ -41,6 +51,76 @@
 }
 
 .flags {
-  height: 20px;
-  padding-right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.flags img {
+  height: 25px;
+  transition: transform 0.2s ease;
+}
+
+.flags img:hover {
+  transform: scale(1.2);
+}
+
+.nav-toggle {
+  font-size: 25px;
+  color: var(--color-hover);
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.nav-toggle:focus,
+.nav-toggle:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 991.98px) {
+  .bg-navbar {
+    padding: 20px 0;
+  }
+  .nav-center {
+    width: 100%;
+    height: auto;
+    gap: 0px;
+    align-items: flex-start;
+    position: static !important;
+    transform: none !important;
+  }
+  .nav-right {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .nav-center .nav-link {
+    font-size: 15px;
+  }
+  .flags img {
+    height: 20px;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav-center {
+    gap: 0px;
+  }
+  .nav-right {
+    gap: 10px;
+  }
+  .nav-center .nav-link {
+    font-size: 17px;
+  }
+  .flags img {
+    height: 23px;
+  }
 }

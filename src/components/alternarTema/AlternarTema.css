@@ -1,0 +1,17 @@
+.form-temas {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-texto-principal);
+  width: 140px;
+}
+
+.form-temas .form-check-input:checked {
+  background-color: var(--color-hover);
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .form-temas {
+    font-size: 17px;
+  }
+}

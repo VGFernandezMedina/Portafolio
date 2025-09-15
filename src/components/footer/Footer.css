@@ -3,7 +3,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
   text-align: center;
   height: 200px;
@@ -16,17 +16,17 @@ footer p {
   font-weight: 400;
 }
 
-.nav-footer {
+.nav-icon {
   display: flex;
   gap: 25px;
 }
 
-.nav-footer a {
+.nav-icon a {
   color: var(--color-texto-principal);
   transition: transform 0.3s ease;
 }
 
-.nav-footer a:hover {
+.nav-icon a:hover {
   transform: scale(1.2);
 }
 
