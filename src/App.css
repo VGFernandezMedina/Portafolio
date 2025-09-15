@@ -4,6 +4,7 @@
   width: 100%;
   background-color: var(--color-fondo-homepage);
   overflow: hidden;
+  z-index: 0;
 }
 
 .bg-homepage::before {
@@ -14,5 +15,5 @@
   background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
     linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
   background-size: 14px 24px;
-  z-index: 0;
+  z-index: -1;
 }

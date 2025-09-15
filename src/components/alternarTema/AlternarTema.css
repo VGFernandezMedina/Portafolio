@@ -5,3 +5,13 @@
   color: var(--color-texto-principal);
   width: 140px;
 }
+
+.form-temas .form-check-input:checked {
+  background-color: var(--color-hover);
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .form-temas {
+    font-size: 17px;
+  }
+}

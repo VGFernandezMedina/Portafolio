@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const Inicio = () => {
   return (
-    <Container fluid className="inicio py-5">
+    <Container fluid id="inicio" className="inicio py-5">
       <h3 className="pb-3 pt-5 text-center">Víctor Gabriel Fernández Medina</h3>
       <h1 className="text-center">
         Desarrollador <br /> FullStack

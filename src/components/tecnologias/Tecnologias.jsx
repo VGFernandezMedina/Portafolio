@@ -33,16 +33,15 @@ const Tecnologias = () => {
   ];
 
   return (
-    <Container fluid className="py-5">
+    <Container fluid id="tecnologias" className="py-5">
       <div className="d-flex align-items-center">
-        <RiToolsFill size={24} className="icono-titulo" />
-        <Separador title="Tecnologias" />
+        <RiToolsFill size={26} className="icono-titulo" />
+        <Separador title="Tecnologías" />
       </div>
       <p className="parrafo py-4">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-        deserunt dicta aperiam hic voluptate? Quasi est ipsum sunt magni vero
-        ipsa, veritatis exercitationem quisquam, eaque illum ratione. Iste, et
-        exercitationem!
+        En mi viaje por el mundo del desarrollo web, he cultivado experiencias y
+        habilidades en una variedad de tecnologías. Mi stack tecnológico
+        incluye:
       </p>
       <Container fluid className="g-0">
         <Row className="align-items-stretch">
