@@ -1,7 +1,7 @@
 .parrafo {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 16px;
   color: var(--color-texto-principal);
 }
 
@@ -9,11 +9,58 @@
   height: 220px;
   max-width: 220px;
   object-fit: cover;
+  box-shadow: var(--color-sombra-img);
+}
+
+.iconos-sobremi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.iconos-sobremi a {
+  color: var(--color-texto-principal);
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.bg-icono-sobremi {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  border: var(--color-border);
+  background: var(--color-fondo-gradiante);
+  box-shadow: var(--color-sombra);
+  transition: filter 0.3s ease;
+}
+
+.bg-icono-sobremi span {
+  font-size: 14px;
+}
+
+.bg-icono-sobremi:hover {
+  filter: brightness(1.2);
 }
 
 .icono-titulo {
   color: var(--color-hover);
   margin-right: 8px;
+}
+
+.texto-naranja {
+  color: var(--color-texto-secundario);
+  font-weight: 600;
+}
+
+.texto-azul {
+  color: var(--color-texto-terciario);
+  font-weight: 600;
 }
 
 @media (max-width: 575.98px) {

@@ -10,9 +10,11 @@
     rgb(202, 212, 227) 120%
   );
   --color-sombra: 5px 5px 20px #7986a6b7;
+  --color-sombra-img: 1px 1px 20px rgba(0, 0, 0, 0.432);
   --color-border: 1px solid #8491ae;
   --color-texto-principal: #212529;
-  --color-texto-secundario: #b0bec5;
+  --color-texto-secundario: #d36313;
+  --color-texto-terciario: #0e4ce9;
   --color-hover: #253bff;
   --color-hover-secundario: #d1d5fb;
 }
@@ -26,12 +28,14 @@
     rgb(6, 10, 19) 40%,
     rgb(9, 28, 57) 120%
   );
-  --color-sombra: 5px 5px 20px #0a101eb7;
+  --color-sombra: 5px 5px 20px #111a30b7;
+  --color-sombra-img: 1px 1px 20px rgba(255, 255, 255, 0.377);
   --color-border: 1px solid #18233c;
   --color-texto-principal: #e0f7fa;
-  --color-texto-secundario: #b0bec5;
+  --color-texto-secundario: #f97316;
+  --color-texto-terciario: #0ea5e9;
   --color-hover: #26c6da;
-  --color-hover-secundario: #016e7c;
+  --color-hover-secundario: #0b1938;
 }
 
 /* .fuente {

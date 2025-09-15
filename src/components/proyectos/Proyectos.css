@@ -12,6 +12,11 @@
   z-index: 1;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card-body {
   padding: 20px 25px;
 }
@@ -52,6 +57,12 @@
   padding: 5px 10px;
   border-radius: 12px;
   font-weight: 400;
+  transition: filter 0.3s ease;
+  cursor: default;
+}
+
+.card-etiqueta:hover {
+  filter: brightness(1.2);
 }
 
 .card-etiqueta-img {

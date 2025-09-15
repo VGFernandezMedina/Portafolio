@@ -8,16 +8,14 @@ import { HiOutlineLightningBolt } from "react-icons/hi";
 
 const Servicios = () => {
   return (
-    <Container fluid className="py-5">
+    <Container fluid id="servicios" className="py-5">
       <div className="d-flex align-items-center">
         <GrServices size={24} className="icono-titulo" />
         <Separador title="Servicios" />
       </div>
       <p className="parrafo py-4">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-        deserunt dicta aperiam hic voluptate? Quasi est ipsum sunt magni vero
-        ipsa, veritatis exercitationem quisquam, eaque illum ratione. Iste, et
-        exercitationem!
+        Cada servicio está pensado para brindar soluciones prácticas y
+        efectivas, siempre priorizando la experiencia del usuario:
       </p>
       <Container fluid className="g-0">
         <Row className="align-items-stretch">

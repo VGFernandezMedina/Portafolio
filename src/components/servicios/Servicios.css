@@ -1,4 +1,5 @@
 .card-servicios {
+  position: relative;
   height: 100%;
   width: auto;
   text-align: center;
@@ -6,6 +7,9 @@
   background: var(--color-fondo-gradiante);
   border: var(--color-border);
   box-shadow: var(--color-sombra);
+  border-radius: 12px;
+  overflow: hidden; /* para que no sobresalga la animación */
+  z-index: 0;
 }
 
 .descripcion-servicios {
@@ -16,4 +20,38 @@
 
 .servicios-icono {
   color: var(--color-hover);
+}
+
+/* borde animado */
+.card-servicios::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    var(--color-hover),
+    /* tu color de acento */ transparent 30%,
+    var(--color-hover)
+  );
+  animation: luz-girando 4s linear infinite;
+  z-index: -2; /* queda detrás */
+}
+
+/* “tapa” el centro para que solo se vea el borde */
+.card-servicios::after {
+  content: "";
+  position: absolute;
+  inset: 1px; /* grosor del borde animado */
+  background: var(--color-fondo-gradiante);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@keyframes luz-girando {
+  to {
+    transform: rotate(360deg);
+  }
 }
