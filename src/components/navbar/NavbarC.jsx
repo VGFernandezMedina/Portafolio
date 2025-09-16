@@ -23,27 +23,27 @@ const NavbarC = () => {
         <Navbar.Collapse id="responsive-navbar-nav" className="prueba">
           <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
             <Nav.Link>
-              <Link to="inicio" smooth={true} duration={100} offset={-70}>
+              <Link to="inicio" smooth={true} duration={50} offset={-70}>
                 Inicio
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="sobremi" smooth={true} duration={100} offset={-70}>
+              <Link to="sobremi" smooth={true} duration={50} offset={-70}>
                 Sobre mi
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="tecnologias" smooth={true} duration={100} offset={-70}>
+              <Link to="tecnologias" smooth={true} duration={50} offset={-70}>
                 Tecnologias
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="proyectos" smooth={true} duration={100} offset={-70}>
+              <Link to="proyectos" smooth={true} duration={50} offset={-70}>
                 Proyectos
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="servicios" smooth={true} duration={100} offset={-70}>
+              <Link to="servicios" smooth={true} duration={50} offset={-70}>
                 Servicios
               </Link>
             </Nav.Link>

@@ -3,20 +3,17 @@ import { Form } from "react-bootstrap";
 import "./AlternarTema.css";
 
 function AlternarTema() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark";
+  });
 
   useEffect(() => {
-    // Ver si el usuario ya tenía guardado un tema
-    const savedTheme = localStorage.getItem("theme") || "light";
-    setTheme(savedTheme);
-    document.body.setAttribute("data-theme", savedTheme);
-  }, []);
+    document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.body.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
