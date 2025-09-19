@@ -3,12 +3,11 @@
   min-height: 100vh;
   width: 100%;
   background-color: var(--color-fondo-homepage);
-  overflow: hidden;
   z-index: 0;
 }
 
-.bg-homepage::before {
-  pointer-events: none; /* Esto evita que bloquee clics y hovers */
+/* .bg-homepage::before {
+  pointer-events: none;
   content: "";
   position: absolute;
   inset: 0;
@@ -17,3 +16,4 @@
   background-size: 14px 24px;
   z-index: -1;
 }
+ */

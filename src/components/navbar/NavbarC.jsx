@@ -2,11 +2,12 @@ import { Container } from "react-bootstrap";
 import "./NavbarC.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import España from "/flag-spain.svg";
-import eeuu from "/flag-eeuu.svg";
-import AlternarTema from "../alternarTema/AlternarTema";
+/* import España from "/flag-spain.svg";
+import eeuu from "/flag-eeuu.svg"; */
+/* import AlternarTema from "../alternarTema/AlternarTema"; */
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const NavbarC = () => {
   return (
@@ -20,7 +21,7 @@ const NavbarC = () => {
             <GiHamburgerMenu />
           </span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className="prueba">
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
             <Nav.Link>
               <Link to="inicio" smooth={true} duration={50} offset={-70}>
@@ -49,11 +50,27 @@ const NavbarC = () => {
             </Nav.Link>
           </Nav>
           <Nav className="nav-right">
-            <div className="flags">
+            {/* <div className="flags">
               <img src={eeuu} alt="flag-eeuu" />
               <img src={España} alt="flag-spain" />
             </div>
-            <AlternarTema />
+            <AlternarTema /> */}
+            <div className="nav-icon">
+              <a
+                href="https://github.com/VGFernandezMedina"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub size={26} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/victor-gabriel-fernández-medina-331286250"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={26} />
+              </a>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
