@@ -4,7 +4,6 @@ import Separador from "../separador/Separador";
 import perfil from "/perfil.jpg";
 import { LuUserRoundCheck } from "react-icons/lu";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdOutgoingMail } from "react-icons/md";
 
 const SobreMi = () => {
   return (
@@ -43,16 +42,6 @@ const SobreMi = () => {
                   <span>Linkedin</span>
                 </a>
               </div>
-              <div className="bg-icono-sobremi">
-                <a
-                  href="mailto:gabrielfernandez090997@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MdOutgoingMail />
-                  <span>Correo</span>
-                </a>
-              </div>
             </div>
           </Col>
 
@@ -60,14 +49,14 @@ const SobreMi = () => {
             sm={{ span: 12, order: 2 }}
             md={{ span: 8, order: 1 }}
             lg={{ span: 8, order: 1 }}
-            className="pt-4 g-0"
+            className="pt-4 g-0 col-sobremi"
           >
             <p className="parrafo">
-              Hola! Soy <span className="texto-azul">Víctor Gabriel</span>, mis
-              amigos y compañeros me dicen Gaby o Gabo. Tengo 28 años y soy de
-              Tucumán.
+              Hola! Soy <span className="texto-naranja">Víctor Gabriel</span>,
+              mis amigos y compañeros me dicen Gaby o Gabo. Tengo 28 años y soy
+              de Tucumán.
             </p>
-            <p className="parrafo">
+            {/* <p className="parrafo">
               Soy <span className="texto-azul">Técnico Electromecánico </span>
               egresado en la ENET N°2. Fui ex estudiante de
               <span className="texto-azul"> Ingeniería Mecánica</span> y
@@ -77,7 +66,7 @@ const SobreMi = () => {
               </span>{" "}
               en la UTN-FRT, donde nació mi interés por la programación al
               escribir mis primeras líneas de código en Arduino.
-            </p>
+            </p> */}
             <p className="parrafo">
               Adquirí y fortalecí mis conocimientos en RollingCode School, donde
               obtuve el certificado de

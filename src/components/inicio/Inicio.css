@@ -4,13 +4,43 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
+  background: url("/bg-inicio.jpg") no-repeat center center/cover;
+  position: relative;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.inicio::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0309257f; /* oscurece la imagen */
+  z-index: 0;
+}
+
+.inicio > * {
+  position: relative;
+  z-index: 1;
 }
 
 .inicio h3 {
   font-weight: 400;
   font-size: 22px;
-  color: var(--color-texto-principal);
+  color: #e0f7fa;
 }
 
 .inicio h1 {
@@ -23,7 +53,7 @@
 .inicio span {
   font-weight: 300;
   font-size: 17px;
-  color: var(--color-texto-principal);
+  color: #e0f7fa;
 }
 
 .punto {
@@ -53,26 +83,25 @@
 .inicio button:focus,
 .inicio button:active,
 .inicio button:active:focus {
-  background-color: transparent;
-  color: var(--color-texto-principal);
+  background: linear-gradient(315deg, rgb(6, 10, 19) 40%, rgb(9, 28, 57) 120%);
+  color: #e0f7fa;
   border-radius: 30px;
-  border-color: var(--color-hover);
-  padding: 6px 18px;
-  box-shadow: none;
-  font-size: 18px;
+  border: 2px solid rgb(76, 85, 138);
+  padding: 10px;
+  box-shadow: var(--color-sombra);
+  font-size: 14px;
+  transition: filter 0.3s ease;
 }
 
 .inicio button:hover {
-  background-color: #197f8d;
-  border-color: #197f8d;
-  color: var(--color-texto-principal);
+  filter: brightness(1.2);
+  border: 2px solid rgb(76, 85, 138);
 }
 
 .inicio button:active,
 .inicio button:active:focus {
-  background-color: #197f8d;
-  border-color: #197f8d;
-  color: var(--color-texto-principal);
+  border-color: rgb(76, 85, 138);
+  color: #e0f7fa;
   box-shadow: none;
 }
 
