@@ -8,12 +8,14 @@ import Servicios from "../components/servicios/Servicios";
 
 const HomePage = () => {
   return (
-    <div className="homepage">
+    <div>
       <Inicio />
-      <SobreMi />
-      <Tecnologias />
-      <Proyectos />
-      <Servicios />
+      <div className="homepage">
+        <SobreMi />
+        <Tecnologias />
+        <Proyectos />
+        <Servicios />
+      </div>
     </div>
   );
 };
