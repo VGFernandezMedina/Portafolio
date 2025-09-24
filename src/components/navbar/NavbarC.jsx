@@ -48,6 +48,11 @@ const NavbarC = () => {
                 Servicios
               </Link>
             </Nav.Link>
+            <Nav.Link>
+              <Link to="certificados" smooth={true} duration={50} offset={-70}>
+                Certificados
+              </Link>
+            </Nav.Link>
           </Nav>
           <Nav className="nav-right">
             {/* <div className="flags">
