@@ -21,3 +21,9 @@
 .bs-tooltip-bottom .tooltip-arrow::before {
   border-bottom-color: var(--color-texto-principal);
 }
+
+@media (max-width: 991px) {
+  .tooltip {
+    display: none !important;
+  }
+}
