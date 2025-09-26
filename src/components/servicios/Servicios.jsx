@@ -19,7 +19,7 @@ const Servicios = () => {
       </p>
       <Container fluid className="g-0">
         <Row className="align-items-stretch">
-          <Col sm="12" md="6" lg="3" className="pb-4">
+          <Col sm="6" md="6" lg="3" className="pb-4">
             <Card className="card-servicios">
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">Páginas web</Card.Title>
@@ -30,7 +30,7 @@ const Servicios = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm="12" md="6" lg="3" className="pb-4">
+          <Col sm="6" md="6" lg="3" className="pb-4">
             <Card className="card-servicios">
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">Aplicaciones móviles</Card.Title>
@@ -41,7 +41,7 @@ const Servicios = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm="12" md="6" lg="3" className="pb-4">
+          <Col sm="6" md="6" lg="3" className="pb-4">
             <Card className="card-servicios">
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">Rendimiento</Card.Title>
@@ -52,7 +52,7 @@ const Servicios = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm="12" md="6" lg="3" className="pb-4">
+          <Col sm="6" md="6" lg="3" className="pb-4">
             <Card className="card-servicios">
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">SEO</Card.Title>
