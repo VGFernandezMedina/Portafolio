@@ -2,6 +2,7 @@ import {
   Col,
   Container,
   Image,
+  Modal,
   OverlayTrigger,
   Row,
   Tooltip,
@@ -12,8 +13,17 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import modulo1 from "/modulo-1.png";
 import modulo2 from "/modulo-2.png";
 import modulo3 from "/modulo-3.png";
+import { useState } from "react";
 
 const Certificados = () => {
+  const [show, setShow] = useState(false); // controla el modal
+  const [imgSeleccionada, setImgSeleccionada] = useState(null); // guarda la imagen clickeada
+
+  const handleClose = () => setShow(false);
+  const handleShow = (img) => {
+    setImgSeleccionada(img);
+    setShow(true);
+  };
   return (
     <Container fluid id="certificados" className="py-5">
       <div className="d-flex align-items-center">
@@ -27,7 +37,7 @@ const Certificados = () => {
       </p>
       <Container fluid className="g-0">
         <Row>
-          <Col sm="12" md="6" lg="3" className="pb-5">
+          <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
@@ -37,12 +47,20 @@ const Certificados = () => {
                 </Tooltip>
               }
             >
-              <div>
-                <Image src={modulo1} alt="" className="certificados-img" />
+              <div
+                onClick={() => handleShow(modulo1)}
+                style={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={modulo1}
+                  alt=""
+                  fluid
+                  className="certificados-img"
+                />
               </div>
             </OverlayTrigger>
           </Col>
-          <Col sm="12" md="6" lg="3" className="pb-5">
+          <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
@@ -50,12 +68,20 @@ const Certificados = () => {
                 <Tooltip id="tooltip1">Desarrollo web con React</Tooltip>
               }
             >
-              <div>
-                <Image src={modulo2} alt="" className="certificados-img" />
+              <div
+                onClick={() => handleShow(modulo2)}
+                style={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={modulo2}
+                  alt=""
+                  fluid
+                  className="certificados-img"
+                />
               </div>
             </OverlayTrigger>
           </Col>
-          <Col sm="12" md="6" lg="3" className="pb-5">
+          <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
@@ -63,12 +89,20 @@ const Certificados = () => {
                 <Tooltip id="tooltip1">Integración de base de datos</Tooltip>
               }
             >
-              <div>
-                <Image src={modulo3} alt="" className="certificados-img" />
+              <div
+                onClick={() => handleShow(modulo3)}
+                style={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={modulo3}
+                  alt=""
+                  fluid
+                  className="certificados-img"
+                />
               </div>
             </OverlayTrigger>
           </Col>
-          {/* <Col sm="12" md="6" lg="3" className="pb-5">
+          {/* <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
@@ -81,6 +115,14 @@ const Certificados = () => {
           </Col> */}
         </Row>
       </Container>
+      {/* Modal para ver la imagen grande */}
+      <Modal show={show} onHide={handleClose} centered size="lg">
+        <Modal.Body className="text-center">
+          {imgSeleccionada && (
+            <Image src={imgSeleccionada} alt="Certificado" fluid />
+          )}
+        </Modal.Body>
+      </Modal>
     </Container>
   );
 };
