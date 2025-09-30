@@ -37,7 +37,7 @@ const Certificados = () => {
       </p>
       <Container fluid className="g-0">
         <Row>
-          <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
@@ -60,7 +60,7 @@ const Certificados = () => {
               </div>
             </OverlayTrigger>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
@@ -81,7 +81,7 @@ const Certificados = () => {
               </div>
             </OverlayTrigger>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
@@ -102,7 +102,7 @@ const Certificados = () => {
               </div>
             </OverlayTrigger>
           </Col>
-          {/* <Col xs="6" sm="6" md="6" lg="3" className="pb-5">
+          {/* <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}

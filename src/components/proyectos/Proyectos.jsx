@@ -21,9 +21,10 @@ const Proyectos = () => {
       <Container fluid className="g-0">
         <Row>
           <Col
-            sm="12"
-            md="6"
-            lg="6"
+            xs="6"
+            sm="6"
+            md="4"
+            lg="4"
             className="pb-4 d-flex justify-content-center"
           >
             <Card className="card-personalizada">
@@ -34,6 +35,7 @@ const Proyectos = () => {
                     variant="top"
                     src={Veterinaria}
                     className="img-fluid"
+                    alt="Veterinaria"
                   />
                 </div>
                 <Card.Body className="card-body d-flex flex-column">
@@ -57,16 +59,22 @@ const Proyectos = () => {
             </Card>
           </Col>
           <Col
-            sm="12"
-            md="6"
-            lg="6"
+            xs="6"
+            sm="6"
+            md="4"
+            lg="4"
             className="pb-4 d-flex justify-content-center"
           >
             <Card className="card-personalizada">
               <Link className="card-link">
                 <div className="card-img-container">
                   <Badge className="card-etiqueta-img">Frontend</Badge>
-                  <Card.Img variant="top" src={Ecommerce} />
+                  <Card.Img
+                    variant="top"
+                    src={Ecommerce}
+                    className="img-fluid"
+                    alt="Ecommerce"
+                  />
                 </div>
                 <Card.Body className="card-body d-flex flex-column">
                   <Card.Title className="card-titulo">E-commerce</Card.Title>
