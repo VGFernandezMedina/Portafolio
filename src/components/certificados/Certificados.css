@@ -22,8 +22,19 @@
   border-bottom-color: var(--color-texto-principal);
 }
 
+.col-certificados {
+  padding-bottom: 30px;
+}
+
 @media (max-width: 991px) {
   .tooltip {
     display: none !important;
+  }
+
+  .certificados-img {
+    transition: none;
+  }
+  .certificados-img:hover {
+    transform: none;
   }
 }
