@@ -12,6 +12,22 @@
   z-index: 1;
 }
 
+.card-personalizada:hover .card-titulo {
+  color: var(--color-hover);
+}
+
+.card-personalizada:hover .card-etiqueta {
+  transform: translateY(0);
+}
+
+.card-personalizada img {
+  transition: transform 0.6s ease;
+}
+
+.card-personalizada:hover img {
+  transform: scale(1.1);
+}
+
 .card-link {
   text-decoration: none;
   color: inherit;
@@ -27,17 +43,10 @@
   position: relative;
 }
 
-.card-personalizada img {
-  transition: transform 0.3s ease;
-}
-
-.card-img-container img:hover {
-  transform: scale(1.05);
-}
-
 .card-titulo {
   font-weight: 500;
-  color: var(--color-hover);
+  color: var(--color-texto-principal);
+  transition: color 0.6s ease;
 }
 
 .card-texto {
@@ -59,6 +68,8 @@
   font-weight: 400;
   transition: filter 0.3s ease;
   cursor: default;
+  transform: translateY(6px);
+  transition: transform 0.6s ease;
 }
 
 .card-etiqueta:hover {
