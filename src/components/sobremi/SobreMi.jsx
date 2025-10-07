@@ -3,7 +3,6 @@ import "./SobreMi.css";
 import Separador from "../separador/Separador";
 import perfil from "/perfil.jpg";
 import { LuUserRoundCheck } from "react-icons/lu";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SobreMi = () => {
   return (
@@ -21,28 +20,6 @@ const SobreMi = () => {
             className="d-flex align-items-center flex-column py-4"
           >
             <Image src={perfil} roundedCircle fluid className="img-perfil" />
-            <div className="pt-4 iconos-sobremi">
-              <div className="bg-icono-sobremi">
-                <a
-                  href="https://github.com/VGFernandezMedina"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub />
-                  <span>Github</span>
-                </a>
-              </div>
-              <div className="bg-icono-sobremi">
-                <a
-                  href="https://www.linkedin.com/in/victor-gabriel-fernández-medina-331286250"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                  <span>Linkedin</span>
-                </a>
-              </div>
-            </div>
           </Col>
 
           <Col

@@ -10,8 +10,8 @@ import Certificados from "../components/certificados/Certificados";
 const HomePage = () => {
   return (
     <div>
-      <Inicio />
       <div className="homepage">
+        <Inicio />
         <SobreMi />
         <Tecnologias />
         <Proyectos />
