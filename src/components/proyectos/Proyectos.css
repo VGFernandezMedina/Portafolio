@@ -18,6 +18,7 @@
 
 .card-personalizada:hover .card-etiqueta {
   transform: translateY(0);
+  filter: brightness(1.2);
 }
 
 .card-personalizada img {
@@ -66,14 +67,13 @@
   padding: 5px 10px;
   border-radius: 12px;
   font-weight: 400;
-  transition: filter 0.3s ease;
-  cursor: default;
+  cursor: pointer;
   transform: translateY(6px);
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, color 0.4s ease;
 }
 
 .card-etiqueta:hover {
-  filter: brightness(1.2);
+  color: aquamarine;
 }
 
 .card-etiqueta-img {
@@ -99,7 +99,7 @@
     padding: 4px 4px;
   }
   .card-body {
-    padding: 10px 10px;
+    padding: 15px 10px;
   }
   .card-etiqueta-img {
     font-weight: 400;

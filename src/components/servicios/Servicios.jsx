@@ -8,7 +8,7 @@ import { HiOutlineLightningBolt } from "react-icons/hi";
 
 const Servicios = () => {
   return (
-    <Container fluid id="servicios" className="py-5">
+    <Container fluid id="servicios" className="py-5" data-aos="fade-up">
       <div className="d-flex align-items-center">
         <GrServices size={24} className="icono-titulo" />
         <Separador title="Servicios" />

@@ -20,7 +20,12 @@ const Inicio = () => {
   }, []);
 
   return (
-    <Container fluid id="inicio" className="inicio py-5 text-center">
+    <Container
+      fluid
+      id="inicio"
+      className="inicio py-5 text-center"
+      data-aos="fade-down"
+    >
       <div
         id="particles-js"
         style={{
