@@ -13,11 +13,12 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import modulo1 from "/modulo-1.png";
 import modulo2 from "/modulo-2.png";
 import modulo3 from "/modulo-3.png";
+import fullstack from "/fullstack.png";
 import { useState } from "react";
 
 const Certificados = () => {
-  const [show, setShow] = useState(false); // controla el modal
-  const [imgSeleccionada, setImgSeleccionada] = useState(null); // guarda la imagen clickeada
+  const [show, setShow] = useState(false);
+  const [imgSeleccionada, setImgSeleccionada] = useState(null);
 
   const handleClose = () => setShow(false);
   const handleShow = (img) => {
@@ -53,7 +54,7 @@ const Certificados = () => {
               >
                 <Image
                   src={modulo1}
-                  alt=""
+                  alt="certificado-modulo1"
                   fluid
                   className="certificados-img"
                 />
@@ -74,7 +75,7 @@ const Certificados = () => {
               >
                 <Image
                   src={modulo2}
-                  alt=""
+                  alt="certificado-modulo2"
                   fluid
                   className="certificados-img"
                 />
@@ -95,24 +96,32 @@ const Certificados = () => {
               >
                 <Image
                   src={modulo3}
-                  alt=""
+                  alt="certificado-modulo3"
                   fluid
                   className="certificados-img"
                 />
               </div>
             </OverlayTrigger>
           </Col>
-          {/* <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
-              overlay={<Tooltip id="tooltip1">Certificado de React</Tooltip>}
+              overlay={<Tooltip id="tooltip1">Desarrollador Fullstack</Tooltip>}
             >
-              <div>
-                <Image src="" alt="" className="certificados-img" />
+              <div
+                onClick={() => handleShow(fullstack)}
+                style={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={fullstack}
+                  alt="certificado-fullstack"
+                  fluid
+                  className="certificados-img"
+                />
               </div>
             </OverlayTrigger>
-          </Col> */}
+          </Col>
         </Row>
       </Container>
       {/* Modal para ver la imagen grande */}
