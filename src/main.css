@@ -21,7 +21,7 @@
 
 /* Tema oscuro */
 :root {
-  --color-fondo-homepage: #03081e;
+  --color-fondo-homepage: linear-gradient(to right, #03081e 20%, #0a3a50 100%);
   --color-fondo-navbar: rgba(0, 0, 0, 0.5);
   --color-fondo-gradiante: linear-gradient(
     315deg,

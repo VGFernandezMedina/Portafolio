@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Proyectos = () => {
   return (
-    <Container fluid id="proyectos" className="py-5">
+    <Container fluid id="proyectos" className="py-5" data-aos="fade-up">
       <div className="d-flex align-items-center">
         <GoProjectRoadmap size={24} className="icono-titulo" />
         <Separador title="Proyectos" />
@@ -21,10 +21,10 @@ const Proyectos = () => {
       <Container fluid className="g-0">
         <Row>
           <Col
-            xs="6"
+            xs="12"
             sm="6"
-            md="4"
-            lg="4"
+            md="6"
+            lg="6"
             className="pb-4 d-flex justify-content-center"
           >
             <Card className="card-personalizada">
@@ -59,10 +59,10 @@ const Proyectos = () => {
             </Card>
           </Col>
           <Col
-            xs="6"
+            xs="12"
             sm="6"
-            md="4"
-            lg="4"
+            md="6"
+            lg="6"
             className="pb-4 d-flex justify-content-center"
           >
             <Card className="card-personalizada">
@@ -79,9 +79,10 @@ const Proyectos = () => {
                 <Card.Body className="card-body d-flex flex-column">
                   <Card.Title className="card-titulo">E-commerce</Card.Title>
                   <Card.Text className="card-texto">
-                    Proyecto frontend de un ecommerce desarrollado con React.
-                    Incluye catálogo de productos, filtros por categorías y
-                    marcas, y un diseño responsivo con Bootstrap.
+                    Proyecto frontend de un ecommerce desarrollado en equipo con
+                    React. Incluye catálogo de productos, localstorage, filtros
+                    por categorías y marcas, y un diseño responsivo con
+                    Bootstrap.
                   </Card.Text>
                   <div className="mt-4">
                     <Stack direction="horizontal" gap={2} className="flex-wrap">
