@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Proyectos = () => {
   return (
-    <Container fluid id="proyectos" className="py-5">
+    <Container fluid id="proyectos" className="py-5" data-aos="fade-up">
       <div className="d-flex align-items-center">
         <GoProjectRoadmap size={24} className="icono-titulo" />
         <Separador title="Proyectos" />
@@ -21,7 +21,7 @@ const Proyectos = () => {
       <Container fluid className="g-0">
         <Row>
           <Col
-            xs="6"
+            xs="12"
             sm="6"
             md="6"
             lg="6"
@@ -59,7 +59,7 @@ const Proyectos = () => {
             </Card>
           </Col>
           <Col
-            xs="6"
+            xs="12"
             sm="6"
             md="6"
             lg="6"

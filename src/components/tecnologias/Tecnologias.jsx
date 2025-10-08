@@ -33,7 +33,7 @@ const Tecnologias = () => {
   ];
 
   return (
-    <Container fluid id="tecnologias" className="py-5">
+    <Container fluid id="tecnologias" className="py-5" data-aos="fade-up">
       <div className="d-flex align-items-center">
         <RiToolsFill size={26} className="icono-titulo" />
         <Separador title="Tecnologías" />
