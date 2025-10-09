@@ -8,6 +8,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import curriculum from "/Curriculum-Desarrollador-2025.pdf";
 
 const Inicio = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const Inicio = () => {
           <a
             href="https://github.com/VGFernandezMedina"
             target="_blank"
+            rel="noopener noreferrer"
             className="github"
           >
             <FaGithub />
@@ -57,6 +59,7 @@ const Inicio = () => {
           <a
             href="https://www.linkedin.com/in/victor-gabriel-fernández-medina-331286250"
             target="_blank"
+            rel="noopener noreferrer"
             className="linkedin"
           >
             <FaLinkedin />
@@ -64,21 +67,36 @@ const Inicio = () => {
           </a>
         </li>
         <li>
-          <a href="" target="_blank" className="correo">
+          <a
+            href="mailto:gabrielfernandez090997@gmail.com?subject=Consulta%20desde%20tu%20portafolio&body=Hola%20Gabriel,%20me%20gustar%C3%ADa%20hablar%20contigo."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="correo"
+          >
             <MdOutlineMail />
             <span className="texto-icono">Email</span>
           </a>
         </li>
         <li>
-          <a href="" target="_blank" className="wpp">
+          <a
+            href="https://wa.me/5493816135750?text=Hola%20Gabriel!%20Vi%20tu%20portafolio%20y%20quiero%20contactarte."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="wpp"
+          >
             <FaWhatsapp />
             <span className="texto-icono">WhatsApp</span>
           </a>
         </li>
         <li>
-          <a href="" target="_blank" className="cv">
+          <a
+            href={curriculum}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cv"
+          >
             <FaFileDownload />
-            <span className="texto-icono">Curriculum</span>
+            <span className="texto-icono">Currículum</span>
           </a>
         </li>
       </ul>
