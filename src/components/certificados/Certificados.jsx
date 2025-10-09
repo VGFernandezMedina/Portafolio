@@ -124,7 +124,6 @@ const Certificados = () => {
           </Col>
         </Row>
       </Container>
-      {/* Modal para ver la imagen grande */}
       <Modal show={show} onHide={handleClose} centered size="lg">
         <Modal.Body className="text-center">
           {imgSeleccionada && (
