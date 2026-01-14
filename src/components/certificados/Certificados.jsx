@@ -13,6 +13,7 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import modulo1 from "/modulo-1.png";
 import modulo2 from "/modulo-2.png";
 import modulo3 from "/modulo-3.png";
+import diseñoUI from "/Certificado-Diseño-UI.jpg";
 import fullstack from "/fullstack.png";
 import { useState } from "react";
 
@@ -116,6 +117,29 @@ const Certificados = () => {
                 <Image
                   src={fullstack}
                   alt="certificado-fullstack"
+                  fluid
+                  className="certificados-img"
+                />
+              </div>
+            </OverlayTrigger>
+          </Col>
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+            <OverlayTrigger
+              placement="bottom"
+              delay={{ show: 100, hide: 200 }}
+              overlay={
+                <Tooltip id="tooltip1">
+                  Diseño visual y de Interfaz con Figma
+                </Tooltip>
+              }
+            >
+              <div
+                onClick={() => handleShow(diseñoUI)}
+                style={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={diseñoUI}
+                  alt="certificado-diseñoUI"
                   fluid
                   className="certificados-img"
                 />
