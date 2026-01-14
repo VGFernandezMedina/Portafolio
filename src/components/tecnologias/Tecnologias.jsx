@@ -10,6 +10,8 @@ const Tecnologias = () => {
     { src: "/css.svg", name: "CSS" },
     { src: "/js.svg", name: "JavaScript" },
     { src: "/react.svg", name: "React" },
+    { src: "/bootstrap.svg", name: "Bootstrap" },
+    { src: "/c++.svg", name: "C++" },
     { src: "/figma.svg", name: "Figma" },
   ];
   const backendIcons = [
@@ -20,7 +22,8 @@ const Tecnologias = () => {
   const toolsIcons = [
     { src: "/git.svg", name: "Git" },
     { src: "/github.svg", name: "GitHub" },
-    { src: "/terminal.svg", name: "Terminal" },
+    { src: "/bash.svg", name: "Bash" },
+    { src: "/powershell.svg", name: "Powershell" },
     { src: "/vsc.svg", name: "VSCode" },
     { src: "/npm.svg", name: "npm" },
     { src: "/trello.svg", name: "Trello" },
@@ -30,6 +33,8 @@ const Tecnologias = () => {
     { src: "/wordpress.svg", name: "WordPress" },
     { src: "/tailwind-css.svg", name: "TailwindCSS" },
     { src: "/typescript.svg", name: "TypeScript" },
+    { src: "/nextjs.svg", name: "Next.js" },
+    { src: "/angular.svg", name: "Angular" },
   ];
 
   return (
