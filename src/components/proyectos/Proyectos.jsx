@@ -1,10 +1,9 @@
-import { Badge, Card, Col, Container, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "./Proyectos.css";
 import Separador from "../separador/Separador";
-import Ecommerce from "/Ecommerce.png";
-import Veterinaria from "/Veterinaria.png";
 import { GoProjectRoadmap } from "react-icons/go";
-import { Link } from "react-router-dom";
+import proyectos from "../../data/projectsData";
+import CardC from "../card/CardC";
 
 const Proyectos = () => {
   return (
@@ -20,82 +19,17 @@ const Proyectos = () => {
       </p>
       <Container fluid className="g-0">
         <Row>
-          <Col
-            xs="12"
-            sm="6"
-            md="6"
-            lg="6"
-            className="pb-4 d-flex justify-content-center"
-          >
-            <Card className="card-personalizada">
-              <Link className="card-link">
-                <div className="card-img-container">
-                  <Badge className="card-etiqueta-img">FullStack</Badge>
-                  <Card.Img
-                    variant="top"
-                    src={Veterinaria}
-                    className="img-fluid"
-                    alt="Veterinaria"
-                  />
-                </div>
-                <Card.Body className="card-body d-flex flex-column">
-                  <Card.Title className="card-titulo">Veterinaria</Card.Title>
-                  <Card.Text className="card-texto">
-                    Aplicación web para la gestión de una veterinaria,
-                    desarrollada en equipo. Permite administrar usuarios,
-                    mascotas, servicios y pagos en línea mediante integración
-                    con Mercado Pago.
-                  </Card.Text>
-                  <div className="mt-4">
-                    <Stack direction="horizontal" gap={2} className="flex-wrap">
-                      <Badge className="card-etiqueta">MongoDB</Badge>
-                      <Badge className="card-etiqueta">Express</Badge>
-                      <Badge className="card-etiqueta">React</Badge>
-                      <Badge className="card-etiqueta">Node.js</Badge>
-                    </Stack>
-                  </div>
-                </Card.Body>
-              </Link>
-            </Card>
-          </Col>
-          <Col
-            xs="12"
-            sm="6"
-            md="6"
-            lg="6"
-            className="pb-4 d-flex justify-content-center"
-          >
-            <Card className="card-personalizada">
-              <Link className="card-link">
-                <div className="card-img-container">
-                  <Badge className="card-etiqueta-img">Frontend</Badge>
-                  <Card.Img
-                    variant="top"
-                    src={Ecommerce}
-                    className="img-fluid"
-                    alt="Ecommerce"
-                  />
-                </div>
-                <Card.Body className="card-body d-flex flex-column">
-                  <Card.Title className="card-titulo">E-commerce</Card.Title>
-                  <Card.Text className="card-texto">
-                    Proyecto frontend de un ecommerce desarrollado en equipo con
-                    React. Incluye catálogo de productos, localstorage, filtros
-                    por categorías y marcas, y un diseño responsivo con
-                    Bootstrap.
-                  </Card.Text>
-                  <div className="mt-4">
-                    <Stack direction="horizontal" gap={2} className="flex-wrap">
-                      <Badge className="card-etiqueta">React</Badge>
-                      <Badge className="card-etiqueta">Bootstrap</Badge>
-                      <Badge className="card-etiqueta">JavaScript</Badge>
-                      <Badge className="card-etiqueta">CSS</Badge>
-                    </Stack>
-                  </div>
-                </Card.Body>
-              </Link>
-            </Card>
-          </Col>
+          {proyectos.map((project) => (
+            <Col
+              xs="12"
+              sm="6"
+              md="6"
+              lg="6"
+              className="pb-4 d-flex justify-content-center"
+            >
+              <CardC project={project} />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>
