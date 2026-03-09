@@ -8,48 +8,99 @@ import eeuu from "/flag-eeuu.svg"; */
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
 
 const NavbarC = () => {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Navbar collapseOnSelect expand="lg" fixed="top" className="bg-navbar">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      fixed="top"
+      expanded={expanded}
+      className="bg-navbar"
+    >
       <Container fluid>
         <Navbar.Toggle
+          onClick={() => setExpanded(!expanded)}
           aria-controls="responsive-navbar-nav"
-          className="nav-toggle"
+          className={`nav-toggle ${expanded ? "open" : ""}`}
         >
           <span className="custom-toggler-icon">
-            <GiHamburgerMenu />
+            {expanded ? (
+              <AiOutlineClose className="icon-navbar" />
+            ) : (
+              <GiHamburgerMenu className="icon-navbar" />
+            )}
           </span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
             <Nav.Link>
-              <Link to="inicio" smooth={true} duration={50} offset={-70}>
+              <Link
+                to="inicio"
+                onClick={() => setExpanded(false)}
+                smooth={true}
+                duration={50}
+                offset={-70}
+              >
                 Inicio
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="sobremi" smooth={true} duration={50} offset={-70}>
+              <Link
+                to="sobremi"
+                onClick={() => setExpanded(false)}
+                smooth={true}
+                duration={50}
+                offset={-70}
+              >
                 Sobre mi
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="tecnologias" smooth={true} duration={50} offset={-70}>
+              <Link
+                to="tecnologias"
+                onClick={() => setExpanded(false)}
+                smooth={true}
+                duration={50}
+                offset={-70}
+              >
                 Tecnologias
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="proyectos" smooth={true} duration={50} offset={-70}>
+              <Link
+                to="proyectos"
+                onClick={() => setExpanded(false)}
+                smooth={true}
+                duration={50}
+                offset={-70}
+              >
                 Proyectos
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="servicios" smooth={true} duration={50} offset={-70}>
+              <Link
+                to="servicios"
+                onClick={() => setExpanded(false)}
+                smooth={true}
+                duration={50}
+                offset={-70}
+              >
                 Servicios
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="certificados" smooth={true} duration={50} offset={-70}>
+              <Link
+                to="certificados"
+                onClick={() => setExpanded(false)}
+                smooth={true}
+                duration={50}
+                offset={-70}
+              >
                 Certificados
               </Link>
             </Nav.Link>

@@ -1,6 +1,19 @@
 const proyectos = [
   {
     id: 1,
+    title: "Estudio Jurídico",
+    img: "/Estudio Juridico.png",
+    description:
+      "Sitio web institucional desarrollado para un estudio jurídico. Permite presentar información del estudio, áreas de práctica y medios de contacto, ofreciendo una presencia profesional y accesible para clientes potenciales.",
+    badgeImg: "Frontend",
+    technologies: ["React", "Bootstrap", "Javascript", "CSS"],
+    github: "https://github.com/VGFernandezMedina/estudio-juridico",
+    web: "https://silviamedinaabogada.com.ar/",
+    span: "Production",
+    status: "prod",
+  },
+  {
+    id: 2,
     title: "Veterinaria",
     img: "/Veterinaria.png",
     description:
@@ -13,7 +26,7 @@ const proyectos = [
     status: "dev",
   },
   {
-    id: 2,
+    id: 3,
     title: "E-commerce",
     img: "/Ecommerce.png",
     description:
@@ -24,19 +37,6 @@ const proyectos = [
     web: "https://ecommerce-2doe.netlify.app/",
     span: "Deployed",
     status: "dev",
-  },
-  {
-    id: 3,
-    title: "Estudio Jurídico",
-    img: "/Estudio Juridico.png",
-    description:
-      "Sitio web institucional desarrollado para un estudio jurídico. Permite presentar información del estudio, áreas de práctica y medios de contacto, ofreciendo una presencia profesional y accesible para clientes potenciales.",
-    badgeImg: "Frontend",
-    technologies: ["React", "Bootstrap", "Javascript", "CSS"],
-    github: "https://github.com/VGFernandezMedina/estudio-juridico",
-    web: "https://silviamedinaabogada.com.ar/",
-    span: "Production",
-    status: "prod",
   },
 ];
 
