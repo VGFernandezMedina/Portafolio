@@ -27,26 +27,42 @@ const CardC = ({ project }) => {
         </div>
         <Card.Text className="card-texto">{project.description}</Card.Text>
         <div className="card-buttons d-flex gap-3 mb-4">
-          <Button
-            as="a"
-            href={project.web}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="d-flex justify-content-center align-items-center gap-1"
-          >
-            <BiWorld className="icon-card" />
-            Sitio Web
-          </Button>
-          <Button
-            as="a"
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="d-flex justify-content-center align-items-center gap-1"
-          >
-            <FaGithub className="icon-card" />
-            Github
-          </Button>
+          {project.web && (
+            <Button
+              as="a"
+              href={project.web}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="d-flex justify-content-center align-items-center gap-1"
+            >
+              <BiWorld className="icon-card" />
+              Sitio Web
+            </Button>
+          )}
+          {project.repoFront && (
+            <Button
+              as="a"
+              href={project.repoFront}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="d-flex justify-content-center align-items-center gap-1"
+            >
+              <FaGithub className="icon-card" />
+              Frontend
+            </Button>
+          )}
+          {project.repoBack && (
+            <Button
+              as="a"
+              href={project.repoBack}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="d-flex justify-content-center align-items-center gap-1"
+            >
+              <FaGithub className="icon-card" />
+              Backend
+            </Button>
+          )}
         </div>
         <div className="mt-4">
           <Stack direction="horizontal" gap={2} className="flex-wrap">
