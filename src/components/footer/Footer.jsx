@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="py-5">
       <p>
-        © 2025, portafolio desarrollado con React por Víctor Gabriel Fernández
+        © 2026, portafolio desarrollado con React por Víctor Gabriel Fernández
         Medina. <br /> Casi todos los derechos reservados.
       </p>
       <nav className="nav-icon py-2">
