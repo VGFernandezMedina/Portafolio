@@ -24,7 +24,7 @@ const proyectos = [
     web: "https://vet-rolling.vercel.app/",
     repoFront: "https://github.com/VGFernandezMedina/vet-rolling-frontend",
     repoBack: "https://github.com/VGFernandezMedina/vet-rolling-backend",
-    span: "Deployed",
+    span: "Dev",
     status: "dev",
   },
   {

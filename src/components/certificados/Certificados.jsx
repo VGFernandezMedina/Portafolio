@@ -15,6 +15,7 @@ import modulo2 from "/modulo-2.png";
 import modulo3 from "/modulo-3.png";
 import diseñoUI from "/Certificado-Diseño-UI.jpg";
 import fullstack from "/fullstack.png";
+import logica from "/Certificado-Logica.png";
 import { useState } from "react";
 
 const Certificados = () => {
@@ -39,6 +40,26 @@ const Certificados = () => {
       </p>
       <Container fluid className="g-0">
         <Row>
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+            <OverlayTrigger
+              placement="bottom"
+              delay={{ show: 100, hide: 200 }}
+              overlay={<Tooltip id="tooltip1">Logica de programación</Tooltip>}
+            >
+              <div
+                onClick={() => handleShow(logica)}
+                style={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={logica}
+                  alt="certificado logica de programacion"
+                  fluid
+                  className="certificados-img"
+                />
+              </div>
+            </OverlayTrigger>
+          </Col>
+
           <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
             <OverlayTrigger
               placement="bottom"
@@ -127,11 +148,7 @@ const Certificados = () => {
             <OverlayTrigger
               placement="bottom"
               delay={{ show: 100, hide: 200 }}
-              overlay={
-                <Tooltip id="tooltip1">
-                  Diseño visual y de Interfaz con Figma
-                </Tooltip>
-              }
+              overlay={<Tooltip id="tooltip1">Diseño UI con Figma</Tooltip>}
             >
               <div
                 onClick={() => handleShow(diseñoUI)}
