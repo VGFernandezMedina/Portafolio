@@ -8,7 +8,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
-import curriculum from "/Curriculum-Desarrollador-2025.pdf";
+import curriculum from "/Gabriel-Fernandez-CV.pdf";
 
 const Inicio = () => {
   useEffect(() => {
