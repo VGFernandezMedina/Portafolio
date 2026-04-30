@@ -1,7 +1,7 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import "./SobreMi.css";
 import Separador from "../separador/Separador";
-import perfil from "/perfil.jpg";
+import perfil from "/perfil.png";
 import { LuUserRoundCheck } from "react-icons/lu";
 
 const SobreMi = () => {
