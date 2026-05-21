@@ -16,6 +16,7 @@ import modulo3 from "/modulo-3.png";
 import diseñoUI from "/Certificado-Diseño-UI.jpg";
 import fullstack from "/fullstack.png";
 import logica from "/Certificado-Logica.png";
+import typescript from "/Certificado-TypeScript.jpg";
 import { useState } from "react";
 
 const Certificados = () => {
@@ -157,6 +158,27 @@ const Certificados = () => {
                 <Image
                   src={diseñoUI}
                   alt="certificado-diseñoUI"
+                  fluid
+                  className="certificados-img"
+                />
+              </div>
+            </OverlayTrigger>
+          </Col>
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+            <OverlayTrigger
+              placement="bottom"
+              delay={{ show: 100, hide: 200 }}
+              overlay={
+                <Tooltip id="tooltip1">Especialización en TypeScript</Tooltip>
+              }
+            >
+              <div
+                onClick={() => handleShow(typescript)}
+                style={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={typescript}
+                  alt="certificado-typescript"
                   fluid
                   className="certificados-img"
                 />
