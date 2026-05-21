@@ -9,6 +9,7 @@ const Tecnologias = () => {
     { src: "/html.svg", name: "HTML" },
     { src: "/css.svg", name: "CSS" },
     { src: "/js.svg", name: "JavaScript" },
+    { src: "/typescript.svg", name: "TypeScript" },
     { src: "/react.svg", name: "React" },
     { src: "/bootstrap.svg", name: "Bootstrap" },
     { src: "/c++.svg", name: "C++" },
@@ -32,7 +33,6 @@ const Tecnologias = () => {
   const aprendiendoIcons = [
     { src: "/wordpress.svg", name: "WordPress" },
     { src: "/tailwind-css.svg", name: "TailwindCSS" },
-    { src: "/typescript.svg", name: "TypeScript" },
     { src: "/nextjs.svg", name: "Next.js" },
     { src: "/angular.svg", name: "Angular" },
   ];
