@@ -1,7 +1,15 @@
-.bg-navbar {
+.navbar-transparente {
   background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
   padding: 30px 0;
+  width: 100%;
+}
+
+.navbar-normal {
+  background: var(--color-fondo-navbar);
+  backdrop-filter: blur(8px);
+  padding: 30px 0;
+  position: sticky;
 }
 
 .nav-right {

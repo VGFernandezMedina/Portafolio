@@ -6,13 +6,17 @@ import Navbar from "react-bootstrap/Navbar";
 import eeuu from "/flag-eeuu.svg"; */
 /* import AlternarTema from "../alternarTema/AlternarTema"; */
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 const NavbarC = () => {
   const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
 
   return (
     <Navbar
@@ -20,7 +24,7 @@ const NavbarC = () => {
       expand="lg"
       fixed="top"
       expanded={expanded}
-      className="bg-navbar"
+      className={isHome ? "navbar-transparente" : "navbar-normal"}
     >
       <Container fluid>
         <Navbar.Toggle
@@ -38,19 +42,11 @@ const NavbarC = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
-            <Nav.Link>
-              <Link
-                to="inicio"
-                onClick={() => setExpanded(false)}
-                smooth={true}
-                duration={50}
-                offset={-70}
-              >
-                Inicio
-              </Link>
+            <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>
+              Inicio
             </Nav.Link>
             <Nav.Link>
-              <Link
+              <ScrollLink
                 to="sobremi"
                 onClick={() => setExpanded(false)}
                 smooth={true}
@@ -58,10 +54,10 @@ const NavbarC = () => {
                 offset={-70}
               >
                 Sobre mi
-              </Link>
+              </ScrollLink>
             </Nav.Link>
             <Nav.Link>
-              <Link
+              <ScrollLink
                 to="tecnologias"
                 onClick={() => setExpanded(false)}
                 smooth={true}
@@ -69,10 +65,10 @@ const NavbarC = () => {
                 offset={-70}
               >
                 Tecnologias
-              </Link>
+              </ScrollLink>
             </Nav.Link>
             <Nav.Link>
-              <Link
+              <ScrollLink
                 to="proyectos"
                 onClick={() => setExpanded(false)}
                 smooth={true}
@@ -80,10 +76,10 @@ const NavbarC = () => {
                 offset={-70}
               >
                 Proyectos
-              </Link>
+              </ScrollLink>
             </Nav.Link>
             <Nav.Link>
-              <Link
+              <ScrollLink
                 to="servicios"
                 onClick={() => setExpanded(false)}
                 smooth={true}
@@ -91,10 +87,10 @@ const NavbarC = () => {
                 offset={-70}
               >
                 Servicios
-              </Link>
+              </ScrollLink>
             </Nav.Link>
             <Nav.Link>
-              <Link
+              <ScrollLink
                 to="certificados"
                 onClick={() => setExpanded(false)}
                 smooth={true}
@@ -102,7 +98,7 @@ const NavbarC = () => {
                 offset={-70}
               >
                 Certificados
-              </Link>
+              </ScrollLink>
             </Nav.Link>
           </Nav>
           <Nav className="nav-right">
