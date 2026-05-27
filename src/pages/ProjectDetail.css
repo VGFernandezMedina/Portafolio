@@ -1,3 +1,14 @@
+.title-div-detail-page {
+  p {
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
+
+.title-detail-page {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
 .btn-details-page {
   display: flex;
   gap: 10px;
@@ -17,7 +28,6 @@
   border-radius: 10px;
   font-weight: 400;
 }
-
 .btn-details-page .btn:hover {
   background-color: #e5e7eb !important;
   color: #14141f;
@@ -45,18 +55,24 @@
 .div-return {
   display: flex;
   align-items: center;
-  width: 140px;
-  margin-bottom: 4%;
+  width: 160px;
   gap: 6%;
   transition: all 0.5s ease;
   color: white;
 }
-
 .div-return:hover {
   color: var(--color-hover);
+  gap: 8%;
 }
-
 .return-link {
   display: inline-block;
-  padding-bottom: 4%;
+  margin-bottom: 4%;
+}
+
+.carousel-detail-page {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.carousel-indicators button {
+  background-color: var(--color-hover) !important;
 }

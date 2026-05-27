@@ -30,7 +30,7 @@ const ProjectDetail = () => {
               <p className="my-0">Volver al Inicio</p>
             </div>
           </Link>
-          <Carousel>
+          <Carousel className="carousel-detail-page" controls={false}>
             <Carousel.Item interval={1000}>
               <img
                 src={proyecto.img}
@@ -78,12 +78,12 @@ const ProjectDetail = () => {
           </div>
         </Col>
         <Col sm="" md="" lg="6" className="px-5">
-          <div className="pb-4">
-            <h1 className="pb-2">{proyecto.title}</h1>
+          <div className="pb-4 title-div-detail-page">
+            <h1 className="title-detail-page">{proyecto.title}</h1>
             <p className="mt-4">{proyecto.description}</p>
           </div>
-          <div className="pb-4">
-            <h5>Tecnologías utilizadas</h5>
+          <div className="pb-5">
+            <h5 className="title-detail-page">Tecnologías utilizadas</h5>
             <div className="d-flex gap-3 flex-wrap">
               {proyecto.techIcon?.map((tech, index) => (
                 <div key={index} className="d-flex align-items-center">
@@ -92,8 +92,8 @@ const ProjectDetail = () => {
               ))}
             </div>
           </div>
-          <div className="pb-4">
-            <h5>Herramientas y recursos</h5>
+          <div className="pb-5">
+            <h5 className="title-detail-page">Herramientas y recursos</h5>
             <div className="d-flex gap-3 flex-wrap">
               {proyecto.toolsIcon?.map((tech, index) => (
                 <div key={index} className="d-flex align-items-center">
@@ -102,8 +102,8 @@ const ProjectDetail = () => {
               ))}
             </div>
           </div>
-          <div className="pb-4">
-            <h5 className="pb-2">Enlaces del Proyecto</h5>
+          <div className="pb-5">
+            <h5 className="pb-2 title-detail-page">Enlaces del Proyecto</h5>
             <div className="btn-details-page">
               {proyecto.web && (
                 <Button
