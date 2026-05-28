@@ -32,7 +32,7 @@ const proyectos = [
   },
   {
     id: 2,
-    title: "Veterinaria",
+    title: "Veterinaria RollingVet",
     img: "/Veterinaria.png",
     img2: "/Veterinaria2.png",
     img3: "/Veterinaria3.png",
