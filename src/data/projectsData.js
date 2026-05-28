@@ -2,6 +2,7 @@ const proyectos = [
   {
     id: 1,
     title: "Estudio Jurídico",
+    imgMain: "/Portada-EstudioJuridico.png",
     img: "/Estudio Juridico.png",
     img2: "/Estudio Juridico2.png",
     img3: "/Estudio Juridico3.png",

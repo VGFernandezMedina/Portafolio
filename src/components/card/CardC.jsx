@@ -12,7 +12,7 @@ const CardC = ({ project }) => {
           <Badge className="card-etiqueta-img">{project.badgeImg}</Badge>
           <Card.Img
             variant="top"
-            src={project.img}
+            src={project.imgMain}
             className="img-fluid"
             alt={project.title}
           />
