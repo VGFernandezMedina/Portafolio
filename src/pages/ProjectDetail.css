@@ -109,6 +109,12 @@
   border-radius: 5px;
   border: 1px solid #313859;
   background-color: #131833;
+  transition: all 0.3s ease;
+}
+.tech-div:hover {
+  border-color: var(--hover-color);
+  box-shadow: 0 0 15px var(--hover-color);
+  transform: translateY(-3px);
 }
 
 .btn-details-page {

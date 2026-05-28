@@ -125,8 +125,12 @@ const ProjectDetail = () => {
             </div>
             <div className="d-flex justify-content-center gap-3 flex-wrap">
               {proyecto.techIcon?.map((tech, index) => (
-                <div key={index} className="tech-div">
-                  <img src={tech.src} alt={tech.name} width="40" height="40" />
+                <div
+                  key={index}
+                  className="tech-div"
+                  style={{ "--hover-color": tech.color }}
+                >
+                  <img src={tech.src} alt={tech.name} width="35" height="35" />
                   {tech.name}
                 </div>
               ))}
@@ -138,8 +142,12 @@ const ProjectDetail = () => {
             </div>
             <div className="d-flex justify-content-center gap-3 flex-wrap">
               {proyecto.toolsIcon?.map((tech, index) => (
-                <div key={index} className="tech-div">
-                  <img src={tech.src} alt={tech.name} width="40" height="40" />
+                <div
+                  key={index}
+                  className="tech-div"
+                  style={{ "--hover-color": tech.color }}
+                >
+                  <img src={tech.src} alt={tech.name} width="35" height="35" />
                   {tech.name}
                 </div>
               ))}
