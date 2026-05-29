@@ -18,7 +18,7 @@ const CardC = ({ project }) => {
           />
         </div>
         <Card.Body className="card-body d-flex flex-column">
-          <div className="d-flex gap-3 mb-2 title-card">
+          <div className="d-flex gap-3 mb-3 title-card">
             <Card.Title className="card-titulo mb-0">
               {project.title}
             </Card.Title>

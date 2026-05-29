@@ -23,7 +23,6 @@ const ProjectDetail = () => {
   return (
     <Container fluid className="text-white py-4 px-0">
       <Row className="p-0 m-0">
-        {/* <Col sm="" md="" lg="6" className=""></Col> */}
         <Col sm="" md="" lg="" className="col-detail-page">
           <Link to="/" className="return-link text-decoration-none text-white">
             <div className="div-return">

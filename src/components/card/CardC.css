@@ -48,7 +48,7 @@
 
 .card-img-container {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   position: relative;
   /* height: 240px; */
 }
@@ -64,6 +64,7 @@
   font-size: 14px;
   padding: 3px 0;
   letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.882);
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;

@@ -6,35 +6,38 @@ import { RiToolsFill } from "react-icons/ri";
 
 const Tecnologias = () => {
   const frontendIcons = [
-    { src: "/html.svg", name: "HTML" },
-    { src: "/css.svg", name: "CSS" },
-    { src: "/js.svg", name: "JavaScript" },
-    { src: "/typescript.svg", name: "TypeScript" },
-    { src: "/react.svg", name: "React" },
-    { src: "/bootstrap.svg", name: "Bootstrap" },
-    { src: "/c++.svg", name: "C++" },
-    { src: "/figma.svg", name: "Figma" },
+    { src: "/html.svg", name: "HTML", color: "#E34F26" },
+    { src: "/css.svg", name: "CSS", color: "#1572B6" },
+    { src: "/js.svg", name: "JavaScript", color: "#F7DF1E" },
+    { src: "/typescript.svg", name: "TypeScript", color: "#3178C6" },
+    { src: "/react.svg", name: "React", color: "#61DAFB" },
+    { src: "/bootstrap.svg", name: "Bootstrap", color: "#7952B3" },
+    { src: "/c++.svg", name: "C++", color: "#00599C" },
+    { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
   ];
+
   const backendIcons = [
-    { src: "/node-js.svg", name: "NodeJS" },
-    { src: "/express-js.svg", name: "ExpressJS" },
-    { src: "/mongodb.svg", name: "MongoDB" },
+    { src: "/node-js.svg", name: "NodeJS", color: "#339933" },
+    { src: "/express-js.svg", name: "ExpressJS", color: "#FFFFFF" },
+    { src: "/mongodb.svg", name: "MongoDB", color: "#47A248" },
   ];
+
   const toolsIcons = [
-    { src: "/git.svg", name: "Git" },
-    { src: "/github.svg", name: "GitHub" },
-    { src: "/bash.svg", name: "Bash" },
-    { src: "/powershell.svg", name: "Powershell" },
-    { src: "/vsc.svg", name: "VSCode" },
-    { src: "/npm.svg", name: "npm" },
-    { src: "/trello.svg", name: "Trello" },
-    { src: "/taiga.svg", name: "Taiga" },
+    { src: "/git.svg", name: "Git", color: "#F05032" },
+    { src: "/github.svg", name: "GitHub", color: "#FFFFFF" },
+    { src: "/bash.svg", name: "Bash", color: "#4EAA25" },
+    { src: "/powershell.svg", name: "Powershell", color: "#5391FE" },
+    { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
+    { src: "/npm.svg", name: "npm", color: "#CB3837" },
+    { src: "/trello.svg", name: "Trello", color: "#0052CC" },
+    { src: "/taiga.svg", name: "Taiga", color: "#83C566" },
   ];
+
   const aprendiendoIcons = [
-    { src: "/wordpress.svg", name: "WordPress" },
-    { src: "/tailwind-css.svg", name: "TailwindCSS" },
-    { src: "/nextjs.svg", name: "Next.js" },
-    { src: "/angular.svg", name: "Angular" },
+    { src: "/wordpress.svg", name: "WordPress", color: "#21759B" },
+    { src: "/tailwind-css.svg", name: "TailwindCSS", color: "#06B6D4" },
+    { src: "/nextjs.svg", name: "Next.js", color: "#FFFFFF" },
+    { src: "/angular.svg", name: "Angular", color: "#DD0031" },
   ];
 
   return (

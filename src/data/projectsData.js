@@ -34,6 +34,7 @@ const proyectos = [
   {
     id: 2,
     title: "Veterinaria RollingVet",
+    imgMain: "/Portada-Rollingvet.png",
     img: "/Veterinaria.png",
     img2: "/Veterinaria2.png",
     img3: "/Veterinaria3.png",
@@ -70,6 +71,7 @@ const proyectos = [
   {
     id: 3,
     title: "E-commerce",
+    imgMain: "/Portada-Ecommerce.png",
     img: "/Ecommerce.png",
     img2: "/Ecommerce2.png",
     img3: "/Ecommerce3.png",
@@ -104,7 +106,7 @@ const proyectos = [
     title: "HDS Esports",
     img: "/HDS.png",
     description:
-      "Aplicación web desarrollada con el stack MERN. Incluye gestión de usuarios, productos y carrito, autenticación y pagos en línea mediante Mercado Pago. Proyecto en desarrollo con arquitectura basada en API REST.",
+      "Aplicación web en desarrollo con el stack MERN. Incluye gestión de usuarios, productos y carrito, autenticación y pagos en línea mediante Mercado Pago. Proyecto con arquitectura basada en API REST.",
     badgeImg: "FullStack",
     technologies: ["MongoDB", "Express", "React", "Node.js"],
     techIcon: [
