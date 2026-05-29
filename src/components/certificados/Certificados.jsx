@@ -29,8 +29,8 @@ const Certificados = () => {
     setShow(true);
   };
   return (
-    <Container fluid id="certificados" className="py-5" data-aos="fade-up">
-      <div className="d-flex align-items-center">
+    <Container fluid id="certificados" className="py-5">
+      <div className="d-flex align-items-center gap-3">
         <LiaCertificateSolid size={26} className="icono-titulo" />
         <Separador title="Certificados" />
       </div>

@@ -2,9 +2,6 @@ import { Container } from "react-bootstrap";
 import "./NavbarC.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-/* import España from "/flag-spain.svg";
-import eeuu from "/flag-eeuu.svg"; */
-/* import AlternarTema from "../alternarTema/AlternarTema"; */
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";

@@ -1,6 +1,5 @@
 import { Container } from "react-bootstrap";
 import "./Inicio.css";
-/* import { useEffect } from "react"; */
 import {
   FaFileDownload,
   FaGithub,
@@ -11,33 +10,13 @@ import { MdOutlineMail } from "react-icons/md";
 import curriculum from "/Gabriel-Fernandez-CV.pdf";
 
 const Inicio = () => {
-  /* useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/npm/particles.js";
-    script.onload = () => {
-      window.particlesJS.load("particles-js", "/particles.json");
-    };
-    document.body.appendChild(script);
-  }, []); */
-
   return (
     <Container
       fluid
       id="inicio"
-      className="inicio py-5 text-center"
+      className="inicio text-center"
       data-aos="fade-down"
     >
-      {/* <div
-        id="particles-js"
-        style={{
-          position: "fixed",
-          width: "100%",
-          height: "100vh",
-          top: 0,
-          left: 0,
-          zIndex: -1,
-        }}
-      ></div> */}
       <h3 className="pb-2 pt-5">Hola! Un gusto conocerte 👋 soy</h3>
       <h1>Gabriel Fernández | Desarrollador</h1>
       <span className="py-4 gap-3 align-items-center">

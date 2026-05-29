@@ -1,7 +1,7 @@
 .navbar-transparente {
   background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
-  padding: 30px 0;
+  height: 10vh;
   width: 100%;
 }
 
@@ -30,7 +30,7 @@
 .nav-center .nav-link {
   color: var(--color-texto-principal) !important;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   position: relative;
   display: flex;
@@ -48,10 +48,10 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 3px;
+  height: 1px;
   width: 0%;
   background-color: var(--color-hover);
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
 }
 
 .nav-center .nav-link:hover::after {
@@ -66,18 +66,6 @@
 .nav-toggle.open .custom-toggler-icon {
   transform: rotate(180deg);
 }
-
-/* .flags {
-  display: flex;
-  gap: 10px;
-}
-.flags img {
-  height: 25px;
-  transition: transform 0.2s ease;
-}
-.flags img:hover {
-  transform: scale(1.2);
-} */
 
 .nav-toggle {
   font-size: 25px;
@@ -113,9 +101,6 @@
     align-items: flex-start;
     padding-left: 10px;
   }
-  /* .flags img {
-    height: 20px;
-  } */
   .navbar-collapse {
     display: flex;
     flex-direction: column;
@@ -133,7 +118,4 @@
   .nav-right {
     gap: 10px;
   }
-  /* .flags img {
-    height: 23px;
-  } */
 }

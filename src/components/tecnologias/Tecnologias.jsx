@@ -41,28 +41,52 @@ const Tecnologias = () => {
   ];
 
   return (
-    <Container fluid id="tecnologias" className="py-5" data-aos="fade-up">
-      <div className="d-flex align-items-center">
+    <Container fluid id="tecnologias" className="py-5">
+      <div className="d-flex align-items-center gap-3">
         <RiToolsFill size={26} className="icono-titulo" />
         <Separador title="Tecnologías" />
       </div>
-      <p className="parrafo py-4">
+      <p className="parrafo pt-4 pb-5">
         En mi viaje por el mundo del desarrollo web, he cultivado experiencias y
         habilidades en una variedad de tecnologías. Mi stack tecnológico
         incluye:
       </p>
       <Container fluid className="g-0">
         <Row className="align-items-stretch">
-          <Col sm="12" md="6" lg="6" className="col-categoria">
+          <Col
+            sm="12"
+            md="6"
+            lg="6"
+            className="col-categoria"
+            data-aos="fade-right"
+          >
             <Categorias title="Frontend" icons={frontendIcons} />
           </Col>
-          <Col sm="12" md="6" lg="6" className="col-categoria">
+          <Col
+            sm="12"
+            md="6"
+            lg="6"
+            className="col-categoria"
+            data-aos="fade-left"
+          >
             <Categorias title="Backend" icons={backendIcons} />
           </Col>
-          <Col sm="12" md="6" lg="6" className="col-categoria">
+          <Col
+            sm="12"
+            md="6"
+            lg="6"
+            className="col-categoria"
+            data-aos="fade-right"
+          >
             <Categorias title="Herramientas" icons={toolsIcons} />
           </Col>
-          <Col sm="12" md="6" lg="6" className="col-categoria">
+          <Col
+            sm="12"
+            md="6"
+            lg="6"
+            className="col-categoria"
+            data-aos="fade-left"
+          >
             <Categorias title="Aprendiendo" icons={aprendiendoIcons} />
           </Col>
         </Row>

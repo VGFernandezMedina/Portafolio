@@ -12,9 +12,15 @@ import "aos/dist/aos.css";
 const HomePage = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       once: false,
+      offset: 10,
+      easing: "ease-in-out",
     });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
   }, []);
 
   return (
