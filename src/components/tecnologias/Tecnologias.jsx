@@ -59,6 +59,7 @@ const Tecnologias = () => {
             lg="6"
             className="col-categoria"
             data-aos="fade-right"
+            data-aos-duration="1000"
           >
             <Categorias title="Frontend" icons={frontendIcons} />
           </Col>
@@ -68,6 +69,7 @@ const Tecnologias = () => {
             lg="6"
             className="col-categoria"
             data-aos="fade-left"
+            data-aos-duration="1000"
           >
             <Categorias title="Backend" icons={backendIcons} />
           </Col>
@@ -77,6 +79,7 @@ const Tecnologias = () => {
             lg="6"
             className="col-categoria"
             data-aos="fade-right"
+            data-aos-duration="1000"
           >
             <Categorias title="Herramientas" icons={toolsIcons} />
           </Col>
@@ -86,6 +89,7 @@ const Tecnologias = () => {
             lg="6"
             className="col-categoria"
             data-aos="fade-left"
+            data-aos-duration="1000"
           >
             <Categorias title="Aprendiendo" icons={aprendiendoIcons} />
           </Col>

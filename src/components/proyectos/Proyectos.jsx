@@ -26,6 +26,8 @@ const Proyectos = () => {
               md="6"
               lg="6"
               className="pb-4 d-flex justify-content-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               <CardC project={project} />
             </Col>
