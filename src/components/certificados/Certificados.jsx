@@ -1,15 +1,9 @@
-import {
-  Col,
-  Container,
-  Image,
-  Modal,
-  OverlayTrigger,
-  Row,
-  Tooltip,
-} from "react-bootstrap";
+import { Col, Container, Image, Modal, Row, Tooltip } from "react-bootstrap";
 import "./Certificados.css";
 import Separador from "../separador/Separador";
 import { LiaCertificateSolid } from "react-icons/lia";
+import { MdVerified } from "react-icons/md";
+import { FaCalendar } from "react-icons/fa";
 import modulo1 from "/modulo-1.png";
 import modulo2 from "/modulo-2.png";
 import modulo3 from "/modulo-3.png";
@@ -28,6 +22,7 @@ const Certificados = () => {
     setImgSeleccionada(img);
     setShow(true);
   };
+
   return (
     <Container fluid id="certificados" className="py-5">
       <div className="d-flex align-items-center gap-3">
@@ -42,148 +37,197 @@ const Certificados = () => {
       <Container fluid className="g-0">
         <Row>
           <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 100, hide: 200 }}
-              overlay={<Tooltip id="tooltip1">Logica de programación</Tooltip>}
-            >
-              <div
-                onClick={() => handleShow(logica)}
-                style={{ cursor: "pointer" }}
-              >
-                <Image
-                  src={logica}
-                  alt="certificado logica de programacion"
-                  fluid
-                  className="certificados-img"
-                />
-              </div>
-            </OverlayTrigger>
-          </Col>
+            <div className="card-certificado">
+              <div className="card-certificado-inner">
+                <div className="div-certificado card-front">
+                  <div className="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <MdVerified className="icon-check-certificado" />
+                    <p className="m-0 title-certificado">
+                      Creación y Diseño de páginas web
+                    </p>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaCalendar className="icon-certificado" />
+                      <p className="m-0 fecha-certificado">Enero 2025</p>
+                    </div>
+                  </div>
+                </div>
 
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 100, hide: 200 }}
-              overlay={
-                <Tooltip id="tooltip1">
-                  Creación y Diseño de páginas web
-                </Tooltip>
-              }
-            >
-              <div
-                onClick={() => handleShow(modulo1)}
-                style={{ cursor: "pointer" }}
-              >
-                <Image
-                  src={modulo1}
-                  alt="certificado-modulo1"
-                  fluid
-                  className="certificados-img"
-                />
+                <div className="card-back" onClick={() => handleShow(modulo1)}>
+                  <Image
+                    src={modulo1}
+                    alt="certificado-modulo1"
+                    fluid
+                    className="img-certificado-back"
+                  />
+                </div>
               </div>
-            </OverlayTrigger>
+            </div>
           </Col>
           <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 100, hide: 200 }}
-              overlay={
-                <Tooltip id="tooltip1">Desarrollo web con React</Tooltip>
-              }
-            >
-              <div
-                onClick={() => handleShow(modulo2)}
-                style={{ cursor: "pointer" }}
-              >
-                <Image
-                  src={modulo2}
-                  alt="certificado-modulo2"
-                  fluid
-                  className="certificados-img"
-                />
+            <div className="card-certificado">
+              <div className="card-certificado-inner">
+                <div className="div-certificado card-front">
+                  <div className="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <MdVerified className="icon-check-certificado" />
+                    <p className="m-0 title-certificado">
+                      Desarrollo web con React
+                    </p>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaCalendar className="icon-certificado" />
+                      <p className="m-0 fecha-certificado">Julio 2025</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card-back" onClick={() => handleShow(modulo2)}>
+                  <Image
+                    src={modulo2}
+                    alt="certificado-modulo2"
+                    fluid
+                    className="img-certificado-back"
+                  />
+                </div>
               </div>
-            </OverlayTrigger>
+            </div>
           </Col>
           <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 100, hide: 200 }}
-              overlay={
-                <Tooltip id="tooltip1">Integración de base de datos</Tooltip>
-              }
-            >
-              <div
-                onClick={() => handleShow(modulo3)}
-                style={{ cursor: "pointer" }}
-              >
-                <Image
-                  src={modulo3}
-                  alt="certificado-modulo3"
-                  fluid
-                  className="certificados-img"
-                />
+            <div className="card-certificado">
+              <div className="card-certificado-inner">
+                <div className="div-certificado card-front">
+                  <div className="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <MdVerified className="icon-check-certificado" />
+                    <p className="m-0 title-certificado">
+                      Integración de base de datos
+                    </p>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaCalendar className="icon-certificado" />
+                      <p className="m-0 fecha-certificado">Agosto 2025</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card-back" onClick={() => handleShow(modulo3)}>
+                  <Image
+                    src={modulo3}
+                    alt="certificado-modulo2"
+                    fluid
+                    className="img-certificado-back"
+                  />
+                </div>
               </div>
-            </OverlayTrigger>
+            </div>
           </Col>
           <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 100, hide: 200 }}
-              overlay={<Tooltip id="tooltip1">Desarrollador Fullstack</Tooltip>}
-            >
-              <div
-                onClick={() => handleShow(fullstack)}
-                style={{ cursor: "pointer" }}
-              >
-                <Image
-                  src={fullstack}
-                  alt="certificado-fullstack"
-                  fluid
-                  className="certificados-img"
-                />
+            <div className="card-certificado">
+              <div className="card-certificado-inner">
+                <div className="div-certificado card-front">
+                  <div className="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <MdVerified className="icon-check-certificado" />
+                    <p className="m-0 title-certificado">
+                      Desarrollador Fullstack
+                    </p>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaCalendar className="icon-certificado" />
+                      <p className="m-0 fecha-certificado">Octubre 2025</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="card-back"
+                  onClick={() => handleShow(fullstack)}
+                >
+                  <Image
+                    src={fullstack}
+                    alt="certificado-modulo2"
+                    fluid
+                    className="img-certificado-back"
+                  />
+                </div>
               </div>
-            </OverlayTrigger>
+            </div>
           </Col>
           <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 100, hide: 200 }}
-              overlay={<Tooltip id="tooltip1">Diseño UI con Figma</Tooltip>}
-            >
-              <div
-                onClick={() => handleShow(diseñoUI)}
-                style={{ cursor: "pointer" }}
-              >
-                <Image
-                  src={diseñoUI}
-                  alt="certificado-diseñoUI"
-                  fluid
-                  className="certificados-img"
-                />
+            <div className="card-certificado">
+              <div className="card-certificado-inner">
+                <div className="div-certificado card-front">
+                  <div className="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <MdVerified className="icon-check-certificado" />
+                    <p className="m-0 title-certificado">Diseño UI con Figma</p>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaCalendar className="icon-certificado" />
+                      <p className="m-0 fecha-certificado">Noviembre 2025</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card-back" onClick={() => handleShow(diseñoUI)}>
+                  <Image
+                    src={diseñoUI}
+                    alt="certificado-modulo2"
+                    fluid
+                    className="img-certificado-back"
+                  />
+                </div>
               </div>
-            </OverlayTrigger>
+            </div>
           </Col>
           <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 100, hide: 200 }}
-              overlay={
-                <Tooltip id="tooltip1">Especialización en TypeScript</Tooltip>
-              }
-            >
-              <div
-                onClick={() => handleShow(typescript)}
-                style={{ cursor: "pointer" }}
-              >
-                <Image
-                  src={typescript}
-                  alt="certificado-typescript"
-                  fluid
-                  className="certificados-img"
-                />
+            <div className="card-certificado">
+              <div className="card-certificado-inner">
+                <div className="div-certificado card-front">
+                  <div className="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <MdVerified className="icon-check-certificado" />
+                    <p className="m-0 title-certificado">
+                      Especialización en TypeScript
+                    </p>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaCalendar className="icon-certificado" />
+                      <p className="m-0 fecha-certificado">Mayo 2026</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="card-back"
+                  onClick={() => handleShow(typescript)}
+                >
+                  <Image
+                    src={typescript}
+                    alt="certificado-modulo2"
+                    fluid
+                    className="img-certificado-back"
+                  />
+                </div>
               </div>
-            </OverlayTrigger>
+            </div>
+          </Col>
+          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+            <div className="card-certificado">
+              <div className="card-certificado-inner">
+                <div className="div-certificado card-front">
+                  <div className="w-100 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <MdVerified className="icon-check-certificado" />
+                    <p className="m-0 title-certificado">
+                      Logica de programación
+                    </p>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaCalendar className="icon-certificado" />
+                      <p className="m-0 fecha-certificado">Marzo 2026</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card-back" onClick={() => handleShow(logica)}>
+                  <Image
+                    src="/Certificado-Logica.png"
+                    alt="certificado"
+                    fluid
+                    className="img-certificado-back"
+                  />
+                </div>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
