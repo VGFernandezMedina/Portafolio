@@ -87,4 +87,19 @@
   .certificados-img:hover {
     transform: none;
   }
+
+  .icon-check-certificado {
+    font-size: 16px;
+  }
+  .title-certificado {
+    font-size: 10px;
+    text-align: center;
+  }
+  .icon-certificado {
+    color: var(--color-hover);
+    font-size: 10px;
+  }
+  .fecha-certificado {
+    font-size: 8px;
+  }
 }

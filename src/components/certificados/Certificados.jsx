@@ -36,7 +36,7 @@ const Certificados = () => {
       </p>
       <Container fluid className="g-0">
         <Row>
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -63,7 +63,7 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -90,7 +90,7 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -117,7 +117,7 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -147,7 +147,7 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -172,7 +172,7 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -202,7 +202,7 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="3" className="col-certificados">
+          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
