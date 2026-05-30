@@ -36,7 +36,15 @@ const Certificados = () => {
       </p>
       <Container fluid className="g-0">
         <Row>
-          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
+          <Col
+            xs="6"
+            sm="4"
+            md="4"
+            lg="3"
+            className="col-certificados"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -63,7 +71,15 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
+          <Col
+            xs="6"
+            sm="4"
+            md="4"
+            lg="3"
+            className="col-certificados"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -90,7 +106,15 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
+          <Col
+            xs="6"
+            sm="4"
+            md="4"
+            lg="3"
+            className="col-certificados"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -117,7 +141,15 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
+          <Col
+            xs="6"
+            sm="4"
+            md="4"
+            lg="3"
+            className="col-certificados"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+          >
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -147,7 +179,15 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
+          <Col
+            xs="6"
+            sm="4"
+            md="4"
+            lg="3"
+            className="col-certificados"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -172,7 +212,15 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
+          <Col
+            xs="6"
+            sm="4"
+            md="4"
+            lg="3"
+            className="col-certificados"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">
@@ -202,7 +250,15 @@ const Certificados = () => {
               </div>
             </div>
           </Col>
-          <Col xs="6" sm="4" md="4" lg="3" className="col-certificados">
+          <Col
+            xs="6"
+            sm="4"
+            md="4"
+            lg="3"
+            className="col-certificados"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+          >
             <div className="card-certificado">
               <div className="card-certificado-inner">
                 <div className="div-certificado card-front">

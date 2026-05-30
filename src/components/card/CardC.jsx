@@ -28,7 +28,7 @@ const CardC = ({ project }) => {
             </span>
           </div>
           <Card.Text className="card-texto">{project.description}</Card.Text>
-          <div className="card-buttons d-flex gap-2 mb-4">
+          <div className="card-buttons d-flex flex-wrap gap-2 mb-4">
             {project.web && (
               <Button
                 as="a"
