@@ -33,18 +33,21 @@
 
 .title-div-detail-page {
   text-align: center;
+  padding: 20px 40px 40px 40px;
   .p1-title {
     color: var(--color-hover);
     font-size: 18px;
     font-weight: 500;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
   }
   .p1-description {
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 0.793);
     text-align: center;
+    font-size: 18px;
   }
 }
 .title-detail-page {
+  font-size: 44px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
@@ -163,7 +166,7 @@
   }
 
   .title-div-detail-page {
-    padding-top: 15%;
+    padding: 30px 0 5px 0;
   }
   .p1-title {
     font-size: 14px !important;

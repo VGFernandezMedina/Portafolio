@@ -30,7 +30,7 @@ const ProjectDetail = () => {
               <p className="my-0">Volver al Inicio</p>
             </div>
           </Link>
-          <div className="pb-5 title-div-detail-page">
+          <div className="title-div-detail-page">
             <p className="p1-title">Caso de estudio</p>
             <h1 className="title-detail-page">{proyecto.title}</h1>
             <p className="mt-4 p1-description">{proyecto.description}</p>
