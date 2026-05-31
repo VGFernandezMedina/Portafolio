@@ -39,7 +39,7 @@
     font-weight: 500;
     padding-bottom: 2%;
   }
-  p {
+  .p1-description {
     color: rgba(255, 255, 255, 0.87);
     text-align: center;
   }
@@ -68,7 +68,7 @@
 }
 .section-title h5 {
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -123,12 +123,13 @@
   padding-bottom: 10%;
 }
 .btn-details-page .btn {
-  width: 16%;
-  height: 40px;
+  width: fit-content;
+  min-width: max-content;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 5%;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
   font-size: 15px !important;
   background-color: #14141f !important;
   transition: all 0.5s ease;
@@ -140,4 +141,63 @@
   background-color: #e5e7eb !important;
   color: #14141f;
   border: 1px solid #3f4246;
+}
+
+@media (max-width: 768px) {
+  .div-col1-detail-page {
+    padding: 10px;
+    font-weight: 300;
+  }
+  .div-col1-detail-page div {
+    gap: 4%;
+    font-weight: 300;
+    padding-bottom: 5px;
+    font-size: 10px;
+  }
+  .info-project {
+    font-size: 10px;
+  }
+
+  .div-return {
+    font-size: 12px;
+  }
+
+  .title-div-detail-page {
+    padding-top: 15%;
+  }
+  .p1-title {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    padding-bottom: 0% !important;
+  }
+  .title-detail-page {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .p1-description {
+    font-size: 13px;
+  }
+
+  .btn-details-page .btn {
+    font-size: 10px !important;
+    padding: 8px 16px;
+  }
+
+  .section-title h5 {
+    font-size: 14px;
+  }
+
+  .tech-div {
+    font-size: 10px;
+    width: 30%;
+  }
+  .tech-div img {
+    width: 20px;
+    height: auto;
+  }
+
+  .carousel-indicators button {
+    width: 24px !important;
+    height: 2px !important;
+  }
 }

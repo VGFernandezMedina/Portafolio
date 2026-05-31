@@ -33,29 +33,29 @@ const ProjectDetail = () => {
           <div className="pb-5 title-div-detail-page">
             <p className="p1-title">Caso de estudio</p>
             <h1 className="title-detail-page">{proyecto.title}</h1>
-            <p className="mt-4">{proyecto.description}</p>
+            <p className="mt-4 p1-description">{proyecto.description}</p>
           </div>
           <div className="mt-4 d-flex">
             <div className="div-col1-detail-page">
-              <div className="">
+              <div>
                 <FaRegCalendarAlt />
-                Fecha
+                <p className="my-0">Fecha</p>
               </div>
-              {proyecto.date}
+              <p className="my-0 info-project">{proyecto.date}</p>
             </div>
             <div className="div-col1-detail-page">
-              <div className="">
+              <div>
                 <BiSolidCategory />
-                Categoría
+                <p className="my-0">Categoría</p>
               </div>
-              {proyecto.category}
+              <p className="my-0 info-project">{proyecto.category}</p>
             </div>
             <div className="div-col1-detail-page">
-              <div className="">
+              <div>
                 <FaCode />
-                Servicio
+                <p className="my-0">Servicio</p>
               </div>
-              Aplicación web
+              <p className="my-0 info-project">Aplicación web</p>
             </div>
           </div>
           <Carousel className="carousel-detail-page" controls={false}>
@@ -120,7 +120,7 @@ const ProjectDetail = () => {
 
           <div className="section-detail-page">
             <div className="section-title">
-              <h5 className="title-detail-page">Tecnologías utilizadas</h5>
+              <h5>Tecnologías utilizadas</h5>
             </div>
             <div className="d-flex justify-content-center gap-3 flex-wrap">
               {proyecto.techIcon?.map((tech, index) => (
@@ -152,9 +152,6 @@ const ProjectDetail = () => {
               ))}
             </div>
           </div>
-          {/* <div className="pb-5">
-            <h5 className="pb-2 title-detail-page">Enlaces del Proyecto</h5>
-          </div> */}
         </Col>
       </Row>
     </Container>
