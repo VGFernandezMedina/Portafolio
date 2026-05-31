@@ -5,15 +5,3 @@
   min-height: 100vh;
   z-index: 0;
 }
-
-/* .bg-homepage::before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
-    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
-  background-size: 14px 24px;
-  z-index: -1;
-}
- */

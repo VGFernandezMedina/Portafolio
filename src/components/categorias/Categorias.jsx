@@ -7,7 +7,10 @@ const Categorias = ({ title, icons }) => {
       <div className="icons-grid">
         {icons.map((icon, i) => (
           <div key={i} className="icon-item">
-            <div className="icon-wrapper">
+            <div
+              className="icon-wrapper"
+              style={{ "--hover-color": icon.color }}
+            >
               <img src={icon.src} alt={icon.name} />
             </div>
             <span>{icon.name}</span>

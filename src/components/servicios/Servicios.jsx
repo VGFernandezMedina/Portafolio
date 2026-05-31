@@ -8,8 +8,8 @@ import { HiOutlineLightningBolt } from "react-icons/hi";
 
 const Servicios = () => {
   return (
-    <Container fluid id="servicios" className="py-5" data-aos="fade-up">
-      <div className="d-flex align-items-center">
+    <Container fluid id="servicios" className="py-5">
+      <div className="d-flex align-items-center gap-3">
         <GrServices size={24} className="icono-titulo" />
         <Separador title="Servicios" />
       </div>
@@ -20,7 +20,11 @@ const Servicios = () => {
       <Container fluid className="g-0">
         <Row className="align-items-stretch">
           <Col sm="6" md="6" lg="3" className="pb-4">
-            <Card className="card-servicios">
+            <Card
+              className="card-servicios"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">Páginas web</Card.Title>
                 <IoIosDesktop size={26} className="servicios-icono" />
@@ -31,7 +35,11 @@ const Servicios = () => {
             </Card>
           </Col>
           <Col sm="6" md="6" lg="3" className="pb-4">
-            <Card className="card-servicios">
+            <Card
+              className="card-servicios"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">Aplicaciones móviles</Card.Title>
                 <FaMobileAlt size={26} className="servicios-icono" />
@@ -42,7 +50,11 @@ const Servicios = () => {
             </Card>
           </Col>
           <Col sm="6" md="6" lg="3" className="pb-4">
-            <Card className="card-servicios">
+            <Card
+              className="card-servicios"
+              data-aos="fade-up"
+              data-aos-duration="1600"
+            >
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">Rendimiento</Card.Title>
                 <HiOutlineLightningBolt size={26} className="servicios-icono" />
@@ -53,7 +65,11 @@ const Servicios = () => {
             </Card>
           </Col>
           <Col sm="6" md="6" lg="3" className="pb-4">
-            <Card className="card-servicios">
+            <Card
+              className="card-servicios"
+              data-aos="fade-up"
+              data-aos-duration="1800"
+            >
               <Card.Body className="p-3">
                 <Card.Title className="pb-4">SEO</Card.Title>
                 <FaRegStar size={26} className="servicios-icono" />
