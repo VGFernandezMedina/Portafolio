@@ -1,24 +1,34 @@
 import { Badge, Button, Card, Stack } from "react-bootstrap";
 import "./CardC.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BiWorld } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 
 const CardC = ({ project }) => {
-  console.log(project.github);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+    navigate(`/project/${project.id}`);
+  };
+
   return (
-    <Card className="card-personalizada">
+    <Card
+      className="card-personalizada"
+      onClick={handleClick}
+      style={{ cursor: "pointer" }}
+    >
       <div className="card-img-container">
         <Badge className="card-etiqueta-img">{project.badgeImg}</Badge>
         <Card.Img
           variant="top"
-          src={project.img}
+          src={project.imgMain}
           className="img-fluid"
           alt={project.title}
         />
       </div>
       <Card.Body className="card-body d-flex flex-column">
-        <div className="d-flex gap-3 mb-2 title-card">
+        <div className="d-flex gap-3 mb-3 title-card">
           <Card.Title className="card-titulo mb-0">{project.title}</Card.Title>
           <span className={`status-card ${project.status}`}>
             <span className="punto-card"></span>
@@ -26,7 +36,7 @@ const CardC = ({ project }) => {
           </span>
         </div>
         <Card.Text className="card-texto">{project.description}</Card.Text>
-        <div className="card-buttons d-flex gap-2 mb-4">
+        <div className="card-buttons d-flex flex-wrap gap-2 mb-4">
           {project.web && (
             <Button
               as="a"

@@ -1,40 +1,107 @@
-.certificados-img {
-  position: relative;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.certificados-img:hover {
-  transform: translateY(-10px);
-}
-
-.tooltip-inner {
-  background-color: rgba(25, 52, 78, 0.396);
-  border: 1px solid var(--color-texto-principal);
-  color: var(--color-texto-principal);
-  font-size: 12px;
-  font-weight: 400;
-  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.3);
-}
-
-.bs-tooltip-bottom .tooltip-arrow::before {
-  border-bottom-color: var(--color-texto-principal);
-}
-
 .col-certificados {
   padding-bottom: 40px;
 }
 
-@media (max-width: 991px) {
-  .tooltip {
-    display: none !important;
-  }
+.card-certificado {
+  width: 100%;
+  aspect-ratio: 12 / 10;
+  perspective: 1000px;
+  cursor: pointer;
+}
 
+.card-certificado-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.div-certificado {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-fondo-gradiante);
+  border-radius: 10px;
+  border: 1px solid #005a66;
+  padding: 10px;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.icon-check-certificado {
+  color: rgba(255, 234, 0, 0.868);
+  font-size: 24px;
+}
+.title-certificado {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.icon-certificado {
+  color: var(--color-hover);
+}
+.fecha-certificado {
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.img-certificado-back {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* object-fit: cover; */
+}
+
+.card-certificado:hover .card-certificado-inner {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 991px) {
   .certificados-img {
     transition: none;
   }
   .certificados-img:hover {
     transform: none;
+  }
+
+  .icon-check-certificado {
+    font-size: 16px;
+  }
+  .title-certificado {
+    font-size: 10px;
+    text-align: center;
+  }
+  .icon-certificado {
+    color: var(--color-hover);
+    font-size: 10px;
+  }
+  .fecha-certificado {
+    font-size: 8px;
   }
 }

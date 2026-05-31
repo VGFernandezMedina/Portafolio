@@ -6,8 +6,8 @@ import { LuUserRoundCheck } from "react-icons/lu";
 
 const SobreMi = () => {
   return (
-    <Container fluid id="sobremi" className="py-5" data-aos="fade-up">
-      <div className="d-flex align-items-center">
+    <Container fluid id="sobremi" className="py-5">
+      <div className="d-flex align-items-center gap-3">
         <LuUserRoundCheck size={24} className="icono-titulo" />
         <Separador title="Sobre mi" />
       </div>
@@ -27,23 +27,14 @@ const SobreMi = () => {
             md={{ span: 8, order: 1 }}
             lg={{ span: 8, order: 1 }}
             className="pt-4 g-0 col-sobremi"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             <p className="parrafo">
               Hola! Soy <span className="texto-naranja">Víctor Gabriel</span>,
               mis amigos y compañeros me dicen Gaby o Gabo. Tengo 28 años y soy
               de Tucumán.
             </p>
-            {/* <p className="parrafo">
-              Soy <span className="texto-azul">Técnico Electromecánico </span>
-              egresado en la ENET N°2. Fui ex estudiante de
-              <span className="texto-azul"> Ingeniería Mecánica</span> y
-              actualmente finalizando la{" "}
-              <span className="texto-azul">
-                Tecnicatura Superior en Mecatrónica
-              </span>{" "}
-              en la UTN-FRT, donde nació mi interés por la programación al
-              escribir mis primeras líneas de código en Arduino.
-            </p> */}
             <p className="parrafo">
               Adquirí y fortalecí mis conocimientos en RollingCode School, donde
               obtuve el certificado de
