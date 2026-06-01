@@ -129,7 +129,13 @@ const ProjectDetail = () => {
                 </div>
                 <h5>Sobre el proyecto</h5>
               </div>
-              <p className="p2-description">{proyecto.caseStudy}</p>
+              <p
+                className="p2-description"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                {proyecto.caseStudy}
+              </p>
             </div>
             <div>
               <div className="info-detail-page">
@@ -138,8 +144,20 @@ const ProjectDetail = () => {
                 </div>
                 <h5>Desafío</h5>
               </div>
-              <p className="p2-description">{proyecto.challenge}</p>
-              <p className="p2-description">{proyecto.solution}</p>
+              <p
+                className="p2-description"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                {proyecto.challenge}
+              </p>
+              <p
+                className="p2-description"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                {proyecto.solution}
+              </p>
             </div>
             <div>
               <div className="info-detail-page">
@@ -150,7 +168,13 @@ const ProjectDetail = () => {
               </div>
               <ul className="highlights-list">
                 {proyecto.highlights.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li
+                    key={index}
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
