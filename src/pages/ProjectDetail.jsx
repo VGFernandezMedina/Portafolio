@@ -5,7 +5,10 @@ import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import {
   FaArrowLeft,
+  FaAward,
   FaCode,
+  FaFileAlt,
+  FaFlag,
   FaGithub,
   FaRegCalendarAlt,
 } from "react-icons/fa";
@@ -116,6 +119,41 @@ const ProjectDetail = () => {
                 Backend
               </Button>
             )}
+          </div>
+
+          <div className="div-info-detail-page">
+            <div>
+              <div className="info-detail-page">
+                <div className="icon-wrapper-info project-icon">
+                  <FaFileAlt className="info-icon-detail-page" />
+                </div>
+                <h5>Sobre el proyecto</h5>
+              </div>
+              <p className="p2-description">{proyecto.caseStudy}</p>
+            </div>
+            <div>
+              <div className="info-detail-page">
+                <div className="icon-wrapper-info challenge-icon">
+                  <FaFlag className="info-icon-detail-page" />
+                </div>
+                <h5>Desafío</h5>
+              </div>
+              <p className="p2-description">{proyecto.challenge}</p>
+              <p className="p2-description">{proyecto.solution}</p>
+            </div>
+            <div>
+              <div className="info-detail-page">
+                <div className="icon-wrapper-info highlight-icon">
+                  <FaAward className="info-icon-detail-page" />
+                </div>
+                <h5>Aspectos destacados</h5>
+              </div>
+              <ul className="highlights-list">
+                {proyecto.highlights.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="section-detail-page">
