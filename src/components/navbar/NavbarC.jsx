@@ -99,11 +99,6 @@ const NavbarC = () => {
             </Nav.Link>
           </Nav>
           <Nav className="nav-right">
-            {/* <div className="flags">
-              <img src={eeuu} alt="flag-eeuu" />
-              <img src={España} alt="flag-spain" />
-            </div>
-            <AlternarTema /> */}
             <div className="nav-icon">
               <a
                 href="https://github.com/VGFernandezMedina"

@@ -16,9 +16,7 @@ import { BiSolidCategory, BiWorld } from "react-icons/bi";
 
 const ProjectDetail = () => {
   const { id } = useParams();
-
   const proyecto = proyectos.find((project) => project.id === Number(id));
-
   if (!proyecto) {
     return <h1>Proyecto no encontrado</h1>;
   }
@@ -34,56 +32,72 @@ const ProjectDetail = () => {
             </div>
           </Link>
           <div className="title-div-detail-page">
-            <p className="p1-title">Caso de estudio</p>
-            <h1 className="title-detail-page">{proyecto.title}</h1>
-            <p className="mt-4 p1-description">{proyecto.description}</p>
+            <p className="p1-title" data-aos="fade-up" data-aos-duration="1000">
+              Caso de estudio
+            </p>
+            <h1
+              className="title-detail-page"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              {proyecto.title}
+            </h1>
+            <p
+              className="mt-4 p1-description"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              {proyecto.description}
+            </p>
           </div>
-          <div className="mt-4 d-flex">
-            <div className="div-col1-detail-page">
-              <div>
-                <FaRegCalendarAlt />
-                <p className="my-0">Fecha</p>
+          <div>
+            <div className="mt-4 d-flex">
+              <div className="div-col1-detail-page">
+                <div>
+                  <FaRegCalendarAlt />
+                  <p className="my-0">Fecha</p>
+                </div>
+                <p className="my-0 info-project">{proyecto.date}</p>
               </div>
-              <p className="my-0 info-project">{proyecto.date}</p>
-            </div>
-            <div className="div-col1-detail-page">
-              <div>
-                <BiSolidCategory />
-                <p className="my-0">Categoría</p>
+              <div className="div-col1-detail-page">
+                <div>
+                  <BiSolidCategory />
+                  <p className="my-0">Categoría</p>
+                </div>
+                <p className="my-0 info-project">{proyecto.category}</p>
               </div>
-              <p className="my-0 info-project">{proyecto.category}</p>
-            </div>
-            <div className="div-col1-detail-page">
-              <div>
-                <FaCode />
-                <p className="my-0">Servicio</p>
+              <div className="div-col1-detail-page">
+                <div>
+                  <FaCode />
+                  <p className="my-0">Servicio</p>
+                </div>
+                <p className="my-0 info-project">Aplicación web</p>
               </div>
-              <p className="my-0 info-project">Aplicación web</p>
             </div>
+            <Carousel className="carousel-detail-page" controls={false}>
+              <Carousel.Item interval={1000}>
+                <img
+                  src={proyecto.img}
+                  alt={proyecto.title}
+                  className="img-fluid"
+                />
+              </Carousel.Item>
+              <Carousel.Item interval={1000}>
+                <img
+                  src={proyecto.img2}
+                  alt={proyecto.title}
+                  className="img-fluid"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={proyecto.img3}
+                  alt={proyecto.title}
+                  className="img-fluid"
+                />
+              </Carousel.Item>
+            </Carousel>
           </div>
-          <Carousel className="carousel-detail-page" controls={false}>
-            <Carousel.Item interval={1000}>
-              <img
-                src={proyecto.img}
-                alt={proyecto.title}
-                className="img-fluid"
-              />
-            </Carousel.Item>
-            <Carousel.Item interval={1000}>
-              <img
-                src={proyecto.img2}
-                alt={proyecto.title}
-                className="img-fluid"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src={proyecto.img3}
-                alt={proyecto.title}
-                className="img-fluid"
-              />
-            </Carousel.Item>
-          </Carousel>
 
           <div className="btn-details-page">
             {proyecto.web && (
@@ -127,54 +141,30 @@ const ProjectDetail = () => {
                 <div className="icon-wrapper-info project-icon">
                   <FaFileAlt className="info-icon-detail-page" />
                 </div>
-                <h5>Sobre el proyecto</h5>
+                <h5 data-aos="fade-right">Sobre el proyecto</h5>
               </div>
-              <p
-                className="p2-description"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                {proyecto.caseStudy}
-              </p>
+              <p className="p2-description">{proyecto.caseStudy}</p>
             </div>
             <div>
               <div className="info-detail-page">
                 <div className="icon-wrapper-info challenge-icon">
                   <FaFlag className="info-icon-detail-page" />
                 </div>
-                <h5>Desafío</h5>
+                <h5 data-aos="fade-right">Desafío</h5>
               </div>
-              <p
-                className="p2-description"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                {proyecto.challenge}
-              </p>
-              <p
-                className="p2-description"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                {proyecto.solution}
-              </p>
+              <p className="p2-description">{proyecto.challenge}</p>
+              <p className="p2-description">{proyecto.solution}</p>
             </div>
             <div>
               <div className="info-detail-page">
                 <div className="icon-wrapper-info highlight-icon">
                   <FaAward className="info-icon-detail-page" />
                 </div>
-                <h5>Aspectos destacados</h5>
+                <h5 data-aos="fade-right">Aspectos destacados</h5>
               </div>
               <ul className="highlights-list">
                 {proyecto.highlights.map((item, index) => (
-                  <li
-                    key={index}
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  >
-                    {item}
-                  </li>
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>

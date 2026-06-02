@@ -1,15 +1,12 @@
 import { Badge, Button, Card, Stack } from "react-bootstrap";
 import "./CardC.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BiWorld } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 
 const CardC = ({ project }) => {
-  const navigate = useNavigate();
-
   const handleClick = () => {
-    window.scrollTo(0, 0);
-    navigate(`/project/${project.id}`);
+    window.location.href = `/project/${project.id}`;
   };
 
   return (
