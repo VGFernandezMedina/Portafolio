@@ -104,6 +104,7 @@ const proyectos = [
   {
     id: 4,
     title: "HDS Esports",
+    imgMain: "/Portada-HDS.png",
     img: "/HDS.png",
     description:
       "Aplicación web en desarrollo con el stack MERN. Incluye gestión de usuarios, productos y carrito, autenticación y pagos en línea mediante Mercado Pago. Proyecto con arquitectura basada en API REST.",
