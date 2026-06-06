@@ -3,14 +3,15 @@
   backdrop-filter: blur(8px);
   height: 10vh;
   width: 100%;
+  position: sticky;
 }
 
-.navbar-normal {
+/* .navbar-normal {
   background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
   padding: 25px 0;
   position: sticky;
-}
+} */
 
 .nav-right {
   display: flex;
