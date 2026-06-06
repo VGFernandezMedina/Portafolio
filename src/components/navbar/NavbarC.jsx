@@ -4,16 +4,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link as ScrollLink } from "react-scroll";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 const NavbarC = () => {
   const [expanded, setExpanded] = useState(false);
-  const location = useLocation();
-
-  const isHome = location.pathname === "/";
 
   return (
     <Navbar
@@ -21,7 +18,7 @@ const NavbarC = () => {
       expand="lg"
       fixed="top"
       expanded={expanded}
-      className={isHome ? "navbar-transparente" : "navbar-normal"}
+      className="navbar-transparente"
     >
       <Container fluid>
         <Navbar.Toggle
@@ -99,11 +96,6 @@ const NavbarC = () => {
             </Nav.Link>
           </Nav>
           <Nav className="nav-right">
-            {/* <div className="flags">
-              <img src={eeuu} alt="flag-eeuu" />
-              <img src={España} alt="flag-spain" />
-            </div>
-            <AlternarTema /> */}
             <div className="nav-icon">
               <a
                 href="https://github.com/VGFernandezMedina"

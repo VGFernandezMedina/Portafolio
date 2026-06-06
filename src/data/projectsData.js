@@ -8,6 +8,24 @@ const proyectos = [
     img3: "/Estudio Juridico3.png",
     description:
       "Sitio web institucional desarrollado para un estudio jurídico. Permite presentar información del estudio, áreas de práctica y medios de contacto, ofreciendo una presencia profesional y accesible para clientes potenciales.",
+
+    caseStudy: `Este proyecto fue desarrollado para un estudio jurídico que necesitaba una presencia profesional en internet. El objetivo principal era presentar los servicios del estudio de manera clara, transmitir confianza a potenciales clientes y facilitar los canales de contacto.
+
+    Me encargué del diseño y desarrollo del sitio, priorizando una experiencia intuitiva y adaptable a distintos dispositivos. La estructura fue pensada para que los usuarios pudieran acceder rápidamente a la información más relevante sin recorrer múltiples páginas.`,
+
+    challenge: `Uno de los principales desafíos fue organizar una gran cantidad de información jurídica de forma accesible para usuarios con distintos niveles de conocimiento técnico. Además, el sitio debía transmitir profesionalismo sin resultar sobrecargado visualmente.
+
+    Para resolverlo, se optó por una estructura de navegación simple, una jerarquía visual clara y secciones bien definidas que permitieran encontrar rápidamente la información importante. También se trabajó en la adaptación a dispositivos móviles para garantizar una experiencia consistente en cualquier pantalla.`,
+
+    highlights: [
+      "Diseño completamente responsive",
+      "Navegación clara e intuitiva",
+      "Organización estratégica del contenido",
+      "Interfaz moderna y profesional",
+      "Canales de contacto accesibles",
+      "Sitio publicado en producción",
+    ],
+
     badgeImg: "Frontend",
     technologies: ["React", "Bootstrap", "Javascript", "CSS"],
     techIcon: [
