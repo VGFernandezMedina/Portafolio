@@ -9,13 +9,27 @@ const proyectos = [
     description:
       "Sitio web institucional desarrollado para un estudio jurídico. Permite presentar información del estudio, áreas de práctica y medios de contacto, ofreciendo una presencia profesional y accesible para clientes potenciales.",
 
-    caseStudy: `Este proyecto fue desarrollado para un estudio jurídico que necesitaba una presencia profesional en internet. El objetivo principal era presentar los servicios del estudio de manera clara, transmitir confianza a potenciales clientes y facilitar los canales de contacto.
+    caseStudy: [
+      "Este proyecto fue desarrollado para un estudio jurídico que necesitaba una presencia profesional en internet. El objetivo principal era presentar los servicios del estudio de manera clara, transmitir confianza a potenciales clientes y facilitar los canales de contacto.",
 
-    Me encargué del diseño y desarrollo del sitio, priorizando una experiencia intuitiva y adaptable a distintos dispositivos. La estructura fue pensada para que los usuarios pudieran acceder rápidamente a la información más relevante sin recorrer múltiples páginas.`,
+      "Me encargué del diseño y desarrollo completo del sitio, trabajando directamente sobre las necesidades del cliente y adaptando la estructura de la información para que resultara clara y accesible para los visitantes.",
 
-    challenge: `Uno de los principales desafíos fue organizar una gran cantidad de información jurídica de forma accesible para usuarios con distintos niveles de conocimiento técnico. Además, el sitio debía transmitir profesionalismo sin resultar sobrecargado visualmente.
+      "La experiencia fue orientada a ofrecer una navegación intuitiva y totalmente responsive, permitiendo acceder rápidamente a la información más relevante desde cualquier dispositivo.",
+    ],
 
-    Para resolverlo, se optó por una estructura de navegación simple, una jerarquía visual clara y secciones bien definidas que permitieran encontrar rápidamente la información importante. También se trabajó en la adaptación a dispositivos móviles para garantizar una experiencia consistente en cualquier pantalla.`,
+    challenge: [
+      "Uno de los principales desafíos fue organizar una gran cantidad de información jurídica de forma accesible para usuarios con distintos niveles de conocimiento técnico.",
+
+      "A su vez, el sitio debía transmitir profesionalismo sin resultar sobrecargado visualmente.",
+    ],
+
+    solution: [
+      "Se desarrolló una aplicación web moderna utilizando React y Bootstrap, priorizando el rendimiento, la accesibilidad y la adaptación a distintos dispositivos.",
+
+      "Se implementó un diseño visual profesional alineado con la identidad del cliente, buscando transmitir confianza y credibilidad sin sacrificar la experiencia de usuario.",
+
+      "Además, se optimizó la experiencia responsive para garantizar una visualización consistente tanto en computadoras como en dispositivos móviles.",
+    ],
 
     highlights: [
       "Diseño completamente responsive",
@@ -67,7 +81,7 @@ const proyectos = [
 
       "También participé en la etapa de planificación y diseño, elaborando los mockups iniciales de las principales pantallas utilizando Excalidraw para definir la experiencia de usuario antes del desarrollo.",
 
-      "En el aspecto técnico, trabajé tanto en frontend como en backend. Desarrollé gran parte de la interfaz de usuario, incluyendo la Home Page, la sección Sobre Nosotros, el formulario de contacto y el carrito de compras. En el backend implementé el CRUD completo de productos, participé en el desarrollo del CRUD de usuarios, construí la lógica del carrito y realicé la integración de Mercado Pago para el procesamiento de pagos. Además, colaboré en la integración entre frontend y backend para asegurar una experiencia consistente y funcional en toda la aplicación.",
+      "En el aspecto técnico, trabajé tanto en frontend como en backend. Participé activamente tanto en frontend como en backend, desarrollando funcionalidades clave como la Home Page, el carrito de compras, el formulario de contacto, el CRUD de productos y la integración de Mercado Pago.",
     ],
 
     challenge: [
@@ -84,8 +98,9 @@ const proyectos = [
 
     highlights: [
       "Rol de Scrum Master durante todo el proyecto",
+      "Coordinación de equipo mediante metodología Scrum",
       "Planificación de 2 sprints y gestión de Trello",
-      "Diseño de mockups y flujo de pantallas en Excalidraw",
+      "Planificación y diseño de la experiencia de usuario",
       "Desarrollo de la Homepage y secciones institucionales",
       "Implementación completa del CRUD de productos",
       "Desarrollo de funcionalidades de carrito de compras",
@@ -131,6 +146,44 @@ const proyectos = [
     img3: "/Ecommerce3.png",
     description:
       "Proyecto frontend de un ecommerce desarrollado en equipo con React. Incluye catálogo de productos, localstorage, filtros por categorías y marcas, y un diseño responsivo con Bootstrap.",
+
+    caseStudy: [
+      "Este proyecto fue desarrollado en equipo como parte de la formación Full Stack, con el objetivo de construir una experiencia de compra moderna e interactiva utilizando React.",
+
+      "Durante el desarrollo asumí el rol de Scrum Master, organizando el tablero de Trello, coordinando tareas entre los integrantes y participando en la planificación general del proyecto. También realicé los mockups iniciales para definir la estructura y el flujo de navegación de la aplicación.",
+
+      "Mi participación estuvo centrada principalmente en el desarrollo de la Home Page, incluyendo la integración de componentes, secciones publicitarias, filtros por categorías, diseño responsive y la implementación de elementos compartidos como el navbar y el footer.",
+
+      "La aplicación permite explorar un catálogo de productos, aplicar filtros dinámicos, consultar detalles de cada artículo y gestionar información mediante LocalStorage y SessionStorage.",
+    ],
+
+    challenge: [
+      "Uno de los principales desafíos fue coordinar el trabajo en equipo mientras se desarrollaban distintas funcionalidades de forma paralela, manteniendo una experiencia consistente en toda la aplicación.",
+
+      "También fue necesario integrar información proveniente de APIs externas, conectar componentes desarrollados por distintos integrantes y garantizar que los filtros y la navegación funcionaran correctamente en diferentes dispositivos.",
+    ],
+
+    solution: [
+      "Se implementó una arquitectura basada en componentes reutilizables utilizando React, permitiendo una interfaz modular y fácil de mantener.",
+
+      "La información de los productos fue obtenida mediante APIs externas y presentada dinámicamente mediante filtros por categorías y marcas, mejorando la navegación dentro del catálogo.",
+
+      "Para optimizar la experiencia del usuario se utilizaron LocalStorage y SessionStorage, permitiendo conservar información relevante entre distintas sesiones y páginas de la aplicación.",
+
+      "Además, se desarrolló una interfaz responsive utilizando Bootstrap para garantizar una correcta visualización en diferentes tamaños de pantalla.",
+    ],
+
+    highlights: [
+      "Rol de Scrum Master durante el proyecto",
+      "Planificación y gestión del tablero de Trello",
+      "Diseño de mockups y estructura inicial de la aplicación",
+      "Desarrollo completo de la Home Page",
+      "Implementación de filtros por categorías",
+      "Integración de componentes reutilizables",
+      "Persistencia de datos con LocalStorage y SessionStorage",
+      "Diseño responsive para múltiples dispositivos",
+    ],
+
     badgeImg: "Frontend",
     technologies: ["React", "Bootstrap", "Javascript", "CSS"],
     techIcon: [
