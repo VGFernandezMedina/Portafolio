@@ -5,6 +5,8 @@ import NavbarC from "./components/navbar/NavbarC";
 import Footer from "./components/footer/Footer";
 import ProjectDetail from "./pages/ProjectDetail";
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
   useEffect(() => {
@@ -14,6 +16,19 @@ const App = () => {
       window.particlesJS.load("particles-js", "/particles.json");
     };
     document.body.appendChild(script);
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: false,
+      offset: 10,
+      easing: "ease-in-out",
+    });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
   }, []);
 
   return (
