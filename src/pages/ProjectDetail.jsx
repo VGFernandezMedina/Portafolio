@@ -10,6 +10,7 @@ import {
   FaFileAlt,
   FaFlag,
   FaGithub,
+  FaLightbulb,
   FaRegCalendarAlt,
 } from "react-icons/fa";
 import { BiSolidCategory, BiWorld } from "react-icons/bi";
@@ -170,8 +171,8 @@ const ProjectDetail = () => {
 
                 <div>
                   <div className="info-detail-page">
-                    <div className="icon-wrapper-info highlight-icon">
-                      <FaAward className="info-icon-detail-page" />
+                    <div className="icon-wrapper-info solution-icon">
+                      <FaLightbulb className="info-icon-detail-page" />
                     </div>
                     <h5 data-aos="fade-right">Solución</h5>
                   </div>
@@ -197,6 +198,7 @@ const ProjectDetail = () => {
                 </div>
               </div>
             )}
+
           <div className="section-detail-page">
             <div className="section-title">
               <h5>Tecnologías utilizadas</h5>
