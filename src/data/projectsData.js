@@ -49,6 +49,7 @@ const proyectos = [
     span: "Prod",
     status: "prod",
   },
+
   {
     id: 2,
     title: "Veterinaria RollingVet",
@@ -58,6 +59,40 @@ const proyectos = [
     img3: "/Veterinaria3.png",
     description:
       "Aplicación web para la gestión de una veterinaria desarrollada en equipo. Permite administrar usuarios, mascotas, servicios y pagos en línea mediante integración con Mercado Pago.",
+
+    caseStudy: [
+      "RollingVet fue desarrollado como proyecto final del curso FullStack de RollingCode por un equipo de cuatro integrantes. El objetivo era crear una plataforma para la gestión de una veterinaria, permitiendo administrar usuarios, veterinarios, mascotas, servicios, productos y turnos desde una única aplicación.",
+
+      "Mi participación abarcó tanto responsabilidades técnicas como de coordinación del equipo. Asumí el rol de Scrum Master durante las cuatro semanas de desarrollo, organizando dos sprints, gestionando el tablero de Trello mediante etiquetas y prioridades, coordinando reuniones de seguimiento y distribuyendo tareas entre los integrantes.",
+
+      "También participé en la etapa de planificación y diseño, elaborando los mockups iniciales de las principales pantallas utilizando Excalidraw para definir la experiencia de usuario antes del desarrollo.",
+
+      "En el aspecto técnico, trabajé tanto en frontend como en backend. Desarrollé gran parte de la interfaz de usuario, incluyendo la Home Page, la sección Sobre Nosotros, el formulario de contacto y el carrito de compras. En el backend implementé el CRUD completo de productos, participé en el desarrollo del CRUD de usuarios, construí la lógica del carrito y realicé la integración de Mercado Pago para el procesamiento de pagos. Además, colaboré en la integración entre frontend y backend para asegurar una experiencia consistente y funcional en toda la aplicación.",
+    ],
+
+    challenge: [
+      "Uno de los principales desafíos fue coordinar el desarrollo de una aplicación FullStack en equipo, manteniendo una arquitectura organizada y escalable. Además, fue necesario gestionar relaciones complejas entre usuarios, mascotas, servicios y productos dentro de la base de datos.",
+
+      "Otro reto importante fue la integración de Mercado Pago para procesar pagos de servicios y compras de productos, garantizando que las operaciones se registraran correctamente y que el estado de cada transacción se actualizara de forma segura mediante webhooks.",
+    ],
+
+    solution: [
+      "Para abordar estos desafíos se implementó una arquitectura basada en API REST utilizando Node.js, Express y MongoDB. Se organizaron las responsabilidades en rutas, controladores, servicios y middlewares, facilitando el mantenimiento y la escalabilidad del proyecto.",
+
+      "La gestión de datos se resolvió mediante modelos de Mongoose con relaciones entre usuarios y mascotas, mientras que la integración de Mercado Pago permitió automatizar los pagos y validar su estado mediante notificaciones webhook. Además, se aplicaron validaciones, control de roles y autenticación para mejorar la seguridad de la plataforma.",
+    ],
+
+    highlights: [
+      "Rol de Scrum Master durante todo el proyecto",
+      "Planificación de 2 sprints y gestión de Trello",
+      "Diseño de mockups y flujo de pantallas en Excalidraw",
+      "Desarrollo de la Homepage y secciones institucionales",
+      "Implementación completa del CRUD de productos",
+      "Desarrollo de funcionalidades de carrito de compras",
+      "Integración de Mercado Pago para pagos online",
+      "Participación en frontend y backend con stack MERN",
+    ],
+
     badgeImg: "Fullstack",
     technologies: ["MongoDB", "Express", "React", "Node.js"],
     techIcon: [
@@ -86,6 +121,7 @@ const proyectos = [
     span: "Dev",
     status: "dev",
   },
+
   {
     id: 3,
     title: "E-commerce",
@@ -119,6 +155,7 @@ const proyectos = [
     span: "Dev",
     status: "dev",
   },
+
   {
     id: 4,
     title: "HDS Esports",

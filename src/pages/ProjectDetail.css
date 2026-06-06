@@ -150,19 +150,12 @@
   background: var(--color-icon-3);
 }
 
-.p2-description {
-  white-space: pre-line;
-  color: rgba(255, 255, 255, 0.793);
-  font-size: 16px;
-  margin: 0;
-}
-
 .highlights-list {
   color: rgba(255, 255, 255, 0.793);
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .tech-div {
@@ -285,9 +278,6 @@
     width: 25px;
     height: 25px;
     filter: blur(12px);
-  }
-  .p2-description {
-    font-size: 13px;
   }
   .highlights-list li {
     font-size: 13px;

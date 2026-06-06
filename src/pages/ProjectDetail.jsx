@@ -143,8 +143,13 @@ const ProjectDetail = () => {
                 </div>
                 <h5 data-aos="fade-right">Sobre el proyecto</h5>
               </div>
-              <p className="p2-description">{proyecto.caseStudy}</p>
+              <ul className="highlights-list">
+                {proyecto.caseStudy.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </div>
+
             <div>
               <div className="info-detail-page">
                 <div className="icon-wrapper-info challenge-icon">
@@ -152,9 +157,27 @@ const ProjectDetail = () => {
                 </div>
                 <h5 data-aos="fade-right">Desafío</h5>
               </div>
-              <p className="p2-description">{proyecto.challenge}</p>
-              <p className="p2-description">{proyecto.solution}</p>
+              <ul className="highlights-list">
+                {proyecto.challenge.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </div>
+
+            <div>
+              <div className="info-detail-page">
+                <div className="icon-wrapper-info highlight-icon">
+                  <FaAward className="info-icon-detail-page" />
+                </div>
+                <h5 data-aos="fade-right">Solución</h5>
+              </div>
+              <ul className="highlights-list">
+                {proyecto.solution.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
             <div>
               <div className="info-detail-page">
                 <div className="icon-wrapper-info highlight-icon">
@@ -187,6 +210,7 @@ const ProjectDetail = () => {
               ))}
             </div>
           </div>
+
           <div className="section-detail-page">
             <div className="section-title">
               <h5 className="title-detail-page">Herramientas y recursos</h5>
