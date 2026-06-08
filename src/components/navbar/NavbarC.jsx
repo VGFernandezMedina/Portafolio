@@ -4,13 +4,27 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 const NavbarC = () => {
   const [expanded, setExpanded] = useState(false);
+  const navigate = useNavigate();
+
+  const goToTop = () => {
+    navigate("/");
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 100);
+
+    setExpanded(false);
+  };
 
   return (
     <Navbar
@@ -36,9 +50,7 @@ const NavbarC = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
-            <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>
-              Inicio
-            </Nav.Link>
+            <Nav.Link onClick={goToTop}>Inicio</Nav.Link>
             <Nav.Link>
               <ScrollLink
                 to="sobremi"

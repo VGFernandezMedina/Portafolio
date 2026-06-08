@@ -7,10 +7,11 @@ import { LuUserRoundCheck } from "react-icons/lu";
 const SobreMi = () => {
   return (
     <Container fluid id="sobremi" className="py-5">
-      <div className="d-flex align-items-center gap-3">
-        <LuUserRoundCheck size={24} className="icono-titulo" />
-        <Separador title="Sobre mi" />
-      </div>
+      <Separador
+        title="Sobre mi"
+        Icon={LuUserRoundCheck}
+        iconClass="sobremi-icon"
+      />
       <Container fluid className="cont-parrafo">
         <Row>
           <Col

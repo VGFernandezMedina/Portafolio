@@ -12,10 +12,6 @@
   box-shadow: var(--color-sombra-img);
 }
 
-.icono-titulo {
-  color: var(--color-hover);
-}
-
 .texto-naranja {
   color: var(--color-texto-secundario);
   font-weight: 600;

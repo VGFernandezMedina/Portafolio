@@ -10,6 +10,7 @@ import {
   FaFileAlt,
   FaFlag,
   FaGithub,
+  FaLightbulb,
   FaRegCalendarAlt,
 } from "react-icons/fa";
 import { BiSolidCategory, BiWorld } from "react-icons/bi";
@@ -31,9 +32,10 @@ const ProjectDetail = () => {
               <p className="my-0">Volver al Inicio</p>
             </div>
           </Link>
+
           <div className="title-div-detail-page">
             <p className="p1-title" data-aos="fade-up" data-aos-duration="1000">
-              Caso de estudio
+              Proyecto destacado
             </p>
             <h1
               className="title-detail-page"
@@ -50,6 +52,7 @@ const ProjectDetail = () => {
               {proyecto.description}
             </p>
           </div>
+
           <div>
             <div className="mt-4 d-flex">
               <div className="div-col1-detail-page">
@@ -135,40 +138,68 @@ const ProjectDetail = () => {
             )}
           </div>
 
-          <div className="div-info-detail-page">
-            <div>
-              <div className="info-detail-page">
-                <div className="icon-wrapper-info project-icon">
-                  <FaFileAlt className="info-icon-detail-page" />
+          {proyecto.caseStudy &&
+            proyecto.challenge &&
+            proyecto.solution &&
+            proyecto.highlights && (
+              <div className="div-info-detail-page">
+                <div>
+                  <div className="info-detail-page">
+                    <div className="icon-wrapper-info project-icon">
+                      <FaFileAlt className="info-icon-detail-page" />
+                    </div>
+                    <h5 data-aos="fade-right">Sobre el proyecto</h5>
+                  </div>
+                  <ul className="highlights-list">
+                    {proyecto.caseStudy.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
-                <h5 data-aos="fade-right">Sobre el proyecto</h5>
-              </div>
-              <p className="p2-description">{proyecto.caseStudy}</p>
-            </div>
-            <div>
-              <div className="info-detail-page">
-                <div className="icon-wrapper-info challenge-icon">
-                  <FaFlag className="info-icon-detail-page" />
+
+                <div>
+                  <div className="info-detail-page">
+                    <div className="icon-wrapper-info challenge-icon">
+                      <FaFlag className="info-icon-detail-page" />
+                    </div>
+                    <h5 data-aos="fade-right">Desafío</h5>
+                  </div>
+                  <ul className="highlights-list">
+                    {proyecto.challenge.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
-                <h5 data-aos="fade-right">Desafío</h5>
-              </div>
-              <p className="p2-description">{proyecto.challenge}</p>
-              <p className="p2-description">{proyecto.solution}</p>
-            </div>
-            <div>
-              <div className="info-detail-page">
-                <div className="icon-wrapper-info highlight-icon">
-                  <FaAward className="info-icon-detail-page" />
+
+                <div>
+                  <div className="info-detail-page">
+                    <div className="icon-wrapper-info solution-icon">
+                      <FaLightbulb className="info-icon-detail-page" />
+                    </div>
+                    <h5 data-aos="fade-right">Solución</h5>
+                  </div>
+                  <ul className="highlights-list">
+                    {proyecto.solution.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
-                <h5 data-aos="fade-right">Aspectos destacados</h5>
+
+                <div>
+                  <div className="info-detail-page">
+                    <div className="icon-wrapper-info highlight-icon">
+                      <FaAward className="info-icon-detail-page" />
+                    </div>
+                    <h5 data-aos="fade-right">Aspectos destacados</h5>
+                  </div>
+                  <ul className="highlights-list">
+                    {proyecto.highlights.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <ul className="highlights-list">
-                {proyecto.highlights.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+            )}
 
           <div className="section-detail-page">
             <div className="section-title">
@@ -187,6 +218,7 @@ const ProjectDetail = () => {
               ))}
             </div>
           </div>
+
           <div className="section-detail-page">
             <div className="section-title">
               <h5 className="title-detail-page">Herramientas y recursos</h5>

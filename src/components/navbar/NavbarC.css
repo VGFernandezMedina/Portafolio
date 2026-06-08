@@ -1,9 +1,9 @@
 .navbar-transparente {
   background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
-  height: 10vh;
   width: 100%;
   position: sticky;
+  padding: 20px 0;
 }
 
 /* .navbar-normal {

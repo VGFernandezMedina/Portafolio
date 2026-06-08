@@ -1,9 +1,12 @@
 import "./Separador.css";
 
-const Separador = ({ title }) => {
+const Separador = ({ title, Icon, iconClass }) => {
   return (
-    <div className="titulo" data-aos="fade-right">
-      <h2>{title}</h2>
+    <div className="titulo">
+      <div className={`icon-wrapper-homepage ${iconClass}`}>
+        <Icon size={24} className="icono-titulo" />
+      </div>
+      <h2 data-aos="fade-right">{title}</h2>
     </div>
   );
 };
