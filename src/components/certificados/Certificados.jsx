@@ -25,10 +25,11 @@ const Certificados = () => {
 
   return (
     <Container fluid id="certificados" className="py-5">
-      <div className="d-flex align-items-center gap-3">
-        <LiaCertificateSolid size={26} className="icono-titulo" />
-        <Separador title="Certificados" />
-      </div>
+      <Separador
+        title="Certificados"
+        Icon={LiaCertificateSolid}
+        iconClass="certificados-icon"
+      />
       <p className="parrafo py-4">
         Estos certificados respaldan mis conocimientos y habilidades adquiridas
         a lo largo de distintos cursos y capacitaciones, demostrando mi

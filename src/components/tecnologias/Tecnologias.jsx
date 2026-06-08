@@ -42,10 +42,11 @@ const Tecnologias = () => {
 
   return (
     <Container fluid id="tecnologias" className="py-5">
-      <div className="d-flex align-items-center gap-3">
-        <RiToolsFill size={26} className="icono-titulo" />
-        <Separador title="Tecnologías" />
-      </div>
+      <Separador
+        title="Tecnologías"
+        Icon={RiToolsFill}
+        iconClass="tecnologias-icon"
+      />
       <p className="parrafo pt-4 pb-5">
         En mi viaje por el mundo del desarrollo web, he cultivado experiencias y
         habilidades en una variedad de tecnologías. Mi stack tecnológico
