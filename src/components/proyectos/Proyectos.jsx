@@ -8,10 +8,11 @@ import CardC from "../card/CardC";
 const Proyectos = () => {
   return (
     <Container fluid id="proyectos" className="py-5">
-      <div className="d-flex align-items-center gap-3">
-        <GoProjectRoadmap size={24} className="icono-titulo" />
-        <Separador title="Proyectos" />
-      </div>
+      <Separador
+        title="Proyectos"
+        Icon={GoProjectRoadmap}
+        iconClass="proyectos-icon"
+      />
       <p className="parrafo pt-4 pb-5">
         Estos proyectos representan un paso más en mi crecimiento como
         desarrollador, donde aplico constantemente los conocimientos adquiridos

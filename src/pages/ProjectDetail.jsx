@@ -32,9 +32,10 @@ const ProjectDetail = () => {
               <p className="my-0">Volver al Inicio</p>
             </div>
           </Link>
+
           <div className="title-div-detail-page">
             <p className="p1-title" data-aos="fade-up" data-aos-duration="1000">
-              Caso de estudio
+              Proyecto destacado
             </p>
             <h1
               className="title-detail-page"
@@ -51,6 +52,7 @@ const ProjectDetail = () => {
               {proyecto.description}
             </p>
           </div>
+
           <div>
             <div className="mt-4 d-flex">
               <div className="div-col1-detail-page">

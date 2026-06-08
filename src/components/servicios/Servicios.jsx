@@ -9,10 +9,11 @@ import { HiOutlineLightningBolt } from "react-icons/hi";
 const Servicios = () => {
   return (
     <Container fluid id="servicios" className="py-5">
-      <div className="d-flex align-items-center gap-3">
-        <GrServices size={24} className="icono-titulo" />
-        <Separador title="Servicios" />
-      </div>
+      <Separador
+        title="Servicios"
+        Icon={GrServices}
+        iconClass="servicios-icon"
+      />
       <p className="parrafo py-4">
         Cada servicio está pensado para brindar soluciones prácticas y
         efectivas, siempre priorizando la experiencia del usuario:
