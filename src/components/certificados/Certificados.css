@@ -7,6 +7,7 @@
   aspect-ratio: 12 / 10;
   perspective: 1000px;
   cursor: pointer;
+  will-change: transform;
 }
 
 .card-certificado-inner {
@@ -55,7 +56,7 @@
   text-align: center;
 }
 .icon-certificado {
-  color: var(--color-hover);
+  color: rgba(255, 234, 0, 0.868);
 }
 .fecha-certificado {
   color: rgba(255, 255, 255, 0.83);
