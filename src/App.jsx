@@ -7,6 +7,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AnalyticsTracker from "./components/ga4/AnalyticsTracker";
 
 const App = () => {
   useEffect(() => {
@@ -45,6 +46,7 @@ const App = () => {
         }}
       ></div>
       <Router>
+        <AnalyticsTracker />
         <NavbarC />
         <Routes>
           <Route path="/" element={<HomePage />} />
