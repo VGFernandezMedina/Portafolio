@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import NavbarC from "./components/navbar/NavbarC";
@@ -32,6 +37,25 @@ const App = () => {
     }, 500);
   }, []);
 
+  function Layout() {
+    const location = useLocation();
+
+    const isProjectDetail = location.pathname.startsWith("/project/");
+
+    return (
+      <>
+        {!isProjectDetail && <NavbarC />}
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+
+        {!isProjectDetail && <Footer />}
+      </>
+    );
+  }
+
   return (
     <div className="bg-homepage">
       <div
@@ -47,12 +71,7 @@ const App = () => {
       ></div>
       <Router>
         <AnalyticsTracker />
-        <NavbarC />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
-        </Routes>
-        <Footer />
+        <Layout />
       </Router>
     </div>
   );
