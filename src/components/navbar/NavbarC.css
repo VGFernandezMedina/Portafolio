@@ -2,7 +2,6 @@
   background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
   width: 100%;
-  position: sticky;
   padding: 20px 0;
 }
 
