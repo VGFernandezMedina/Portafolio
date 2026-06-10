@@ -51,61 +51,51 @@ const NavbarC = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
             <Nav.Link onClick={goToTop}>Inicio</Nav.Link>
-            <Nav.Link>
-              <ScrollLink
-                to="sobremi"
-                onClick={() => setExpanded(false)}
-                smooth={true}
-                duration={50}
-                offset={-70}
-              >
-                Sobre mi
-              </ScrollLink>
-            </Nav.Link>
-            <Nav.Link>
-              <ScrollLink
-                to="tecnologias"
-                onClick={() => setExpanded(false)}
-                smooth={true}
-                duration={50}
-                offset={-70}
-              >
-                Tecnologias
-              </ScrollLink>
-            </Nav.Link>
-            <Nav.Link>
-              <ScrollLink
-                to="proyectos"
-                onClick={() => setExpanded(false)}
-                smooth={true}
-                duration={50}
-                offset={-70}
-              >
-                Proyectos
-              </ScrollLink>
-            </Nav.Link>
-            <Nav.Link>
-              <ScrollLink
-                to="servicios"
-                onClick={() => setExpanded(false)}
-                smooth={true}
-                duration={50}
-                offset={-70}
-              >
-                Servicios
-              </ScrollLink>
-            </Nav.Link>
-            <Nav.Link>
-              <ScrollLink
-                to="certificados"
-                onClick={() => setExpanded(false)}
-                smooth={true}
-                duration={50}
-                offset={-70}
-              >
-                Certificados
-              </ScrollLink>
-            </Nav.Link>
+            <ScrollLink
+              to="sobremi"
+              onClick={() => setExpanded(false)}
+              smooth={true}
+              duration={50}
+              offset={0}
+            >
+              Sobre mi
+            </ScrollLink>
+            <ScrollLink
+              to="tecnologias"
+              onClick={() => setExpanded(false)}
+              smooth={true}
+              duration={50}
+              offset={0}
+            >
+              Tecnologias
+            </ScrollLink>
+            <ScrollLink
+              to="proyectos"
+              onClick={() => setExpanded(false)}
+              smooth={true}
+              duration={50}
+              offset={0}
+            >
+              Proyectos
+            </ScrollLink>
+            <ScrollLink
+              to="servicios"
+              onClick={() => setExpanded(false)}
+              smooth={true}
+              duration={50}
+              offset={0}
+            >
+              Servicios
+            </ScrollLink>
+            <ScrollLink
+              to="certificados"
+              onClick={() => setExpanded(false)}
+              smooth={true}
+              duration={50}
+              offset={0}
+            >
+              Certificados
+            </ScrollLink>
           </Nav>
           <Nav className="nav-right">
             <div className="nav-icon">
