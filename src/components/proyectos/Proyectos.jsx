@@ -22,6 +22,7 @@ const Proyectos = () => {
         <Row>
           {proyectos.map((project) => (
             <Col
+              key={project.id}
               xs="12"
               sm="6"
               md="6"
