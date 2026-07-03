@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
-import curriculum from "/Gabriel-Fernandez-CV.pdf";
+import curriculum from "/Fernandez Medina Desarrollador Fullstack CV.pdf";
 import ScrollIndicator from "../scrollIndicator/ScrollIndicator";
 
 const Inicio = () => {
