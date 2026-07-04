@@ -17,7 +17,7 @@ const Footer = () => {
           <FaGithub size={30} />
         </a>
         <a
-          href="https://www.linkedin.com/in/victor-gabriel-fernández-medina-331286250"
+          href="https://www.linkedin.com/in/vgabriel-fernandezm/"
           target="_blank"
           rel="noopener noreferrer"
         >
