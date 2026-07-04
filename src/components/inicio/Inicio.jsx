@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
-import curriculum from "/Fernandez Medina Desarrollador Fullstack CV.pdf";
+import Curriculum from "/Fernandez Medina Desarrollador Fullstack CV.pdf";
 import ScrollIndicator from "../scrollIndicator/ScrollIndicator";
 
 const Inicio = () => {
@@ -41,7 +41,7 @@ const Inicio = () => {
           </li>
           <li data-aos="fade-up" data-aos-duration="1700">
             <a
-              href="https://www.linkedin.com/in/victor-gabriel-fernández-medina-331286250"
+              href="https://www.linkedin.com/in/vgabriel-fernandezm/"
               target="_blank"
               rel="noopener noreferrer"
               className="linkedin"
@@ -74,7 +74,7 @@ const Inicio = () => {
           </li>
           <li data-aos="fade-up" data-aos-duration="2000">
             <a
-              href={curriculum}
+              href={Curriculum}
               target="_blank"
               rel="noopener noreferrer"
               className="cv"
