@@ -13,7 +13,7 @@ const Categorias = ({ title, icons }) => {
             >
               <img src={icon.src} alt={icon.name} />
             </div>
-            <span>{icon.name}</span>
+            <span className="text-center">{icon.name}</span>
           </div>
         ))}
       </div>
