@@ -66,6 +66,71 @@ const proyectos = [
 
   {
     id: 2,
+    title: "Portafolio Personal",
+    imgMain: "",
+    img: ".png",
+    img2: ".png",
+    img3: ".png",
+    description:
+      "Portafolio web creado para exhibir mis proyectos, conocimientos y experiencia en desarrollo web. Incluye información profesional, tecnologías utilizadas y enlaces a mis trabajos y redes de contacto.",
+
+    caseStudy: [
+      "Este proyecto fue desarrollado para un estudio jurídico que necesitaba una presencia profesional en internet. El objetivo principal era presentar los servicios del estudio de manera clara, transmitir confianza a potenciales clientes y facilitar los canales de contacto.",
+
+      "Me encargué del diseño y desarrollo completo del sitio, trabajando directamente sobre las necesidades del cliente y adaptando la estructura de la información para que resultara clara y accesible para los visitantes.",
+
+      "La experiencia fue orientada a ofrecer una navegación intuitiva y totalmente responsive, permitiendo acceder rápidamente a la información más relevante desde cualquier dispositivo.",
+    ],
+
+    challenge: [
+      "Uno de los principales desafíos fue organizar una gran cantidad de información jurídica de forma accesible para usuarios con distintos niveles de conocimiento técnico.",
+
+      "A su vez, el sitio debía transmitir profesionalismo sin resultar sobrecargado visualmente.",
+    ],
+
+    solution: [
+      "Se desarrolló una aplicación web moderna utilizando React y Bootstrap, priorizando el rendimiento, la accesibilidad y la adaptación a distintos dispositivos.",
+
+      "Se implementó un diseño visual profesional alineado con la identidad del cliente, buscando transmitir confianza y credibilidad sin sacrificar la experiencia de usuario.",
+
+      "Además, se optimizó la experiencia responsive para garantizar una visualización consistente tanto en computadoras como en dispositivos móviles.",
+    ],
+
+    highlights: [
+      "Diseño completamente responsive",
+      "Navegación clara e intuitiva",
+      "Organización estratégica del contenido",
+      "Interfaz moderna y profesional",
+      "Canales de contacto accesibles",
+      "Sitio publicado en producción",
+    ],
+
+    badgeImg: "Frontend",
+    technologies: ["React", "Bootstrap", "Javascript", "CSS"],
+    techIcon: [
+      { src: "/html.svg", name: "HTML", color: "#E34F26" },
+      { src: "/css.svg", name: "CSS", color: "#1572B6" },
+      { src: "/js.svg", name: "JavaScript", color: "#F7DF1E" },
+      { src: "/react.svg", name: "React", color: "#61DAFB" },
+      { src: "/bootstrap.svg", name: "Bootstrap", color: "#7952B3" },
+    ],
+    toolsIcon: [
+      { src: "/git.svg", name: "Git", color: "#F05032" },
+      { src: "/npm.svg", name: "npm", color: "#CB3837" },
+      { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
+      { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
+    ],
+    date: "Febrero 2026",
+    category: "Proyecto Freelance",
+    web: "https://gabrielfm-dev.netlify.app/",
+    repoFront: "https://github.com/VGFernandezMedina/Portafolio",
+    repoBack: null,
+    span: "Prod",
+    status: "prod",
+  },
+
+  {
+    id: 3,
     title: "Veterinaria RollingVet",
     imgMain: "/Portada-Rollingvet.png",
     img: "/Veterinaria.png",
@@ -138,7 +203,7 @@ const proyectos = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "E-commerce",
     imgMain: "/Portada-Ecommerce.png",
     img: "/Ecommerce.png",
@@ -210,7 +275,7 @@ const proyectos = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "HDS Esports",
     imgMain: "/Portada-HDS.png",
     img: "/HDS.png",

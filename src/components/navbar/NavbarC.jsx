@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import logo from "/logo.png";
 
 const NavbarC = () => {
   const [expanded, setExpanded] = useState(false);
@@ -47,6 +48,9 @@ const NavbarC = () => {
       className="navbar-transparente"
     >
       <Container fluid>
+        <Navbar.Brand href="/" className="navbar-logo">
+          <img src={logo} alt="Logo" />
+        </Navbar.Brand>
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
           aria-controls="responsive-navbar-nav"
