@@ -67,7 +67,7 @@ const proyectos = [
   {
     id: 2,
     title: "Portafolio Personal",
-    imgMain: "",
+    imgMain: "/Portada-Portafolio.png",
     img: ".png",
     img2: ".png",
     img3: ".png",
