@@ -68,41 +68,36 @@ const proyectos = [
     id: 2,
     title: "Portafolio Personal",
     imgMain: "/Portada-Portafolio.png",
-    img: ".png",
-    img2: ".png",
-    img3: ".png",
+    img: "/Portafolio.png",
+    img2: "/Portafolio 2.png",
+    img3: "/Portafolio 3.png",
     description:
       "Portafolio web creado para exhibir mis proyectos, conocimientos y experiencia en desarrollo web. Incluye información profesional, tecnologías utilizadas y enlaces a mis trabajos y redes de contacto.",
 
     caseStudy: [
-      "Este proyecto fue desarrollado para un estudio jurídico que necesitaba una presencia profesional en internet. El objetivo principal era presentar los servicios del estudio de manera clara, transmitir confianza a potenciales clientes y facilitar los canales de contacto.",
+      "Este proyecto fue desarrollado con el objetivo de crear mi propio portafolio web profesional, un espacio donde pudiera mostrar mis proyectos, habilidades y experiencia como desarrollador fullstack. La idea principal fue construir una presentación digital que reflejara mi perfil, mi forma de trabajar y los conocimientos adquiridos durante mi formación.",
 
-      "Me encargué del diseño y desarrollo completo del sitio, trabajando directamente sobre las necesidades del cliente y adaptando la estructura de la información para que resultara clara y accesible para los visitantes.",
-
-      "La experiencia fue orientada a ofrecer una navegación intuitiva y totalmente responsive, permitiendo acceder rápidamente a la información más relevante desde cualquier dispositivo.",
+      "La experiencia fue pensada para ser intuitiva, responsive y accesible desde cualquier dispositivo, destacando cada proyecto mediante una presentación visual organizada y enfocada en la calidad del desarrollo.",
     ],
 
     challenge: [
-      "Uno de los principales desafíos fue organizar una gran cantidad de información jurídica de forma accesible para usuarios con distintos niveles de conocimiento técnico.",
+      "Uno de los principales desafíos fue crear una identidad visual propia que representara mi perfil profesional y, al mismo tiempo, lograra diferenciar el portafolio de otros sitios similares.",
 
-      "A su vez, el sitio debía transmitir profesionalismo sin resultar sobrecargado visualmente.",
+      "También fue importante encontrar un equilibrio entre mostrar suficiente información sobre cada proyecto sin perder simplicidad, manteniendo una navegación fluida y una buena experiencia para el usuario.",
     ],
 
     solution: [
-      "Se desarrolló una aplicación web moderna utilizando React y Bootstrap, priorizando el rendimiento, la accesibilidad y la adaptación a distintos dispositivos.",
+      "Se desarrolló una aplicación web moderna utilizando React, aplicando componentes reutilizables y una estructura organizada para facilitar la escalabilidad y el mantenimiento del proyecto.",
 
-      "Se implementó un diseño visual profesional alineado con la identidad del cliente, buscando transmitir confianza y credibilidad sin sacrificar la experiencia de usuario.",
-
-      "Además, se optimizó la experiencia responsive para garantizar una visualización consistente tanto en computadoras como en dispositivos móviles.",
+      "Se implementó un diseño personalizado enfocado en transmitir profesionalismo, utilizando una interfaz limpia, animaciones y una distribución estratégica del contenido.",
     ],
 
     highlights: [
-      "Diseño completamente responsive",
-      "Navegación clara e intuitiva",
-      "Organización estratégica del contenido",
-      "Interfaz moderna y profesional",
-      "Canales de contacto accesibles",
-      "Sitio publicado en producción",
+      "Diseño personalizado y responsive",
+      "Desarrollo con React",
+      "Componentes reutilizables",
+      "Presentación profesional de proyectos",
+      "Experiencia de usuario optimizada",
     ],
 
     badgeImg: "Frontend",
@@ -120,8 +115,8 @@ const proyectos = [
       { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
       { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
     ],
-    date: "Febrero 2026",
-    category: "Proyecto Freelance",
+    date: "Septiembre 2025",
+    category: "Proyecto Personal",
     web: "https://gabrielfm-dev.netlify.app/",
     repoFront: "https://github.com/VGFernandezMedina/Portafolio",
     repoBack: null,
