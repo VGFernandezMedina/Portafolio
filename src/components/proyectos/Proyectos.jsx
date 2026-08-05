@@ -30,10 +30,10 @@ const Proyectos = () => {
       </p>
 
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <Button className="btn-allproject">
+        <Link to="/projects" className="btn btn-allproject">
           <p className="m-0">Ver los proyectos</p>
           <IoArrowForward />
-        </Button>
+        </Link>
 
         <div className="d-flex gap-2">
           <Button variant="link" className="swiper-prev btn-project">
