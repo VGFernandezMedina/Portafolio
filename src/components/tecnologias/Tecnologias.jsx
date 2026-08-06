@@ -78,7 +78,7 @@ const Tecnologias = () => {
             md="6"
             lg="6"
             className="col-categoria"
-            data-aos="fade-right"
+            data-aos="fade"
             data-aos-duration="1000"
           >
             <Categorias title="Frontend" icons={frontendIcons} />
@@ -88,7 +88,7 @@ const Tecnologias = () => {
             md="6"
             lg="6"
             className="col-categoria"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
           >
             <Categorias title="Backend" icons={backendIcons} />
@@ -98,7 +98,7 @@ const Tecnologias = () => {
             md="6"
             lg="6"
             className="col-categoria"
-            data-aos="fade-right"
+            data-aos="fade"
             data-aos-duration="1000"
           >
             <Categorias title="Herramientas" icons={toolsIcons} />
@@ -108,7 +108,7 @@ const Tecnologias = () => {
             md="6"
             lg="6"
             className="col-categoria"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
           >
             <Categorias
@@ -121,7 +121,7 @@ const Tecnologias = () => {
             md="6"
             lg="6"
             className="col-categoria"
-            data-aos="fade-right"
+            data-aos="fade"
             data-aos-duration="1000"
           >
             <Categorias title="Despliegue" icons={despliegueIcons} />
@@ -131,7 +131,7 @@ const Tecnologias = () => {
             md="6"
             lg="6"
             className="col-categoria"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
           >
             <Categorias title="Aprendiendo" icons={aprendiendoIcons} />

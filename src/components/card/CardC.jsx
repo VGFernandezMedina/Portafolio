@@ -40,6 +40,7 @@ const CardC = ({ project }) => {
               href={project.web}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="d-flex justify-content-center align-items-center gap-1"
             >
               <BiWorld className="icon-card" />
@@ -52,6 +53,7 @@ const CardC = ({ project }) => {
               href={project.repoFront}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="d-flex justify-content-center align-items-center gap-1"
             >
               <FaGithub className="icon-card" />
@@ -64,6 +66,7 @@ const CardC = ({ project }) => {
               href={project.repoBack}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="d-flex justify-content-center align-items-center gap-1"
             >
               <FaGithub className="icon-card" />
