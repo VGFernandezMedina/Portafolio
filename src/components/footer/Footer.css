@@ -6,14 +6,15 @@ footer {
   background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
   text-align: center;
-  height: 200px;
-  padding: 30px;
+  height: 150px;
+  padding: 10px;
 }
 
 footer p {
   color: var(--color-texto-principal);
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .nav-icon {
