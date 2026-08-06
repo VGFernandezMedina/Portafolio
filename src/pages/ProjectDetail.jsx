@@ -53,7 +53,7 @@ const ProjectDetail = () => {
             </p>
           </div>
 
-          <div>
+          <div data-aos="fade" data-aos-duration="1200">
             <div className="mt-4 d-flex">
               <div className="div-col1-detail-page">
                 <div>

@@ -13,6 +13,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AnalyticsTracker from "./components/ga4/AnalyticsTracker";
+import AllProjects from "./pages/AllProjects";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 
 const App = () => {
   useEffect(() => {
@@ -41,17 +43,19 @@ const App = () => {
     const location = useLocation();
 
     const isProjectDetail = location.pathname.startsWith("/project/");
+    const isAllProjects = location.pathname === "/projects";
 
     return (
       <>
-        {!isProjectDetail && <NavbarC />}
+        {!isProjectDetail && !isAllProjects && <NavbarC />}
 
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<AllProjects />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
 
-        {!isProjectDetail && <Footer />}
+        {/* {!isProjectDetail && !isAllProjects && <Footer />} */}
       </>
     );
   }
@@ -70,8 +74,10 @@ const App = () => {
         }}
       ></div>
       <Router>
+        <ScrollToTop />
         <AnalyticsTracker />
         <Layout />
+        <Footer />
       </Router>
     </div>
   );

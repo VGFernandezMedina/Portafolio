@@ -66,6 +66,66 @@ const proyectos = [
 
   {
     id: 2,
+    title: "Portafolio Personal",
+    imgMain: "/Portada-Portafolio.png",
+    img: "/Portafolio.png",
+    img2: "/Portafolio 2.png",
+    img3: "/Portafolio 3.png",
+    description:
+      "Portafolio web creado para exhibir mis proyectos, conocimientos y experiencia en desarrollo web. Incluye información profesional, tecnologías utilizadas y enlaces a mis trabajos y redes de contacto.",
+
+    caseStudy: [
+      "Este proyecto fue desarrollado con el objetivo de crear mi propio portafolio web profesional, un espacio donde pudiera mostrar mis proyectos, habilidades y experiencia como desarrollador fullstack. La idea principal fue construir una presentación digital que reflejara mi perfil, mi forma de trabajar y los conocimientos adquiridos durante mi formación.",
+
+      "La experiencia fue pensada para ser intuitiva, responsive y accesible desde cualquier dispositivo, destacando cada proyecto mediante una presentación visual organizada y enfocada en la calidad del desarrollo.",
+    ],
+
+    challenge: [
+      "Uno de los principales desafíos fue crear una identidad visual propia que representara mi perfil profesional y, al mismo tiempo, lograra diferenciar el portafolio de otros sitios similares.",
+
+      "También fue importante encontrar un equilibrio entre mostrar suficiente información sobre cada proyecto sin perder simplicidad, manteniendo una navegación fluida y una buena experiencia para el usuario.",
+    ],
+
+    solution: [
+      "Se desarrolló una aplicación web moderna utilizando React, aplicando componentes reutilizables y una estructura organizada para facilitar la escalabilidad y el mantenimiento del proyecto.",
+
+      "Se implementó un diseño personalizado enfocado en transmitir profesionalismo, utilizando una interfaz limpia, animaciones y una distribución estratégica del contenido.",
+    ],
+
+    highlights: [
+      "Diseño personalizado y responsive",
+      "Desarrollo con React",
+      "Componentes reutilizables",
+      "Presentación profesional de proyectos",
+      "Experiencia de usuario optimizada",
+    ],
+
+    badgeImg: "Frontend",
+    technologies: ["React", "Bootstrap", "Javascript", "CSS"],
+    techIcon: [
+      { src: "/html.svg", name: "HTML", color: "#E34F26" },
+      { src: "/css.svg", name: "CSS", color: "#1572B6" },
+      { src: "/js.svg", name: "JavaScript", color: "#F7DF1E" },
+      { src: "/react.svg", name: "React", color: "#61DAFB" },
+      { src: "/bootstrap.svg", name: "Bootstrap", color: "#7952B3" },
+    ],
+    toolsIcon: [
+      { src: "/git.svg", name: "Git", color: "#F05032" },
+      { src: "/npm.svg", name: "npm", color: "#CB3837" },
+      { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
+      { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
+    ],
+    date: "Septiembre 2025",
+    category: "Proyecto Personal",
+    web: "https://gabrielfm-dev.netlify.app/",
+    repoFront: "https://github.com/VGFernandezMedina/Portafolio",
+    repoBack: null,
+    span: "Prod",
+    status: "prod",
+  },
+
+  {
+    id: 3,
     title: "Veterinaria RollingVet",
     imgMain: "/Portada-Rollingvet.png",
     img: "/Veterinaria.png",
@@ -138,7 +198,7 @@ const proyectos = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "E-commerce",
     imgMain: "/Portada-Ecommerce.png",
     img: "/Ecommerce.png",
@@ -210,7 +270,7 @@ const proyectos = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "HDS Esports",
     imgMain: "/Portada-HDS.png",
     img: "/HDS.png",
