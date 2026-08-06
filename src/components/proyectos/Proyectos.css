@@ -1,3 +1,7 @@
+/* font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-size: 16px; */
+
 .btn-project {
   padding: 4px;
   background-color: transparent;
@@ -27,26 +31,38 @@
 .btn-allproject {
   display: flex;
   align-items: center;
-  background-color: transparent;
-  border-color: white;
+  background-color: rgb(0, 96, 180);
+  border-color: rgb(0, 96, 180);
   color: white;
   gap: 10px;
   transition: all 0.3s ease;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 .btn-allproject:hover,
 .btn-allproject:focus:hover {
-  background-color: rgba(255, 255, 255, 0.774);
-  border-color: rgba(255, 255, 255, 0.774);
-  color: black;
+  background-color: rgba(0, 96, 180, 0.566);
+  border-color: rgb(0, 96, 180);
+  color: white;
 }
 .btn-allproject:active {
-  background-color: rgba(255, 255, 255, 0.774) !important;
-  border-color: rgba(255, 255, 255, 0.774) !important;
-  color: black !important;
+  background-color: rgb(0, 96, 180);
+  border-color: rgb(0, 96, 180);
+  border: rgb(0, 96, 180);
+  color: white !important;
 }
 
 .icon-project {
   font-size: 30px;
+}
+
+.hr-white {
+  background-color: white;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {

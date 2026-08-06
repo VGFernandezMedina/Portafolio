@@ -29,12 +29,7 @@ const Proyectos = () => {
         en este camino de la programación.
       </p>
 
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <Link to="/projects" className="btn btn-allproject">
-          <p className="m-0">Ver los proyectos</p>
-          <IoArrowForward />
-        </Link>
-
+      <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex gap-2">
           <Button variant="link" className="swiper-prev btn-project">
             <IoChevronBack className="icon-project" />
@@ -44,7 +39,13 @@ const Proyectos = () => {
             <IoChevronForward className="icon-project" />
           </Button>
         </div>
+        <Link to="/projects" className="btn btn-allproject">
+          <p className="m-0">Ver los proyectos</p>
+          <IoArrowForward size={22} />
+        </Link>
       </div>
+
+      <hr className="hr-white" />
 
       <Swiper
         modules={[Navigation]}
