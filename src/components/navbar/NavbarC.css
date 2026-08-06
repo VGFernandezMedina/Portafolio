@@ -2,7 +2,7 @@
   background: var(--color-fondo-navbar);
   backdrop-filter: blur(8px);
   width: 100%;
-  padding: 0 40px;
+  padding: 10px 40px;
 }
 
 /* .navbar-normal {
@@ -13,8 +13,8 @@
 } */
 
 .navbar-logo img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   cursor: pointer;
   /* border: 1px solid white; */
@@ -33,6 +33,7 @@
   height: 100%;
   align-items: center;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .nav-center .nav-link {
@@ -50,6 +51,13 @@
 .nav-center .nav-link:hover {
   color: var(--color-hover) !important;
 }
+.nav-center .nav-link.active {
+  color: var(--color-hover) !important;
+}
+.nav-center .nav-link:hover::after,
+.nav-center .nav-link.active::after {
+  width: 100%;
+}
 
 .nav-center .nav-link::after {
   content: "";
@@ -60,10 +68,6 @@
   width: 0%;
   background-color: var(--color-hover);
   transition: width 0.5s ease;
-}
-
-.nav-center .nav-link:hover::after {
-  width: 100%;
 }
 
 .custom-toggler-icon {
@@ -91,11 +95,11 @@
 
 @media (max-width: 991.98px) {
   .navbar-transparente {
-    padding: 0 10px;
+    padding: 5px 10px;
   }
   .navbar-logo img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 
   .bg-navbar {

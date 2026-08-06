@@ -3,8 +3,7 @@ import "./NavbarC.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { scroller } from "react-scroll";
-import { useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
@@ -12,45 +11,24 @@ import logo from "/logo.png";
 
 const NavbarC = () => {
   const [expanded, setExpanded] = useState(false);
-  const navigate = useNavigate();
-
-  const goToTop = () => {
-    navigate("/");
-
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }, 100);
-
-    setExpanded(false);
-  };
-
-  const handleNavClick = (section) => {
-    setExpanded(false);
-
-    setTimeout(() => {
-      scroller.scrollTo(section, {
-        smooth: true,
-        duration: 0,
-        offset: -40,
-      });
-    }, 250);
-  };
 
   return (
     <Navbar
-      collapseOnSelect
       expand="lg"
       fixed="top"
       expanded={expanded}
       className="navbar-transparente"
     >
       <Container fluid>
-        <Navbar.Brand href="/" className="navbar-logo">
+        <ScrollLink
+          className="navbar-logo"
+          to="inicio"
+          smooth={true}
+          duration={400}
+          offset={-40}
+        >
           <img src={logo} alt="Logo" />
-        </Navbar.Brand>
+        </ScrollLink>
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
           aria-controls="responsive-navbar-nav"
@@ -66,34 +44,78 @@ const NavbarC = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
-            <Nav.Link onClick={goToTop}>Inicio</Nav.Link>
-            <Nav.Link to="sobremi" onClick={() => handleNavClick("sobremi")}>
-              Sobre mi
-            </Nav.Link>
-            <Nav.Link
-              to="tecnologias"
-              onClick={() => handleNavClick("tecnologias")}
+            <ScrollLink
+              className="nav-link"
+              activeClass="active"
+              to="inicio"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-40}
+              onClick={() => setExpanded(false)}
             >
-              Tecnologias
-            </Nav.Link>
-            <Nav.Link
+              Inicio
+            </ScrollLink>
+            <ScrollLink
+              className="nav-link"
+              activeClass="active"
+              to="sobremi"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-40}
+              onClick={() => setExpanded(false)}
+            >
+              Sobre mi
+            </ScrollLink>
+            <ScrollLink
+              className="nav-link"
+              activeClass="active"
+              to="tecnologias"
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-40}
+              onClick={() => setExpanded(false)}
+            >
+              Tecnologías
+            </ScrollLink>
+            <ScrollLink
+              className="nav-link"
+              activeClass="active"
               to="proyectos"
-              onClick={() => handleNavClick("proyectos")}
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-40}
+              onClick={() => setExpanded(false)}
             >
               Proyectos
-            </Nav.Link>
-            <Nav.Link
+            </ScrollLink>
+            <ScrollLink
+              className="nav-link"
+              activeClass="active"
               to="servicios"
-              onClick={() => handleNavClick("servicios")}
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-40}
+              onClick={() => setExpanded(false)}
             >
               Servicios
-            </Nav.Link>
-            <Nav.Link
+            </ScrollLink>
+            <ScrollLink
+              className="nav-link"
+              activeClass="active"
               to="certificados"
-              onClick={() => handleNavClick("certificados")}
+              spy={true}
+              smooth={true}
+              duration={400}
+              offset={-40}
+              onClick={() => setExpanded(false)}
             >
               Certificados
-            </Nav.Link>
+            </ScrollLink>
           </Nav>
           <Nav className="nav-right">
             <div className="nav-icon">
