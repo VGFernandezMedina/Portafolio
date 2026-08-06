@@ -55,7 +55,7 @@ const App = () => {
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
 
-        {!isProjectDetail && !isAllProjects && <Footer />}
+        {/* {!isProjectDetail && !isAllProjects && <Footer />} */}
       </>
     );
   }
@@ -77,6 +77,7 @@ const App = () => {
         <ScrollToTop />
         <AnalyticsTracker />
         <Layout />
+        <Footer />
       </Router>
     </div>
   );

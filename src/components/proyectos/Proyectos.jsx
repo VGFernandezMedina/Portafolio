@@ -41,7 +41,7 @@ const Proyectos = () => {
         </div>
         <Link to="/projects" className="btn btn-allproject">
           <p className="m-0">Ver los proyectos</p>
-          <IoArrowForward size={22} />
+          <IoArrowForward className="icon-allprojects" />
         </Link>
       </div>
 

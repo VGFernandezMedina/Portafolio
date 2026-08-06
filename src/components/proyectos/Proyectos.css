@@ -39,19 +39,21 @@ font-size: 16px; */
 
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
 }
 .btn-allproject:hover,
 .btn-allproject:focus:hover {
-  background-color: rgba(0, 96, 180, 0.566);
-  border-color: rgb(0, 96, 180);
+  background-color: rgb(0, 114, 213);
+  border-color: rgb(0, 114, 213);
   color: white;
 }
 .btn-allproject:active {
-  background-color: rgb(0, 96, 180);
-  border-color: rgb(0, 96, 180);
-  border: rgb(0, 96, 180);
+  background-color: rgb(0, 114, 213);
+  border-color: rgb(0, 114, 213);
   color: white !important;
+}
+.icon-allprojects {
+  font-size: 22px;
 }
 
 .icon-project {
@@ -68,7 +70,11 @@ font-size: 16px; */
 @media (max-width: 576px) {
   .btn-allproject {
     gap: 5px;
-    font-size: 12px;
+    font-size: 10px;
+    padding: 4px;
+  }
+  .icon-allprojects {
+    font-size: 18px;
   }
   .icon-project {
     font-size: 24px;
