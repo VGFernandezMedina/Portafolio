@@ -102,7 +102,7 @@ const Servicios = () => {
             </Card>
           </Col>
         </Row>
-        <div className="py-5 publicidad-servicio border" data-aos="fade">
+        <div className="publicidad-servicio" data-aos="fade">
           <h2>¿Buscás una página web para tu negocio?</h2>
           <p className="pb-2">
             Conocé los planes disponibles, los servicios adicionales y cómo

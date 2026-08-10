@@ -41,7 +41,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 30vh;
+  margin-top: 50px;
 
   h2 {
     font-weight: 500;
@@ -96,6 +97,21 @@
   .card-title {
     font-size: 16px;
     font-weight: 400;
+  }
+  .publicidad-servicio {
+    height: 20vh;
+    margin-top: 40px;
+    font-size: 12px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 30px;
+      font-size: 24px;
+    }
+  }
+  .btn-servicios {
+    width: 220px;
+    font-size: 12px;
   }
 }
 
