@@ -15,6 +15,7 @@ import "aos/dist/aos.css";
 import AnalyticsTracker from "./components/ga4/AnalyticsTracker";
 import AllProjects from "./pages/AllProjects";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
+import ServicesPage from "./pages/ServicesPage";
 
 const App = () => {
   useEffect(() => {
@@ -51,6 +52,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>

@@ -108,7 +108,7 @@ const Servicios = () => {
             Conocé los planes disponibles, los servicios adicionales y cómo
             trabajo en cada proyecto.
           </p>
-          <Link to="" className="btn btn-servicios">
+          <Link to="/services" className="btn btn-servicios">
             <span className="m-0">Ver planes y servicios</span>
           </Link>
         </div>
