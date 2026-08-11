@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import NavbarC from "./components/navbar/NavbarC";
@@ -41,15 +36,15 @@ const App = () => {
   }, []);
 
   function Layout() {
-    const location = useLocation();
+    /*     const location = useLocation();
 
     const isProjectDetail = location.pathname.startsWith("/project/");
     const isAllProjects = location.pathname === "/projects";
-    const isServicesPage = location.pathname === "/services";
+    const isServicesPage = location.pathname === "/services"; */
 
     return (
       <>
-        {!isProjectDetail && !isAllProjects && !isServicesPage && <NavbarC />}
+        {/* {!isProjectDetail && !isAllProjects && !isServicesPage && <NavbarC />} */}
 
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -77,6 +72,7 @@ const App = () => {
         }}
       ></div>
       <Router>
+        <NavbarC />
         <ScrollToTop />
         <AnalyticsTracker />
         <Layout />
