@@ -33,16 +33,17 @@
 
 .title-div-detail-page {
   text-align: center;
-  padding: 20px 40px 40px 40px;
+  padding: 10px 40px 20px 40px;
   .p1-title {
     color: rgb(0, 217, 255);
     font-size: 18px;
     font-weight: 500;
-    padding-bottom: 1%;
   }
   .p1-description {
-    color: rgba(255, 255, 255, 0.793);
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
+    color: rgba(255, 255, 255, 0.793);
     font-size: 16px;
   }
 }

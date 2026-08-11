@@ -10,10 +10,10 @@ const AllProjects = () => {
     <Container fluid className="py-4 px-0">
       <Row className="p-0 m-0 justify-content-center">
         <Col lg="10" className="">
-          <Link to="/" className="return-link text-decoration-none text-white">
+          <Link to={-1} className="return-link text-decoration-none text-white">
             <div className="div-return">
               <FaArrowLeft />
-              <p className="my-0">Volver al Inicio</p>
+              <p className="my-0">Volver</p>
             </div>
           </Link>
           <div className="title-div-detail-page">
@@ -38,7 +38,7 @@ const AllProjects = () => {
               autenticación e integración con servicios externos.
             </p>
           </div>
-          <Container fluid className="g-0">
+          <Container fluid className="g-0 pt-4">
             <Row>
               {proyectos.map((project) => (
                 <Col

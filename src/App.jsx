@@ -45,10 +45,11 @@ const App = () => {
 
     const isProjectDetail = location.pathname.startsWith("/project/");
     const isAllProjects = location.pathname === "/projects";
+    const isServicesPage = location.pathname === "/services";
 
     return (
       <>
-        {!isProjectDetail && !isAllProjects && <NavbarC />}
+        {!isProjectDetail && !isAllProjects && !isServicesPage && <NavbarC />}
 
         <Routes>
           <Route path="/" element={<HomePage />} />

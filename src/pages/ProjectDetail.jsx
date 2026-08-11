@@ -26,10 +26,10 @@ const ProjectDetail = () => {
     <Container fluid className="text-white py-4 px-0">
       <Row className="p-0 m-0">
         <Col sm="" md="" lg="" className="col-detail-page">
-          <Link to="/" className="return-link text-decoration-none text-white">
+          <Link to={-1} className="return-link text-decoration-none text-white">
             <div className="div-return">
               <FaArrowLeft />
-              <p className="my-0">Volver al Inicio</p>
+              <p className="my-0">Volver</p>
             </div>
           </Link>
 
