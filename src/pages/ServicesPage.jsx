@@ -1,35 +1,24 @@
-import { Link } from "react-router-dom";
 import "./ServicesPage.css";
+import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaArrowLeft } from "react-icons/fa";
+import BackButton from "../components/backbutton/BackButton";
 
 const ServicesPage = () => {
   return (
     <Container fluid className="py-4 px-0">
       <Row className="p-0 m-0 justify-content-center">
         <Col lg="10" className="">
-          <Link to={-1} className="return-link text-decoration-none text-white">
-            <div className="div-return">
-              <FaArrowLeft />
-              <p className="my-0">Volver</p>
-            </div>
-          </Link>
-          <div className="title-div-detail-page">
-            <p className="p1-title" data-aos="fade-up" data-aos-duration="800">
-              Servicios y planes
-            </p>
-            <h1
-              className="title-detail-page"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+          <BackButton />
+          <div
+            className="title-div-detail-page"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <p className="p1-title">Servicios y planes</p>
+            <h1 className="title-detail-page">
               Elegí el plan ideal para tu negocio
             </h1>
-            <p
-              className="mt-4 p1-description"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
+            <p className="mt-4 p1-description">
               Todos los planes están pensados para ofrecer una presencia online
               profesional y adaptada a las necesidades de cada proyecto.
             </p>
