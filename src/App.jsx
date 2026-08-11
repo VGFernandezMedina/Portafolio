@@ -35,29 +35,6 @@ const App = () => {
     }, 500);
   }, []);
 
-  function Layout() {
-    /*     const location = useLocation();
-
-    const isProjectDetail = location.pathname.startsWith("/project/");
-    const isAllProjects = location.pathname === "/projects";
-    const isServicesPage = location.pathname === "/services"; */
-
-    return (
-      <>
-        {/* {!isProjectDetail && !isAllProjects && !isServicesPage && <NavbarC />} */}
-
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/projects" element={<AllProjects />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
-        </Routes>
-
-        {/* {!isProjectDetail && !isAllProjects && <Footer />} */}
-      </>
-    );
-  }
-
   return (
     <div className="bg-homepage">
       <div
@@ -71,11 +48,17 @@ const App = () => {
           zIndex: -1,
         }}
       ></div>
+
       <Router>
         <NavbarC />
         <ScrollToTop />
         <AnalyticsTracker />
-        <Layout />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/projects" element={<AllProjects />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
         <Footer />
       </Router>
     </div>
