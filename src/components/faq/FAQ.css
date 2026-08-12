@@ -1,0 +1,143 @@
+/* -------------------- */
+/* SECCIÓN */
+/* -------------------- */
+
+.faq-section {
+  max-width: 850px;
+  margin: 100px auto 0;
+  padding: 0 15px;
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+
+.faq-header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.faq-header h2 {
+  margin: 0;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.faq-header p {
+  max-width: 600px;
+  margin: 12px auto 0;
+  color: rgba(255, 255, 255, 0.7);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* -------------------- */
+/* ACCORDION */
+/* -------------------- */
+
+.faq-accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: rgba(255, 255, 255, 0.08);
+  --bs-accordion-color: white;
+  --bs-accordion-btn-color: white;
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-active-bg: rgba(255, 255, 255, 0.02);
+  --bs-accordion-active-color: white;
+}
+
+/* -------------------- */
+/* ITEM */
+/* -------------------- */
+
+.faq-accordion .accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background-color: rgb(1, 60, 102);
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.faq-accordion .accordion-item:hover {
+  border-color: rgba(6, 70, 116, 0.9);
+}
+
+/* -------------------- */
+/* HEADER PREGUNTA */
+/* -------------------- */
+
+.faq-accordion .accordion-button {
+  padding: 24px 22px;
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Cuando está abierto */
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  color: var(--color-hover);
+}
+
+/* -------------------- */
+/* ICONO + / - */
+/* -------------------- */
+
+.faq-accordion .accordion-button::after {
+  background-size: 18px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+.faq-accordion .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) saturate(100%) invert(64%) sepia(95%) saturate(1500%)
+    hue-rotate(165deg) brightness(95%) contrast(100%);
+}
+
+/* -------------------- */
+/* RESPUESTA */
+/* -------------------- */
+
+.faq-accordion .accordion-body {
+  padding: 0 22px 22px;
+  color: rgba(255, 255, 255, 0.808);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+@media (max-width: 768px) {
+  .faq-section {
+    margin-top: 60px;
+    padding: 0 0;
+  }
+  .faq-header h2 {
+    font-size: 22px;
+  }
+  .faq-accordion .accordion-button {
+    padding: 18px;
+    font-size: 13px;
+  }
+  .faq-accordion .accordion-body {
+    padding: 0 18px 20px;
+    font-size: 12px;
+  }
+}

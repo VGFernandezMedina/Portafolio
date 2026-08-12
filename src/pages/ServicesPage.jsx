@@ -1,7 +1,8 @@
 import "./ServicesPage.css";
 import { Link } from "react-router-dom";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import BackButton from "../components/backbutton/BackButton";
+import FAQ from "../components/faq/FAQ";
 
 const ServicesPage = () => {
   return (
@@ -45,7 +46,6 @@ const ServicesPage = () => {
                       <li>Diseño personalizado</li>
                       <li>Diseño responsive</li>
                       <li>Hasta 4 secciones</li>
-                      <li>Botón de WhatsApp</li>
                       <li>Formulario de contacto</li>
                       <li>Redes sociales</li>
                       <li>Google Maps</li>
@@ -66,9 +66,18 @@ const ServicesPage = () => {
                       </p>
                     </div>
 
-                    <Link to="https://wa.me/TUNUMERO" className="plan-button">
+                    <a
+                      href="https://wa.me/5493816135750?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Inicial.%20Me%20gustaría%20recibir%20más%20información."
+                      className="plan-button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Consultar por WhatsApp
-                    </Link>
+                    </a>
+
+                    <Button className="plan-details-button">
+                      Ver detalles
+                    </Button>
                   </div>
                 </div>
               </Col>
@@ -99,8 +108,11 @@ const ServicesPage = () => {
                       <li>Hasta 7 secciones</li>
                       <li>Galería</li>
                       <li>Testimonios</li>
-                      <li>Preguntas frecuentes</li>
-                      <li>Animaciones</li>
+                      <li>Botón de WhatsApp</li>
+                      <li>Preguntas frecuentes (FAQ)</li>
+                      <li>Microanimaciones y transiciones suaves</li>
+                      <li>SEO mejorado</li>
+                      <li>Optimización más completa</li>
                     </ul>
 
                     <div className="plan-info">
@@ -115,9 +127,18 @@ const ServicesPage = () => {
                       </p>
                     </div>
 
-                    <Link to="https://wa.me/TUNUMERO" className="plan-button">
+                    <a
+                      href="https://wa.me/5493816135750?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Profesional.%20Me%20gustaría%20recibir%20más%20información."
+                      className="plan-button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Consultar por WhatsApp
-                    </Link>
+                    </a>
+
+                    <Button className="plan-details-button">
+                      Ver detalles
+                    </Button>
                   </div>
                 </div>
               </Col>
@@ -144,11 +165,11 @@ const ServicesPage = () => {
 
                     <ul className="plan-list">
                       <li>Hasta 10 secciones</li>
-                      <li>Integración con EmailJS</li>
-                      <li>SEO inicial</li>
                       <li>Optimización avanzada</li>
                       <li>Animaciones avanzadas</li>
-                      <li>Capacitación para editar contenidos</li>
+                      <li>SEO avanzado</li>
+                      <li>Configuración de Google Analytics</li>
+                      <li>Configuración de Google Search Console</li>
                     </ul>
 
                     <div className="plan-info">
@@ -163,23 +184,30 @@ const ServicesPage = () => {
                       </p>
                     </div>
 
-                    <Link to="https://wa.me/TUNUMERO" className="plan-button">
+                    <a
+                      href="https://wa.me/5493816135750?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Premium.%20Me%20gustaría%20recibir%20más%20información."
+                      className="plan-button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Consultar por WhatsApp
-                    </Link>
+                    </a>
+
+                    <Button className="plan-details-button">
+                      Ver detalles
+                    </Button>
                   </div>
                 </div>
               </Col>
             </Row>
 
-            <p
-              className="planes-extra-info"
-              data-aos="fade-up"
-              data-aos-duration="800"
-            >
+            <p className="planes-extra-info">
               ¿Necesitás algo diferente? Los servicios adicionales y
               funcionalidades que no estén contempladas en el plan elegido se
               cotizan por separado según las necesidades del proyecto.
             </p>
+
+            <FAQ />
           </div>
         </Col>
       </Row>
