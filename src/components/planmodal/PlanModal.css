@@ -1,0 +1,218 @@
+.plan-modal .modal-content {
+  background-color: rgb(0, 34, 59);
+  color: var(--color-texto-principal);
+
+  border: 1px solid rgb(6, 70, 116);
+  border-radius: 16px;
+
+  box-shadow: var(--color-sombra);
+}
+
+.plan-modal .modal-header {
+  padding: 25px 30px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.plan-modal .modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-plan-number {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--color-hover);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.plan-modal .modal-title {
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.modal-plan-subtitle {
+  margin: 3px 0 0;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.plan-modal .modal-body {
+  padding: 30px;
+}
+
+.modal-plan-description {
+  margin-bottom: 30px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.modal-section-title {
+  margin-bottom: 20px;
+
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.modal-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-feature {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.modal-check {
+  flex-shrink: 0;
+  margin-top: 4px;
+
+  color: var(--color-hover);
+  font-size: 14px;
+}
+
+.modal-feature h6 {
+  margin: 0 0 5px;
+
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.modal-feature p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.modal-plan-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-top: 35px;
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-plan-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.modal-plan-info strong {
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.modal-plan-info span {
+  color: rgba(255, 255, 255, 0.7);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.plan-modal .modal-footer {
+  padding: 20px 30px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-modal-whatsapp {
+  width: 100%;
+
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: rgb(0, 96, 180);
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn-modal-whatsapp:hover {
+  background-color: rgb(0, 120, 220);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 5px 15px rgba(0, 150, 255, 0.25);
+}
+
+.btn-modal-whatsapp:active {
+  background-color: rgb(0, 96, 180) !important;
+
+  transform: translateY(0);
+
+  box-shadow: none;
+}
+
+@media (max-width: 576px) {
+  .plan-modal .modal-header {
+    padding: 20px;
+  }
+
+  .plan-modal .modal-body {
+    padding: 20px;
+  }
+
+  .plan-modal .modal-footer {
+    padding: 15px 20px;
+  }
+
+  .plan-modal .modal-title {
+    font-size: 23px;
+  }
+
+  .modal-plan-info {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-plan-description {
+    font-size: 14px;
+  }
+}
