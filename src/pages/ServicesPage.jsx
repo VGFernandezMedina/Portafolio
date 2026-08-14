@@ -16,7 +16,7 @@ const plans = [
 
     details: [
       {
-        title: "One-page de hasta 4 secciones",
+        title: "1 página de hasta 4 secciones",
         description:
           "Una única página organizada en hasta 4 secciones principales, como Inicio, Servicios, Sobre Nosotros y Contacto.",
       },

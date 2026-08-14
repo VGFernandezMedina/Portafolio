@@ -127,7 +127,6 @@
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
-
 .plan-info p {
   margin-bottom: 2px;
   color: rgba(255, 255, 255, 0.65);
@@ -136,7 +135,6 @@
   font-size: 12px;
   font-weight: 300;
 }
-
 .plan-info strong {
   color: white;
   font-weight: 400;
@@ -250,4 +248,49 @@
 
 .modal-open {
   padding-right: 0 !important;
+}
+
+@media (max-width: 576px) {
+  .plan-header {
+    padding: 10px 15px 10px;
+  }
+  .plan-number {
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  .plan-header h3 {
+    font-size: 18px;
+  }
+  .plan-header p {
+    font-size: 12px;
+  }
+  .plan-content {
+    padding: 10px 15px;
+  }
+  .plan-description {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .plan-includes {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  .plan-list {
+    margin: 5px 0 5px;
+  }
+  .plan-list li {
+    padding-left: 15px;
+    margin-bottom: 3px;
+    font-size: 12px;
+  }
+  .plan-details-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  .plan-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
 }
