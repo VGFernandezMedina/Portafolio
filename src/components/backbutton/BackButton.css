@@ -1,0 +1,35 @@
+.div-return {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  gap: 2%;
+  transition: all 0.3s ease;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.div-return:hover {
+  color: var(--color-hover);
+}
+.return-link {
+  display: inline-block;
+  margin-bottom: 2%;
+}
+.return-icon {
+  font-size: 26px;
+}
+
+@media (max-width: 767.98px) {
+  .div-return {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .return-link {
+    display: inline-block;
+  }
+  .return-icon {
+    font-size: 18px;
+  }
+}

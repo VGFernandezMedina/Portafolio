@@ -14,35 +14,19 @@
   }
 }
 
-.div-return {
-  display: flex;
-  align-items: center;
-  width: 160px;
-  gap: 6%;
-  transition: all 0.5s ease;
-  color: white;
-}
-.div-return:hover {
-  color: var(--color-hover);
-  gap: 8%;
-}
-.return-link {
-  display: inline-block;
-  margin-bottom: 5%;
-}
-
 .title-div-detail-page {
   text-align: center;
-  padding: 20px 40px 40px 40px;
+  padding: 10px 40px 20px 40px;
   .p1-title {
     color: rgb(0, 217, 255);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding-bottom: 1%;
   }
   .p1-description {
-    color: rgba(255, 255, 255, 0.793);
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
+    color: rgba(255, 255, 255, 0.852);
     font-size: 16px;
   }
 }

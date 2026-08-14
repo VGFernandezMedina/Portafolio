@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import NavbarC from "./components/navbar/NavbarC";
@@ -15,6 +10,7 @@ import "aos/dist/aos.css";
 import AnalyticsTracker from "./components/ga4/AnalyticsTracker";
 import AllProjects from "./pages/AllProjects";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
+import ServicesPage from "./pages/ServicesPage";
 
 const App = () => {
   useEffect(() => {
@@ -39,27 +35,6 @@ const App = () => {
     }, 500);
   }, []);
 
-  function Layout() {
-    const location = useLocation();
-
-    const isProjectDetail = location.pathname.startsWith("/project/");
-    const isAllProjects = location.pathname === "/projects";
-
-    return (
-      <>
-        {!isProjectDetail && !isAllProjects && <NavbarC />}
-
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<AllProjects />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
-        </Routes>
-
-        {/* {!isProjectDetail && !isAllProjects && <Footer />} */}
-      </>
-    );
-  }
-
   return (
     <div className="bg-homepage">
       <div
@@ -73,10 +48,17 @@ const App = () => {
           zIndex: -1,
         }}
       ></div>
+
       <Router>
+        <NavbarC />
         <ScrollToTop />
         <AnalyticsTracker />
-        <Layout />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/projects" element={<AllProjects />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
         <Footer />
       </Router>
     </div>
