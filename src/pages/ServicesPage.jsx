@@ -62,7 +62,7 @@ const plans = [
     support: "7 días",
 
     whatsapp:
-      "https://wa.me/TUNUMERO?text=Hola%20Gabriel,%20estoy%20interesado%20en%20el%20Plan%20Inicial.",
+      "https://wa.me/5493816135750?text=Hola%20Gabriel,%20estoy%20interesado%20en%20el%20Plan%20Inicial.",
   },
 
   {
@@ -126,7 +126,7 @@ const plans = [
     support: "15 días",
 
     whatsapp:
-      "https://wa.me/TUNUMERO?text=Hola%20Gabriel,%20estoy%20interesado%20en%20el%20Plan%20Profesional.",
+      "https://wa.me/5493816135750?text=Hola%20Gabriel,%20estoy%20interesado%20en%20el%20Plan%20Profesional.",
   },
 
   {
@@ -180,7 +180,7 @@ const plans = [
     support: "30 días",
 
     whatsapp:
-      "https://wa.me/TUNUMERO?text=Hola%20Gabriel,%20estoy%20interesado%20en%20el%20Plan%20Premium.",
+      "https://wa.me/5493816135750?text=Hola%20Gabriel,%20estoy%20interesado%20en%20el%20Plan%20Premium.",
   },
 ];
 
@@ -247,7 +247,7 @@ const ServicesPage = () => {
                             <li key={detail.title}>{detail.title}</li>
                           ))}
                       </ul>
-                      <div className="plan-info">
+                      {/* <div className="plan-info">
                         <p>
                           <strong>Entrega:</strong> {plan.delivery}
                         </p>
@@ -257,7 +257,13 @@ const ServicesPage = () => {
                         <p>
                           <strong>Soporte:</strong> {plan.support}
                         </p>
-                      </div>
+                      </div> */}
+                      <Button
+                        className="plan-details-button"
+                        onClick={() => setSelectedPlan(plan)}
+                      >
+                        Ver detalles
+                      </Button>
                       <a
                         href={plan.whatsapp}
                         className="plan-button"
@@ -266,12 +272,6 @@ const ServicesPage = () => {
                       >
                         Consultar por WhatsApp
                       </a>
-                      <Button
-                        className="plan-details-button"
-                        onClick={() => setSelectedPlan(plan)}
-                      >
-                        Ver detalles
-                      </Button>
                     </div>
                   </div>
                 </Col>

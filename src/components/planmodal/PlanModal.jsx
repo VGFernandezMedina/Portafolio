@@ -16,18 +16,14 @@ const PlanModal = ({ show, onHide, plan }) => {
       <Modal.Header closeButton>
         <div>
           <span className="modal-plan-number">{plan.number}</span>
-
           <Modal.Title>{plan.title}</Modal.Title>
-
           <p className="modal-plan-subtitle">{plan.subtitle}</p>
         </div>
       </Modal.Header>
 
       <Modal.Body>
         <p className="modal-plan-description">{plan.description}</p>
-
         <h5 className="modal-section-title">¿Qué incluye?</h5>
-
         <div className="modal-features">
           {plan.details.map((detail, index) => (
             <div className="modal-feature" key={index}>
