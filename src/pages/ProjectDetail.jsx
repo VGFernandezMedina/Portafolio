@@ -4,7 +4,6 @@ import proyectos from "../data/projectsData";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import {
-  FaArrowLeft,
   FaAward,
   FaCode,
   FaFileAlt,
@@ -14,6 +13,7 @@ import {
   FaRegCalendarAlt,
 } from "react-icons/fa";
 import { BiSolidCategory, BiWorld } from "react-icons/bi";
+import BackButton from "../components/backbutton/BackButton";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -26,31 +26,15 @@ const ProjectDetail = () => {
     <Container fluid className="text-white py-4 px-0">
       <Row className="p-0 m-0">
         <Col sm="" md="" lg="" className="col-detail-page">
-          <Link to="/" className="return-link text-decoration-none text-white">
-            <div className="div-return">
-              <FaArrowLeft />
-              <p className="my-0">Volver al Inicio</p>
-            </div>
-          </Link>
-
-          <div className="title-div-detail-page">
-            <p className="p1-title" data-aos="fade-up" data-aos-duration="1000">
-              Proyecto destacado
-            </p>
-            <h1
-              className="title-detail-page"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              {proyecto.title}
-            </h1>
-            <p
-              className="mt-4 p1-description"
-              data-aos="fade-up"
-              data-aos-duration="1400"
-            >
-              {proyecto.description}
-            </p>
+          <BackButton />
+          <div
+            className="title-div-detail-page"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <p className="p1-title">Proyecto destacado</p>
+            <h1 className="title-detail-page">{proyecto.title}</h1>
+            <p className="mt-4 p1-description">{proyecto.description}</p>
           </div>
 
           <div data-aos="fade" data-aos-duration="1200">

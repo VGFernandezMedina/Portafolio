@@ -1,59 +1,92 @@
 .card-servicios {
-  position: relative;
   height: 100%;
   width: auto;
   text-align: center;
   color: var(--color-texto-principal);
-  background: var(--color-fondo-gradiante);
-  border: var(--color-border);
+  background-color: rgb(0, 34, 59);
+  border-color: rgb(6, 70, 116);
   box-shadow: var(--color-sombra);
   border-radius: 12px;
-  overflow: hidden; /* para que no sobresalga la animación */
-  z-index: 0;
+  transition: all 0.3s ease;
 }
-
-.descripcion-servicios {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+.card-servicios:hover {
+  background-color: rgb(2, 52, 88);
+  border-color: rgb(35, 122, 184);
+  transform: translateY(-5px);
 }
-
-.servicios-icono {
+.card-servicios:hover .servicios-icono {
   color: var(--color-hover);
 }
 
-/* borde animado */
-.card-servicios::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(
-    from 0deg,
-    var(--color-hover),
-    /* tu color de acento */ transparent 30%,
-    var(--color-hover)
-  );
-  animation: luz-girando 4s linear infinite;
-  z-index: -2; /* queda detrás */
+.titulo-servicios {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.descripcion-servicios {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-/* “tapa” el centro para que solo se vea el borde */
-.card-servicios::after {
-  content: "";
-  position: absolute;
-  inset: 1px; /* grosor del borde animado */
-  background: var(--color-fondo-gradiante);
-  border-radius: 10px;
-  z-index: -1;
+.servicios-icono {
+  transition: color 0.3s ease;
 }
 
-@keyframes luz-girando {
-  to {
-    transform: rotate(360deg);
+.publicidad-servicio {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: 50px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
   }
+  p {
+    color: rgba(255, 255, 255, 0.773);
+    padding-top: 10px;
+  }
+}
+.btn-servicios {
+  background-color: rgb(0, 96, 180);
+  color: white;
+  border-radius: 20px;
+  width: 400px;
+  display: inline-block;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.btn-servicios:hover {
+  background-color: rgb(0, 120, 220);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 150, 255, 0.25);
+}
+.btn-servicios:active {
+  background-color: rgb(0, 96, 180) !important;
+  box-shadow: none !important;
+  color: white !important;
+  border-color: rgb(0, 96, 180) !important;
+}
+.btn-servicios:focus-visible {
+  outline: 2px solid var(--color-hover);
+  outline-offset: 3px;
+  color: white;
+  background-color: rgb(0, 96, 180);
 }
 
 @media (max-width: 576px) {
@@ -65,4 +98,49 @@
     font-size: 16px;
     font-weight: 400;
   }
+  .publicidad-servicio {
+    height: 20vh;
+    margin-top: 40px;
+    font-size: 12px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 30px;
+      font-size: 24px;
+    }
+  }
+  .btn-servicios {
+    width: 220px;
+    font-size: 12px;
+  }
 }
+
+/* .card-servicios::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    var(--color-hover),
+    transparent 30%,
+    var(--color-hover)
+  );
+  animation: luz-girando 4s linear infinite;
+  z-index: -2;
+}
+.card-servicios::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--color-fondo-gradiante);
+  border-radius: 10px;
+  z-index: -1;
+}
+@keyframes luz-girando {
+  to {
+    transform: rotate(360deg);
+  }
+} */

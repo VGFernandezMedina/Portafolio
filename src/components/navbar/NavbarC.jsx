@@ -3,32 +3,26 @@ import "./NavbarC.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link as ScrollLink } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import logo from "/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 const NavbarC = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <Navbar
-      expand="lg"
-      fixed="top"
+      expand="md"
+      sticky="top"
       expanded={expanded}
-      className="navbar-transparente"
+      className="navbar-normal"
     >
       <Container fluid>
-        <ScrollLink
-          className="navbar-logo"
-          to="inicio"
-          smooth={true}
-          duration={400}
-          offset={-40}
-        >
+        <Link className="navbar-logo" to="/">
           <img src={logo} alt="Logo" />
-        </ScrollLink>
+        </Link>
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
           aria-controls="responsive-navbar-nav"
@@ -43,95 +37,45 @@ const NavbarC = () => {
           </span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="position-absolute start-50 translate-middle-x nav-center d-flex ">
-            <ScrollLink
+          <Nav className="position-absolute start-50 translate-middle-x nav-center">
+            <NavLink
               className="nav-link"
-              activeClass="active"
-              to="inicio"
-              spy={true}
-              smooth={true}
-              duration={400}
-              offset={-40}
+              to="/"
+              end
               onClick={() => setExpanded(false)}
             >
               Inicio
-            </ScrollLink>
-            <ScrollLink
+            </NavLink>
+            <NavLink
               className="nav-link"
-              activeClass="active"
-              to="sobremi"
-              spy={true}
-              smooth={true}
-              duration={400}
-              offset={-40}
-              onClick={() => setExpanded(false)}
-            >
-              Sobre mi
-            </ScrollLink>
-            <ScrollLink
-              className="nav-link"
-              activeClass="active"
-              to="tecnologias"
-              spy={true}
-              smooth={true}
-              duration={400}
-              offset={-40}
-              onClick={() => setExpanded(false)}
-            >
-              Tecnologías
-            </ScrollLink>
-            <ScrollLink
-              className="nav-link"
-              activeClass="active"
-              to="proyectos"
-              spy={true}
-              smooth={true}
-              duration={400}
-              offset={-40}
+              to="/projects"
               onClick={() => setExpanded(false)}
             >
               Proyectos
-            </ScrollLink>
-            <ScrollLink
+            </NavLink>
+            <NavLink
               className="nav-link"
-              activeClass="active"
-              to="servicios"
-              spy={true}
-              smooth={true}
-              duration={400}
-              offset={-40}
+              to="/services"
               onClick={() => setExpanded(false)}
             >
               Servicios
-            </ScrollLink>
-            <ScrollLink
-              className="nav-link"
-              activeClass="active"
-              to="certificados"
-              spy={true}
-              smooth={true}
-              duration={400}
-              offset={-40}
-              onClick={() => setExpanded(false)}
-            >
-              Certificados
-            </ScrollLink>
+            </NavLink>
           </Nav>
           <Nav className="nav-right">
-            <div className="nav-icon">
+            <div className="nav-icon-nav">
               <a
                 href="https://github.com/VGFernandezMedina"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub size={26} />
+                <FaGithub className="icon-nav" />
               </a>
               <a
                 href="https://www.linkedin.com/in/vgabriel-fernandezm/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin size={26} />
+                <FaLinkedin className="icon-nav" />
               </a>
             </div>
           </Nav>
