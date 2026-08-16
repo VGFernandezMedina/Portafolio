@@ -14,7 +14,6 @@ const Tecnologias = () => {
     { src: "/react.svg", name: "React", color: "#61DAFB" },
     { src: "/react-router.svg", name: "React Router", color: "#ce6161" },
     { src: "/axios.svg", name: "Axios", color: "#7a09dd" },
-    /* { src: "/c++.svg", name: "C++", color: "#00599C" }, */
   ];
 
   const backendIcons = [
