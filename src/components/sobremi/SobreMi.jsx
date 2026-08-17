@@ -20,7 +20,13 @@ const SobreMi = () => {
             lg={{ span: 4, order: 2 }}
             className="d-flex align-items-center flex-column py-4"
           >
-            <Image src={perfil} roundedCircle fluid className="img-perfil" />
+            <Image
+              src={perfil}
+              roundedCircle
+              fluid
+              className="img-perfil"
+              alt="imagen de perfil"
+            />
           </Col>
 
           <Col

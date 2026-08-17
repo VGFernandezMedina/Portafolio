@@ -39,7 +39,7 @@ const Proyectos = () => {
             <IoChevronForward className="icon-project" />
           </Button>
         </div>
-        <Link to="/projects" className="btn btn-allproject">
+        <Link to="/proyectos" className="btn btn-allproject">
           <p className="m-0">Ver los proyectos</p>
           <IoArrowForward className="icon-allprojects" />
         </Link>
@@ -84,26 +84,3 @@ const Proyectos = () => {
 };
 
 export default Proyectos;
-
-/* 
-
-<Container fluid className="g-0">
-        <Row>
-          {proyectos.map((project) => (
-            <Col
-              key={project.id}
-              xs="12"
-              sm="6"
-              md="6"
-              lg="6"
-              className="pb-4 d-flex justify-content-center"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <CardC project={project} />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-
-*/

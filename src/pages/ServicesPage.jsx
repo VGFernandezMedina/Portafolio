@@ -247,17 +247,6 @@ const ServicesPage = () => {
                             <li key={detail.title}>{detail.title}</li>
                           ))}
                       </ul>
-                      {/* <div className="plan-info">
-                        <p>
-                          <strong>Entrega:</strong> {plan.delivery}
-                        </p>
-                        <p>
-                          <strong>Revisiones:</strong> {plan.revisions}
-                        </p>
-                        <p>
-                          <strong>Soporte:</strong> {plan.support}
-                        </p>
-                      </div> */}
                       <Button
                         className="plan-details-button"
                         onClick={() => setSelectedPlan(plan)}
