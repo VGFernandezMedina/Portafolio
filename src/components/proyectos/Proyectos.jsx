@@ -39,7 +39,7 @@ const Proyectos = () => {
             <IoChevronForward className="icon-project" />
           </Button>
         </div>
-        <Link to="/projects" className="btn btn-allproject">
+        <Link to="/proyectos" className="btn btn-allproject">
           <p className="m-0">Ver los proyectos</p>
           <IoArrowForward className="icon-allprojects" />
         </Link>

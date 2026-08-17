@@ -55,9 +55,9 @@ const App = () => {
         <AnalyticsTracker />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/projects" element={<AllProjects />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/proyectos" element={<AllProjects />} />
+          <Route path="/proyectos/:id" element={<ProjectDetail />} />
         </Routes>
         <Footer />
       </Router>
