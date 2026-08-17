@@ -9,25 +9,21 @@ footer {
   height: 150px;
   padding: 10px;
 }
-
 footer p {
   color: var(--color-texto-principal);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
-
 .nav-icon {
   display: flex;
   gap: 25px;
 }
-
 .nav-icon a {
   color: var(--color-texto-principal);
   transition: transform 0.3s ease;
   will-change: transform;
 }
-
 .nav-icon a:hover {
   transform: scale(1.2);
 }

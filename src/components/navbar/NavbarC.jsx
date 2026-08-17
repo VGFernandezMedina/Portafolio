@@ -48,14 +48,14 @@ const NavbarC = () => {
             </NavLink>
             <NavLink
               className="nav-link"
-              to="/projects"
+              to="/proyectos"
               onClick={() => setExpanded(false)}
             >
               Proyectos
             </NavLink>
             <NavLink
               className="nav-link"
-              to="/services"
+              to="/servicios"
               onClick={() => setExpanded(false)}
             >
               Servicios

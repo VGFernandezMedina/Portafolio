@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 const CardC = ({ project }) => {
   const handleClick = () => {
-    window.location.href = `/project/${project.id}`;
+    window.location.href = `/proyectos/${project.id}`;
   };
 
   return (

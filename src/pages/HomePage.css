@@ -3,13 +3,11 @@
   margin: 0 auto;
   padding: 0 2%;
 }
-
 @media (min-width: 1200px) {
   .homepage {
     padding: 0 200px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .homepage {
     padding: 0 150px;

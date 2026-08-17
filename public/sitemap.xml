@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/servicios</loc>
+  </url>
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/proyectos</loc>
+  </url>
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/proyectos/1</loc>
+  </url>
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/proyectos/2</loc>
+  </url>
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/proyectos/3</loc>
+  </url>
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/proyectos/4</loc>
+  </url>
+
+  <url>
+    <loc>https://gabrielfm-dev.netlify.app/proyectos/5</loc>
+  </url>
+
+</urlset>

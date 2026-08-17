@@ -4,19 +4,16 @@
   font-size: 16px;
   color: var(--color-texto-principal);
 }
-
 .img-perfil {
   height: 220px;
   max-width: 220px;
   object-fit: cover;
   box-shadow: var(--color-sombra-img);
 }
-
 .texto-naranja {
   color: var(--color-texto-secundario);
   font-weight: 600;
 }
-
 .texto-azul {
   color: var(--color-texto-terciario);
   font-weight: 600;
@@ -32,9 +29,6 @@
     width: auto;
   }
 }
-
-/* @media (min-width: 576px) and (max-width: 1024px) {
-} */
 
 @media (min-width: 1024px) {
   .col-sobremi {

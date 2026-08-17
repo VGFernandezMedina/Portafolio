@@ -1,16 +1,8 @@
-/* -------------------- */
-/* SECCIÓN */
-/* -------------------- */
-
 .faq-section {
   max-width: 850px;
   margin: 100px auto 0;
   padding: 0 15px;
 }
-
-/* -------------------- */
-/* HEADER */
-/* -------------------- */
 
 .faq-header {
   margin-bottom: 35px;
@@ -35,10 +27,6 @@
   line-height: 1.7;
 }
 
-/* -------------------- */
-/* ACCORDION */
-/* -------------------- */
-
 .faq-accordion {
   --bs-accordion-bg: transparent;
   --bs-accordion-border-color: rgba(255, 255, 255, 0.08);
@@ -48,11 +36,6 @@
   --bs-accordion-active-bg: rgba(255, 255, 255, 0.02);
   --bs-accordion-active-color: white;
 }
-
-/* -------------------- */
-/* ITEM */
-/* -------------------- */
-
 .faq-accordion .accordion-item {
   margin-bottom: 10px;
   overflow: hidden;
@@ -63,14 +46,9 @@
     border-color 0.3s ease,
     background-color 0.3s ease;
 }
-
 .faq-accordion .accordion-item:hover {
   border-color: rgba(6, 70, 116, 0.9);
 }
-
-/* -------------------- */
-/* HEADER PREGUNTA */
-/* -------------------- */
 
 .faq-accordion .accordion-button {
   padding: 24px 22px;
@@ -85,17 +63,9 @@
 .faq-accordion .accordion-button:focus {
   box-shadow: none;
 }
-
-/* Cuando está abierto */
-
 .faq-accordion .accordion-button:not(.collapsed) {
   color: var(--color-hover);
 }
-
-/* -------------------- */
-/* ICONO + / - */
-/* -------------------- */
-
 .faq-accordion .accordion-button::after {
   background-size: 18px;
   transition: transform 0.3s ease;
@@ -105,11 +75,6 @@
   filter: brightness(0) saturate(100%) invert(64%) sepia(95%) saturate(1500%)
     hue-rotate(165deg) brightness(95%) contrast(100%);
 }
-
-/* -------------------- */
-/* RESPUESTA */
-/* -------------------- */
-
 .faq-accordion .accordion-body {
   padding: 0 22px 22px;
   color: rgba(255, 255, 255, 0.808);
@@ -119,10 +84,6 @@
   font-weight: 300;
   line-height: 1.8;
 }
-
-/* -------------------- */
-/* MOBILE */
-/* -------------------- */
 
 @media (max-width: 768px) {
   .faq-section {
