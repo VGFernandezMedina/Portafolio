@@ -4,13 +4,13 @@ import Separador from "../separador/Separador";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { MdVerified } from "react-icons/md";
 import { FaCalendar } from "react-icons/fa";
-import modulo1 from "/modulo-1.png";
-import modulo2 from "/modulo-2.png";
-import modulo3 from "/modulo-3.png";
-import diseñoUI from "/Certificado-Diseño-UI.jpg";
-import fullstack from "/fullstack.png";
-import logica from "/Certificado-Logica.png";
-import typescript from "/Certificado-TypeScript.jpg";
+import modulo1 from "/modulo-1.webp";
+import modulo2 from "/modulo-2.webp";
+import modulo3 from "/modulo-3.webp";
+import diseñoUI from "/Certificado-Diseño-UI.webp";
+import fullstack from "/fullstack.webp";
+import logica from "/Certificado-Logica.webp";
+import typescript from "/Certificado-TypeScript.webp";
 import { useState } from "react";
 
 const Certificados = () => {
@@ -64,7 +64,7 @@ const Certificados = () => {
                 <div className="card-back" onClick={() => handleShow(modulo1)}>
                   <Image
                     src={modulo1}
-                    alt="certificado-modulo1"
+                    alt="Certificado de Creación y Diseño de páginas web"
                     fluid
                     className="img-certificado-back"
                   />
@@ -99,7 +99,7 @@ const Certificados = () => {
                 <div className="card-back" onClick={() => handleShow(modulo2)}>
                   <Image
                     src={modulo2}
-                    alt="certificado-modulo2"
+                    alt="Certificado de Desarrollo web con React"
                     fluid
                     className="img-certificado-back"
                   />
@@ -134,7 +134,7 @@ const Certificados = () => {
                 <div className="card-back" onClick={() => handleShow(modulo3)}>
                   <Image
                     src={modulo3}
-                    alt="certificado-modulo2"
+                    alt="Certificado de Integración de base de datos"
                     fluid
                     className="img-certificado-back"
                   />
@@ -172,7 +172,7 @@ const Certificados = () => {
                 >
                   <Image
                     src={fullstack}
-                    alt="certificado-modulo2"
+                    alt="Certificado de Desarrollador Fullstack"
                     fluid
                     className="img-certificado-back"
                   />
@@ -205,7 +205,7 @@ const Certificados = () => {
                 <div className="card-back" onClick={() => handleShow(diseñoUI)}>
                   <Image
                     src={diseñoUI}
-                    alt="certificado-modulo2"
+                    alt="Certificado de Diseño UI con Figma"
                     fluid
                     className="img-certificado-back"
                   />
@@ -243,7 +243,7 @@ const Certificados = () => {
                 >
                   <Image
                     src={typescript}
-                    alt="certificado-modulo2"
+                    alt="Certificado de Especialización en TypeScript"
                     fluid
                     className="img-certificado-back"
                   />
@@ -277,8 +277,8 @@ const Certificados = () => {
 
                 <div className="card-back" onClick={() => handleShow(logica)}>
                   <Image
-                    src="/Certificado-Logica.png"
-                    alt="certificado"
+                    src="/Certificado-Logica.webp"
+                    alt="Certificado de Lógica de programación"
                     fluid
                     className="img-certificado-back"
                   />

@@ -4,6 +4,7 @@ import BackButton from "../components/backbutton/BackButton";
 import FAQ from "../components/faq/FAQ";
 import { useState } from "react";
 import PlanModal from "../components/planmodal/PlanModal";
+import { Helmet } from "react-helmet-async";
 
 const plans = [
   {
@@ -188,99 +189,110 @@ const ServicesPage = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);
 
   return (
-    <Container fluid className="py-4 px-0">
-      <Row className="p-0 m-0 justify-content-center">
-        <Col lg="10" className="">
-          <BackButton />
-          <div
-            className="title-div-detail-page"
-            data-aos="fade-up"
-            data-aos-duration="600"
-          >
-            <p className="p1-title">Servicios y planes</p>
-            <h1 className="title-detail-page">
-              Elegí el plan ideal para tu negocio
-            </h1>
-            <p className="mt-4 p1-description">
-              Todos los planes están pensados para ofrecer una presencia online
-              profesional y adaptada a las necesidades de cada proyecto.
-            </p>
-          </div>
-          <div className="planes-section">
-            <Row className="g-4">
-              {plans.map((plan, index) => (
-                <Col
-                  md={6}
-                  lg={4}
-                  key={plan.number}
-                  data-aos="fade-up"
-                  data-aos-delay={index * 100}
-                >
-                  <div
-                    className={`plan-card ${
-                      plan.number === "02" ? "plan-card-featured" : ""
-                    }`}
+    <>
+      <Helmet>
+        <title>Servicios de Desarrollo Web | Gabriel Fernández</title>
+
+        <meta
+          name="description"
+          content="Conocé mis servicios y planes de desarrollo web para negocios y emprendimientos. Diseño responsive, desarrollo frontend, SEO y publicación de sitios."
+        />
+      </Helmet>
+      <Container fluid className="py-4 px-0">
+        <Row className="p-0 m-0 justify-content-center">
+          <Col lg="10" className="">
+            <BackButton />
+            <div
+              className="title-div-detail-page"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              <p className="p1-title">Servicios y planes</p>
+              <h1 className="title-detail-page">
+                Elegí el plan ideal para tu negocio
+              </h1>
+              <p className="mt-4 p1-description">
+                Todos los planes están pensados para ofrecer una presencia
+                online profesional y adaptada a las necesidades de cada
+                proyecto.
+              </p>
+            </div>
+            <div className="planes-section">
+              <Row className="g-4">
+                {plans.map((plan, index) => (
+                  <Col
+                    md={6}
+                    lg={4}
+                    key={plan.number}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
                   >
-                    {plan.number === "02" && (
-                      <div className="plan-badge">Más elegido</div>
-                    )}
-                    <div className="plan-header">
-                      <span className="plan-number">{plan.number}</span>
-                      <h3>{plan.title}</h3>
-                      <p>{plan.subtitle}</p>
-                    </div>
-                    <div className="plan-content">
-                      <p className="plan-description">{plan.description}</p>
-                      {plan.number !== "01" && (
-                        <p className="plan-includes">
-                          Todo lo incluido en el{" "}
-                          {plan.number === "02"
-                            ? "Plan Inicial"
-                            : "Plan Profesional"}
-                          , más:
-                        </p>
+                    <div
+                      className={`plan-card ${
+                        plan.number === "02" ? "plan-card-featured" : ""
+                      }`}
+                    >
+                      {plan.number === "02" && (
+                        <div className="plan-badge">Más elegido</div>
                       )}
-                      <ul className="plan-list">
-                        {plan.details
-                          .slice(0, plan.number === "01" ? 10 : 7)
-                          .map((detail) => (
-                            <li key={detail.title}>{detail.title}</li>
-                          ))}
-                      </ul>
-                      <Button
-                        className="plan-details-button"
-                        onClick={() => setSelectedPlan(plan)}
-                      >
-                        Ver detalles
-                      </Button>
-                      <a
-                        href={plan.whatsapp}
-                        className="plan-button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Consultar por WhatsApp
-                      </a>
+                      <div className="plan-header">
+                        <span className="plan-number">{plan.number}</span>
+                        <h3>{plan.title}</h3>
+                        <p>{plan.subtitle}</p>
+                      </div>
+                      <div className="plan-content">
+                        <p className="plan-description">{plan.description}</p>
+                        {plan.number !== "01" && (
+                          <p className="plan-includes">
+                            Todo lo incluido en el{" "}
+                            {plan.number === "02"
+                              ? "Plan Inicial"
+                              : "Plan Profesional"}
+                            , más:
+                          </p>
+                        )}
+                        <ul className="plan-list">
+                          {plan.details
+                            .slice(0, plan.number === "01" ? 10 : 7)
+                            .map((detail) => (
+                              <li key={detail.title}>{detail.title}</li>
+                            ))}
+                        </ul>
+                        <Button
+                          className="plan-details-button"
+                          onClick={() => setSelectedPlan(plan)}
+                        >
+                          Ver detalles
+                        </Button>
+                        <a
+                          href={plan.whatsapp}
+                          className="plan-button"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Consultar por WhatsApp
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-            <PlanModal
-              show={selectedPlan !== null}
-              onHide={() => setSelectedPlan(null)}
-              plan={selectedPlan}
-            />
-            <p className="planes-extra-info">
-              ¿Necesitás algo diferente? Los servicios adicionales y
-              funcionalidades que no estén contempladas en el plan elegido se
-              cotizan por separado según las necesidades del proyecto.
-            </p>
-            <FAQ />
-          </div>
-        </Col>
-      </Row>
-    </Container>
+                  </Col>
+                ))}
+              </Row>
+              <PlanModal
+                show={selectedPlan !== null}
+                onHide={() => setSelectedPlan(null)}
+                plan={selectedPlan}
+              />
+              <p className="planes-extra-info">
+                ¿Necesitás algo diferente? Los servicios adicionales y
+                funcionalidades que no estén contempladas en el plan elegido se
+                cotizan por separado según las necesidades del proyecto.
+              </p>
+              <FAQ />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 
