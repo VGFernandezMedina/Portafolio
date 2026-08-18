@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import logo from "/logo.png";
+import logo from "/logo.webp";
 import { Link, NavLink } from "react-router-dom";
 
 const NavbarC = () => {

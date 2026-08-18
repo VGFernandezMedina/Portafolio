@@ -2,10 +2,10 @@ const proyectos = [
   {
     id: 1,
     title: "Estudio Jurídico",
-    imgMain: "/Portada-EstudioJuridico.png",
-    img: "/Estudio Juridico.png",
-    img2: "/Estudio Juridico2.png",
-    img3: "/Estudio Juridico3.png",
+    imgMain: "/Portada-EstudioJuridico.webp",
+    img: "/Estudio Juridico.webp",
+    img2: "/Estudio Juridico2.webp",
+    img3: "/Estudio Juridico3.webp",
     description:
       "Sitio web institucional desarrollado para un estudio jurídico. Permite presentar información del estudio, áreas de práctica y medios de contacto, ofreciendo una presencia profesional y accesible para clientes potenciales.",
 
@@ -67,10 +67,10 @@ const proyectos = [
   {
     id: 2,
     title: "Portafolio Personal",
-    imgMain: "/Portada-Portafolio.png",
-    img: "/Portafolio.png",
-    img2: "/Portafolio 2.png",
-    img3: "/Portafolio 3.png",
+    imgMain: "/Portada-Portafolio.webp",
+    img: "/Portafolio.webp",
+    img2: "/Portafolio 2.webp",
+    img3: "/Portafolio 3.webp",
     description:
       "Portafolio web creado para exhibir mis proyectos, conocimientos y experiencia en desarrollo web. Incluye información profesional, tecnologías utilizadas y enlaces a mis trabajos y redes de contacto.",
 
@@ -127,10 +127,10 @@ const proyectos = [
   {
     id: 3,
     title: "Veterinaria RollingVet",
-    imgMain: "/Portada-Rollingvet.png",
-    img: "/Veterinaria.png",
-    img2: "/Veterinaria2.png",
-    img3: "/Veterinaria3.png",
+    imgMain: "/Portada-Rollingvet.webp",
+    img: "/Veterinaria.webp",
+    img2: "/Veterinaria2.webp",
+    img3: "/Veterinaria3.webp",
     description:
       "Aplicación web para la gestión de una veterinaria desarrollada en equipo. Permite administrar usuarios, mascotas, servicios y pagos en línea mediante integración con Mercado Pago.",
 
@@ -200,10 +200,10 @@ const proyectos = [
   {
     id: 4,
     title: "E-commerce",
-    imgMain: "/Portada-Ecommerce.png",
-    img: "/Ecommerce.png",
-    img2: "/Ecommerce2.png",
-    img3: "/Ecommerce3.png",
+    imgMain: "/Portada-Ecommerce.webp",
+    img: "/Ecommerce.webp",
+    img2: "/Ecommerce2.webp",
+    img3: "/Ecommerce3.webp",
     description:
       "Proyecto frontend de un ecommerce desarrollado en equipo con React. Incluye catálogo de productos, localstorage, filtros por categorías y marcas, y un diseño responsivo con Bootstrap.",
 
@@ -272,8 +272,8 @@ const proyectos = [
   {
     id: 5,
     title: "HDS Esports",
-    imgMain: "/Portada-HDS.png",
-    img: "/HDS.png",
+    imgMain: "/Portada-HDS.webp",
+    img: "/HDS.webp",
     description:
       "Aplicación web en desarrollo con el stack MERN. Incluye gestión de usuarios, productos y carrito, autenticación y pagos en línea mediante Mercado Pago. Proyecto con arquitectura basada en API REST.",
     badgeImg: "FullStack",

@@ -52,7 +52,6 @@ const Tecnologias = () => {
   ];
 
   const aprendiendoIcons = [
-    /* { src: "/wordpress.svg", name: "WordPress", color: "#21759B" }, */
     { src: "/tailwind-css.svg", name: "TailwindCSS", color: "#06B6D4" },
     { src: "/nextjs.svg", name: "Next.js", color: "#FFFFFF" },
     { src: "/angular.svg", name: "Angular", color: "#DD0031" },
