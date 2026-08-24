@@ -10,3 +10,12 @@ body {
   min-height: 100vh;
   z-index: 0;
 }
+
+:root {
+  --navbar-height: 70px;
+}
+
+body {
+  padding-top: var(--navbar-height);
+  background: var(--color-fondo-homepage);
+}

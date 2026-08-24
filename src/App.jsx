@@ -1,18 +1,30 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import "./App.css";
+
 import HomePage from "./pages/HomePage";
 import NavbarC from "./components/navbar/NavbarC";
 import Footer from "./components/footer/Footer";
 import ProjectDetail from "./pages/ProjectDetail";
-import { useEffect } from "react";
+import AllProjects from "./pages/AllProjects";
+import ServicesPage from "./pages/ServicesPage";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop";
+import AnalyticsTracker from "./components/ga4/AnalyticsTracker";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AnalyticsTracker from "./components/ga4/AnalyticsTracker";
-import AllProjects from "./pages/AllProjects";
-import ScrollToTop from "./components/scrolltotop/ScrollToTop";
-import ServicesPage from "./pages/ServicesPage";
+
+import Preloader from "./components/preloader/Preloader";
 
 const App = () => {
+  const [loading, setLoading] = useState(() => {
+    return (
+      window.location.pathname === "/" &&
+      !sessionStorage.getItem("preloaderShown")
+    );
+  });
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/particles.js";
@@ -20,23 +32,30 @@ const App = () => {
       window.particlesJS.load("particles-js", "/particles.json");
     };
     document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   useEffect(() => {
-    AOS.init({
-      duration: 500,
-      once: false,
-      offset: 10,
-      easing: "ease-in-out",
-    });
+    if (!loading) {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 50,
+        easing: "ease-out",
+      });
+    }
+  }, [loading]);
 
-    setTimeout(() => {
-      AOS.refresh();
-    }, 500);
-  }, []);
+  const handlePreloaderComplete = () => {
+    sessionStorage.setItem("preloaderShown", "true");
+    setLoading(false);
+  };
 
   return (
     <div className="bg-homepage">
+      {loading && <Preloader onComplete={handlePreloaderComplete} />}
       <div
         id="particles-js"
         style={{
