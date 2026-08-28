@@ -58,7 +58,7 @@ const Tecnologias = () => {
   ];
 
   return (
-    <Container fluid id="tecnologias" className="py-5">
+    <Container fluid as="section" id="tecnologias" className="py-5">
       <Separador
         title="Tecnologías"
         Icon={RiToolsFill}

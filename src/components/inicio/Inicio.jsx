@@ -12,11 +12,11 @@ import ScrollIndicator from "../scrollIndicator/ScrollIndicator";
 
 const Inicio = () => {
   return (
-    <Container fluid id="inicio" className="inicio text-center">
+    <Container fluid as="section" id="inicio" className="inicio text-center">
       <div className="position-relative">
-        <h3 className="pb-2 pt-5" data-aos="fade-up" data-aos-duration="1000">
+        <p className="pb-2 pt-5" data-aos="fade-up" data-aos-duration="1000">
           Hola! Un gusto conocerte 👋 soy
-        </h3>
+        </p>
         <h1 data-aos="fade-up" data-aos-duration="1200">
           Gabriel Fernández | Desarrollador
         </h1>

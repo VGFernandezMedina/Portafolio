@@ -6,7 +6,7 @@ import { LuUserRoundCheck } from "react-icons/lu";
 
 const SobreMi = () => {
   return (
-    <Container fluid id="sobremi" className="py-5">
+    <Container fluid as="section" id="sobremi" className="py-5">
       <Separador
         title="Sobre mi"
         Icon={LuUserRoundCheck}
