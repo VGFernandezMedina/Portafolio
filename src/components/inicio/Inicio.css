@@ -7,7 +7,7 @@
   padding-bottom: 70px;
   position: relative;
 }
-.inicio h3 {
+.inicio p {
   font-weight: 400;
   font-size: 26px;
   color: #e0f7fa;
@@ -139,7 +139,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .inicio h3 {
+  .inicio p {
     font-weight: 400;
     font-size: 16px;
   }
@@ -163,7 +163,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 1024px) {
-  .inicio h3 {
+  .inicio p {
     font-weight: 400;
     font-size: 18px;
   }

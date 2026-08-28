@@ -2,7 +2,7 @@ import "./Categorias.css";
 
 const Categorias = ({ title, icons }) => {
   return (
-    <div className="category-box">
+    <article className="category-box">
       <h3 className="text-center pb-2 titulo-tecnologia">{title}</h3>
       <div className="icons-grid">
         {icons.map((icon, i) => (
@@ -17,7 +17,7 @@ const Categorias = ({ title, icons }) => {
           </div>
         ))}
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -198,7 +198,7 @@ const ServicesPage = () => {
           content="Conocé mis servicios y planes de desarrollo web para negocios y emprendimientos. Diseño responsive, desarrollo frontend, SEO y publicación de sitios."
         />
       </Helmet>
-      <Container fluid className="py-4 px-0">
+      <Container fluid as="section" className="py-4 px-0">
         <Row className="p-0 m-0 justify-content-center">
           <Col lg="10" className="">
             <BackButton />
