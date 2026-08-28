@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 
 const Proyectos = () => {
   return (
-    <Container fluid id="proyectos" className="py-5">
+    <Container fluid as="section" id="proyectos" className="py-5">
       <Separador
         title="Proyectos"
         Icon={GoProjectRoadmap}

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Servicios = () => {
   return (
-    <Container fluid id="servicios" className="py-5">
+    <Container fluid as="section" id="servicios" className="py-5">
       <Separador
         title="Servicios"
         Icon={GrServices}
@@ -102,7 +102,7 @@ const Servicios = () => {
             </Card>
           </Col>
         </Row>
-        <div className="publicidad-servicio" data-aos="fade">
+        <article className="publicidad-servicio" data-aos="fade">
           <h2>¿Buscás una página web para tu negocio?</h2>
           <p className="pb-2">
             Conocé los planes disponibles, los servicios adicionales y cómo
@@ -111,7 +111,7 @@ const Servicios = () => {
           <Link to="/servicios" className="btn btn-servicios">
             <span className="m-0">Ver planes y servicios</span>
           </Link>
-        </div>
+        </article>
       </Container>
     </Container>
   );

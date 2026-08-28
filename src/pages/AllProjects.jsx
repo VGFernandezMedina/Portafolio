@@ -17,7 +17,7 @@ const AllProjects = () => {
           content="Explorá mis proyectos de desarrollo web y conocé los sitios y aplicaciones que desarrollé utilizando tecnologías frontend y backend."
         />
       </Helmet>
-      <Container fluid className="py-4 px-0">
+      <Container fluid as="section" className="py-4 px-0">
         <Row className="p-0 m-0 justify-content-center">
           <Col lg="10" className="">
             <BackButton />

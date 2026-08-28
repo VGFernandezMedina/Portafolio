@@ -42,7 +42,7 @@ const ProjectDetail = () => {
 
         <meta name="description" content={proyecto.description} />
       </Helmet>
-      <Container fluid className="text-white py-4 px-0">
+      <Container fluid as="section" className="text-white py-4 px-0">
         <Row className="p-0 m-0 justify-content-center">
           <Col sm="" md="" lg="10" className="">
             <BackButton />
