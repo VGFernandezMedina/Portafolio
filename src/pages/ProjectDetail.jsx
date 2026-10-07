@@ -141,68 +141,84 @@ const ProjectDetail = () => {
               )}
             </div>
 
-            {proyecto.caseStudy &&
-              proyecto.challenge &&
-              proyecto.solution &&
-              proyecto.highlights && (
-                <div className="div-info-detail-page">
+            {(proyecto.caseStudy ||
+              proyecto.challenge ||
+              proyecto.solution ||
+              proyecto.highlights) && (
+              <div className="div-info-detail-page">
+                {proyecto.caseStudy && (
                   <div>
                     <div className="info-detail-page">
                       <div className="icon-wrapper-info project-icon">
                         <FaFileAlt className="info-icon-detail-page" />
                       </div>
+
                       <h5 data-aos="fade-right">Sobre el proyecto</h5>
                     </div>
+
                     <ul className="highlights-list">
                       {proyecto.caseStudy.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
                   </div>
+                )}
 
+                {proyecto.challenge && (
                   <div>
                     <div className="info-detail-page">
                       <div className="icon-wrapper-info challenge-icon">
                         <FaFlag className="info-icon-detail-page" />
                       </div>
+
                       <h5 data-aos="fade-right">Desafío</h5>
                     </div>
+
                     <ul className="highlights-list">
                       {proyecto.challenge.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
                   </div>
+                )}
 
+                {proyecto.solution && (
                   <div>
                     <div className="info-detail-page">
                       <div className="icon-wrapper-info solution-icon">
                         <FaLightbulb className="info-icon-detail-page" />
                       </div>
+
                       <h5 data-aos="fade-right">Solución</h5>
                     </div>
+
                     <ul className="highlights-list">
                       {proyecto.solution.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
                   </div>
+                )}
 
+                {proyecto.highlights && (
                   <div>
                     <div className="info-detail-page">
                       <div className="icon-wrapper-info highlight-icon">
                         <FaAward className="info-icon-detail-page" />
                       </div>
+
                       <h5 data-aos="fade-right">Aspectos destacados</h5>
                     </div>
+
                     <ul className="highlights-list">
                       {proyecto.highlights.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
+            )}
 
             <div className="section-detail-page">
               <div className="section-title">

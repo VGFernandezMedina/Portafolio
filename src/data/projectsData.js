@@ -301,6 +301,57 @@ const proyectos = [
     span: "Beta",
     status: "beta",
   },
+
+  {
+    id: 6,
+    title: "Restaurante Valdivia",
+    imgMain: "/Portada-RestauranteValdivia.webp",
+    img: "/Restaurante Valdivia.webp",
+    img2: "/Restaurante Valdivia2.webp",
+    img3: "/Restaurante Valdivia3.webp",
+    description:
+      "Sitio web institucional desarrollado para un restaurante y cafetería. Permite presentar su propuesta gastronómica, menú, identidad y ubicación, ofreciendo una experiencia visual atractiva y accesible para sus clientes.",
+
+    caseStudy: [
+      "Restaurante Valdivia es una demostración del Plan Inicial, una propuesta pensada para negocios que buscan tener una presencia profesional en internet de forma clara, moderna y accesible.",
+
+      "El sitio fue diseñado y desarrollado con una estructura One Page adaptativa, incluyendo presentación del negocio, menú, información institucional, ubicación y medios de contacto.",
+
+      "El diseño es totalmente responsive, adaptándose a distintos dispositivos y priorizando una navegación simple e intuitiva.",
+    ],
+
+    highlights: [
+      "Diseño completamente responsive",
+      "Navegación clara e intuitiva",
+      "Organización estratégica del contenido",
+      "Interfaz moderna y profesional",
+      "Ubicación por medio de Google Maps",
+      "Sitio publicado en producción",
+    ],
+
+    badgeImg: "Frontend",
+    technologies: ["React", "Bootstrap", "Javascript", "CSS"],
+    techIcon: [
+      { src: "/html.svg", name: "HTML", color: "#E34F26" },
+      { src: "/css.svg", name: "CSS", color: "#1572B6" },
+      { src: "/js.svg", name: "JavaScript", color: "#F7DF1E" },
+      { src: "/react.svg", name: "React", color: "#61DAFB" },
+      { src: "/bootstrap.svg", name: "Bootstrap", color: "#7952B3" },
+    ],
+    toolsIcon: [
+      { src: "/git.svg", name: "Git", color: "#F05032" },
+      { src: "/npm.svg", name: "npm", color: "#CB3837" },
+      { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
+      { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
+    ],
+    date: "Octubre 2026",
+    category: "Proyecto Freelance",
+    web: "https://restaurante-valdivia.vercel.app/",
+    repoFront: "https://github.com/VGFernandezMedina/restaurante-valdivia",
+    repoBack: null,
+    span: "Prod",
+    status: "prod",
+  },
 ];
 
 export default proyectos;
