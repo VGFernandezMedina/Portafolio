@@ -56,6 +56,7 @@ const proyectos = [
       { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
     ],
     date: "Febrero 2026",
+    orderDate: "2026-02-05",
     category: "Proyecto Freelance",
     web: "https://silviamedinaabogada.com.ar/",
     repoFront: "https://github.com/VGFernandezMedina/estudio-juridico",
@@ -116,6 +117,7 @@ const proyectos = [
       { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
     ],
     date: "Septiembre 2025",
+    orderDate: "2025-09-12",
     category: "Proyecto Personal",
     web: "https://gabrielfm-dev.netlify.app/",
     repoFront: "https://github.com/VGFernandezMedina/Portafolio",
@@ -189,6 +191,7 @@ const proyectos = [
       { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
     ],
     date: "Agosto 2025",
+    orderDate: "2025-08-23",
     category: "Proyecto Académico",
     web: "https://vet-rolling.vercel.app/",
     repoFront: "https://github.com/VGFernandezMedina/vet-rolling-frontend",
@@ -261,6 +264,7 @@ const proyectos = [
       { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
     ],
     date: "Mayo 2025",
+    orderDate: "2025-05-05",
     category: "Proyecto Académico",
     web: "https://ecommerce-2doe.netlify.app/",
     repoFront: "https://github.com/VGFernandezMedina/Ecommerce-2doE",
@@ -294,12 +298,65 @@ const proyectos = [
       { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
     ],
     date: "2026",
+    orderDate: "",
     category: "Proyecto Personal",
     web: null,
     repoFront: "https://github.com/VGFernandezMedina/HDS-Frontend",
     repoBack: "https://github.com/VGFernandezMedina/HDS-Backend",
     span: "Beta",
     status: "beta",
+  },
+
+  {
+    id: 6,
+    title: "Restaurante Valdivia",
+    imgMain: "/Portada-RestauranteValdivia.webp",
+    img: "/Restaurante Valdivia.webp",
+    img2: "/Restaurante Valdivia2.webp",
+    img3: "/Restaurante Valdivia3.webp",
+    description:
+      "Sitio web desarrollado como una One Page para un restaurante y cafetería. Presenta su identidad, propuesta gastronómica, menú, ubicación y medios de contacto en una única página, contiene una navegación intuitiva y un diseño adaptable a dispositivos móviles y de escritorio.",
+
+    caseStudy: [
+      "Restaurante Valdivia es una demostración del Plan Inicial, una propuesta pensada para negocios que buscan tener una presencia profesional en internet de forma clara, moderna y accesible.",
+
+      "El sitio fue diseñado y desarrollado con una estructura One Page adaptativa, incluyendo presentación del negocio, menú, información institucional, ubicación y medios de contacto.",
+
+      "El diseño es totalmente responsive, adaptándose a distintos dispositivos y priorizando una navegación simple e intuitiva.",
+    ],
+
+    highlights: [
+      "Diseño completamente responsive",
+      "Navegación clara e intuitiva",
+      "Organización estratégica del contenido",
+      "Interfaz moderna y profesional",
+      "Ubicación por medio de Google Maps",
+      "Sitio publicado en producción",
+    ],
+
+    badgeImg: "Frontend",
+    technologies: ["React", "Bootstrap", "Javascript", "CSS"],
+    techIcon: [
+      { src: "/html.svg", name: "HTML", color: "#E34F26" },
+      { src: "/css.svg", name: "CSS", color: "#1572B6" },
+      { src: "/js.svg", name: "JavaScript", color: "#F7DF1E" },
+      { src: "/react.svg", name: "React", color: "#61DAFB" },
+      { src: "/bootstrap.svg", name: "Bootstrap", color: "#7952B3" },
+    ],
+    toolsIcon: [
+      { src: "/git.svg", name: "Git", color: "#F05032" },
+      { src: "/npm.svg", name: "npm", color: "#CB3837" },
+      { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
+      { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
+    ],
+    date: "Octubre 2026",
+    orderDate: "2026-10-07",
+    category: "Proyecto Freelance",
+    web: "https://restaurante-valdivia.vercel.app/",
+    repoFront: "https://github.com/VGFernandezMedina/restaurante-valdivia",
+    repoBack: null,
+    span: "Prod",
+    status: "prod",
   },
 ];
 
