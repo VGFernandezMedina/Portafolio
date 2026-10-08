@@ -16,6 +16,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const Proyectos = () => {
+  const proyectosRecientes = [...proyectos].sort(
+    (a, b) => new Date(b.orderDate) - new Date(a.orderDate),
+  );
+
   return (
     <Container fluid as="section" id="proyectos" className="py-5">
       <Separador
@@ -67,7 +71,7 @@ const Proyectos = () => {
           },
         }}
       >
-        {proyectos.map((project) => (
+        {proyectosRecientes.map((project) => (
           <SwiperSlide key={project.id}>
             <div
               className="d-flex justify-content-center"
