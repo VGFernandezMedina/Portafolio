@@ -7,6 +7,10 @@ import BackButton from "../components/backbutton/BackButton";
 import { Helmet } from "react-helmet-async";
 
 const AllProjects = () => {
+  const proyectosRecientes = [...proyectos].sort(
+    (a, b) => new Date(b.orderDate) - new Date(a.orderDate),
+  );
+
   return (
     <>
       <Helmet>
@@ -37,7 +41,7 @@ const AllProjects = () => {
             </div>
             <Container fluid className="g-0 pt-4">
               <Row>
-                {proyectos.map((project) => (
+                {proyectosRecientes.map((project) => (
                   <Col
                     key={project.id}
                     xs="12"
