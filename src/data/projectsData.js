@@ -358,6 +358,57 @@ const proyectos = [
     span: "Prod",
     status: "prod",
   },
+  {
+    id: 7,
+    title: "El Viejo Sauce",
+    imgMain: "/Portada-RestauranteElViejoSauce.webp",
+    img: "/El Viejo Sauce1.webp",
+    img2: "/El Viejo Sauce2.webp",
+    img3: "/El Viejo Sauce3.webp",
+    description:
+      "Plataforma web gastronómica desarrollada para El Viejo Sauce. Cuenta con un sistema interactivo de reservas integrado a WhatsApp con mensajes preformateados, carta digital interactiva, maquetación responsive de alto rendimiento y una identidad visual refinada con tipografías DM Sans y Playfair Display.",
+
+    caseStudy: [
+      "El Viejo Sauce es la implementación del Plan Intermedio, enfocado en negocios gastronómicos que requieren una experiencia interactiva para captar clientes y agilizar la gestión de reservas.",
+
+      "Se priorizó el rendimiento y la experiencia de usuario (UX) mediante animaciones de desplazamiento (AOS), optimización de imágenes a formato WebP y un flujo directo de interacción hacia la conversión.",
+
+      "Incluye un módulo de reservas que construye dinámicamente un mensaje prellenado a WhatsApp especificando fecha, hora y cantidad de comensales, además de integración con Google Maps para la llegada al local.",
+    ],
+
+    highlights: [
+      "Sistema interactivo de reservas vía WhatsApp con texto dinámico",
+      "Diseño responsive enfocado en la conversión móvil",
+      "Animaciones avanzadas de scroll (AOS)",
+      "Imágenes hiperoptimizadas a formato WebP",
+      "Ubicación interactiva mediante Google Maps",
+      "Sitio publicado en producción",
+    ],
+
+    badgeImg: "Frontend",
+    technologies: ["React", "Bootstrap", "JavaScript", "CSS"],
+    techIcon: [
+      { src: "/html.svg", name: "HTML", color: "#E34F26" },
+      { src: "/css.svg", name: "CSS", color: "#1572B6" },
+      { src: "/js.svg", name: "JavaScript", color: "#F7DF1E" },
+      { src: "/react.svg", name: "React", color: "#61DAFB" },
+      { src: "/bootstrap.svg", name: "Bootstrap", color: "#7952B3" },
+    ],
+    toolsIcon: [
+      { src: "/git.svg", name: "Git", color: "#F05032" },
+      { src: "/npm.svg", name: "npm", color: "#CB3837" },
+      { src: "/vsc.svg", name: "VSCode", color: "#007ACC" },
+      { src: "/figma.svg", name: "Figma", color: "#F24E1E" },
+    ],
+    date: "Noviembre 2026",
+    orderDate: "2026-11-01",
+    category: "Proyecto Freelance",
+    web: "https://restaurante-el-viejo-sauce.vercel.app/",
+    repoFront: "https://github.com/VGFernandezMedina/plan-intermedio",
+    repoBack: null,
+    span: "Prod",
+    status: "prod",
+  },
 ];
 
 export default proyectos;
